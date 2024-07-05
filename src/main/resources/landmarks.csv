@@ -1,0 +1,2696 @@
+name,latitude,longitude,address,description
+Central Park,40.785091,-73.968285,New York, NY
+Eiffel Tower,48.858844,2.294351,Paris,France
+Colosseum,41.890251,12.492373,Rome,Italy
+Statue of Liberty,40.689247,-74.044502,New York, NY
+Great Wall of China,40.431908,116.570374,China,Historic wall stretching across northern China
+Taj Mahal,27.175015,78.042155,Agra,India
+Sydney Opera House,-33.856784,151.215297,Sydney,Australia
+Mount Fuji,35.360555,138.727778,Japan,Highest mountain in Japan
+Christ the Redeemer,-22.951916,-43.210487,Rio de Janeiro,Brazil
+Machu Picchu,-13.163141,-72.544963,Peru,Inca citadel in the Andes Mountains
+Stonehenge,51.178882,-1.826215,England,Prehistoric stone circle
+Louvre Museum,48.860611,2.337644,Paris,France
+Pyramids of Giza,29.979235,31.134202,Egypt,Ancient pyramid structures
+Golden Gate Bridge,37.819929,-122.478255,San Francisco, CA
+Grand Canyon,36.106965,-112.112997,Arizona,USA
+Niagara Falls,43.096214,-79.037739,New York, NY
+Big Ben,51.500729,-0.124625,London,England
+Buckingham Palace,51.501364,-0.14189,London,England
+Empire State Building,40.748817,-73.985428,New York, NY
+Times Square,40.758896,-73.98513,New York, NY
+Hollywood Sign,34.134115,-118.321548,Los Angeles, CA
+Las Vegas Strip,36.114647,-115.172813,Las Vegas, NV
+Walt Disney World,28.385233,-81.563874,Orlando, FL
+White House,38.897676,-77.03653,Washington, D.C.
+Pentagon,38.87098,-77.05596,Washington, D.C.
+Lincoln Memorial,38.889269,-77.050176,Washington, D.C.
+Capitol Hill,38.889939,-77.009051,Washington, D.C.
+Metropolitan Museum of Art,40.779437,-73.963244,New York, NY
+Brooklyn Bridge,40.706086,-73.996864,New York, NY
+Liberty Bell,39.94961,-75.150282,Philadelphia, PA
+Alcatraz Island,37.826977,-122.422956,San Francisco, CA
+Space Needle,47.620506,-122.349277,Seattle, WA
+Yellowstone National Park,44.428,-110.5885,Wyoming,USA
+Mount Rushmore,43.879102,-103.459067,South Dakota,USA
+Walt Disney Concert Hall,34.055345,-118.249845,Los Angeles, CA
+CN Tower,43.642566,-79.387057,Toronto,Canada
+Banff National Park,51.496846,-115.928056,Alberta,Canada
+Niagara Falls,43.096214,-79.037739,Ontario,Canada
+Notre Dame Cathedral,48.852968,2.349902,Paris,France
+Versailles Palace,48.804865,2.120355,Versailles,France
+Berlin Wall,52.516275,13.377704,Berlin,Germany
+Neuschwanstein Castle,47.557574,10.7498,Germany,Fairy-tale castle in Bavaria
+St. Basil's Cathedral,55.752523,37.623073,Moscow,Russia
+Red Square,55.753913,37.620836,Moscow,Russia
+Kremlin,55.751999,37.617734,Moscow,Russia
+Blue Mosque,41.005409,28.976814,Istanbul,Turkey
+Hagia Sophia,41.008583,28.980175,Istanbul,Turkey
+Bosphorus Bridge,41.043964,29.034546,Istanbul,Turkey
+Petra,30.328457,35.444362,Jordan,Historic archaeological city
+Central Park,40.785091,-73.968285,New York, NY
+Eiffel Tower,48.858844,2.294351,Paris,France
+Colosseum,41.890251,12.492373,Rome,Italy
+Statue of Liberty,40.689247,-74.044502,New York, NY
+Great Wall of China,40.431908,116.570374,China,Historic wall stretching across northern China
+Taj Mahal,27.175015,78.042155,Agra,India
+Sydney Opera House,-33.856784,151.215297,Sydney,Australia
+Mount Fuji,35.360555,138.727778,Japan,Highest mountain in Japan
+Christ the Redeemer,-22.951916,-43.210487,Rio de Janeiro,Brazil
+Machu Picchu,-13.163141,-72.544963,Peru,Inca citadel in the Andes Mountains
+Stonehenge,51.178882,-1.826215,England,Prehistoric stone circle
+Louvre Museum,48.860611,2.337644,Paris,France
+Pyramids of Giza,29.979235,31.134202,Egypt,Ancient pyramid structures
+Golden Gate Bridge,37.819929,-122.478255,San Francisco, CA
+Grand Canyon,36.106965,-112.112997,Arizona,USA
+Niagara Falls,43.096214,-79.037739,New York, NY
+Big Ben,51.500729,-0.124625,London,England
+Buckingham Palace,51.501364,-0.14189,London,England
+Empire State Building,40.748817,-73.985428,New York, NY
+Times Square,40.758896,-73.98513,New York, NY
+Hollywood Sign,34.134115,-118.321548,Los Angeles, CA
+Las Vegas Strip,36.114647,-115.172813,Las Vegas, NV
+Walt Disney World,28.385233,-81.563874,Orlando, FL
+White House,38.897676,-77.03653,Washington, D.C.
+Pentagon,38.87098,-77.05596,Washington, D.C.
+Lincoln Memorial,38.889269,-77.050176,Washington, D.C.
+Capitol Hill,38.889939,-77.009051,Washington, D.C.
+Metropolitan Museum of Art,40.779437,-73.963244,New York, NY
+Brooklyn Bridge,40.706086,-73.996864,New York, NY
+Liberty Bell,39.94961,-75.150282,Philadelphia, PA
+Alcatraz Island,37.826977,-122.422956,San Francisco, CA
+Space Needle,47.620506,-122.349277,Seattle, WA
+Yellowstone National Park,44.428,-110.5885,Wyoming,USA
+Mount Rushmore,43.879102,-103.459067,South Dakota,USA
+Walt Disney Concert Hall,34.055345,-118.249845,Los Angeles, CA
+CN Tower,43.642566,-79.387057,Toronto,Canada
+Banff National Park,51.496846,-115.928056,Alberta,Canada
+Niagara Falls,43.096214,-79.037739,Ontario,Canada
+Notre Dame Cathedral,48.852968,2.349902,Paris,France
+Versailles Palace,48.804865,2.120355,Versailles,France
+Berlin Wall,52.516275,13.377704,Berlin,Germany
+Neuschwanstein Castle,47.557574,10.7498,Germany,Fairy-tale castle in Bavaria
+St. Basil's Cathedral,55.752523,37.623073,Moscow,Russia
+Red Square,55.753913,37.620836,Moscow,Russia
+Kremlin,55.751999,37.617734,Moscow,Russia
+Blue Mosque,41.005409,28.976814,Istanbul,Turkey
+Hagia Sophia,41.008583,28.980175,Istanbul,Turkey
+Bosphorus Bridge,41.043964,29.034546,Istanbul,Turkey
+Petra,30.328457,35.444362,Jordan,Historic archaeological city
+Central Park,40.785091,-73.968285,New York, NY
+Eiffel Tower,48.858844,2.294351,Paris,France
+Colosseum,41.890251,12.492373,Rome,Italy
+Statue of Liberty,40.689247,-74.044502,New York, NY
+Great Wall of China,40.431908,116.570374,China,Historic wall stretching across northern China
+Taj Mahal,27.175015,78.042155,Agra,India
+Sydney Opera House,-33.856784,151.215297,Sydney,Australia
+Mount Fuji,35.360555,138.727778,Japan,Highest mountain in Japan
+Christ the Redeemer,-22.951916,-43.210487,Rio de Janeiro,Brazil
+Machu Picchu,-13.163141,-72.544963,Peru,Inca citadel in the Andes Mountains
+Stonehenge,51.178882,-1.826215,England,Prehistoric stone circle
+Louvre Museum,48.860611,2.337644,Paris,France
+Pyramids of Giza,29.979235,31.134202,Egypt,Ancient pyramid structures
+Golden Gate Bridge,37.819929,-122.478255,San Francisco, CA
+Grand Canyon,36.106965,-112.112997,Arizona,USA
+Niagara Falls,43.096214,-79.037739,New York, NY
+Big Ben,51.500729,-0.124625,London,England
+Buckingham Palace,51.501364,-0.14189,London,England
+Empire State Building,40.748817,-73.985428,New York, NY
+Times Square,40.758896,-73.98513,New York, NY
+Hollywood Sign,34.134115,-118.321548,Los Angeles, CA
+Las Vegas Strip,36.114647,-115.172813,Las Vegas, NV
+Walt Disney World,28.385233,-81.563874,Orlando, FL
+White House,38.897676,-77.03653,Washington, D.C.
+Pentagon,38.87098,-77.05596,Washington, D.C.
+Lincoln Memorial,38.889269,-77.050176,Washington, D.C.
+Capitol Hill,38.889939,-77.009051,Washington, D.C.
+Metropolitan Museum of Art,40.779437,-73.963244,New York, NY
+Brooklyn Bridge,40.706086,-73.996864,New York, NY
+Liberty Bell,39.94961,-75.150282,Philadelphia, PA
+Alcatraz Island,37.826977,-122.422956,San Francisco, CA
+Space Needle,47.620506,-122.349277,Seattle, WA
+Yellowstone National Park,44.428,-110.5885,Wyoming,USA
+Mount Rushmore,43.879102,-103.459067,South Dakota,USA
+Walt Disney Concert Hall,34.055345,-118.249845,Los Angeles, CA
+CN Tower,43.642566,-79.387057,Toronto,Canada
+Banff National Park,51.496846,-115.928056,Alberta,Canada
+Niagara Falls,43.096214,-79.037739,Ontario,Canada
+Notre Dame Cathedral,48.852968,2.349902,Paris,France
+Versailles Palace,48.804865,2.120355,Versailles,France
+Berlin Wall,52.516275,13.377704,Berlin,Germany
+Neuschwanstein Castle,47.557574,10.7498,Germany,Fairy-tale castle in Bavaria
+St. Basil's Cathedral,55.752523,37.623073,Moscow,Russia
+Red Square,55.753913,37.620836,Moscow,Russia
+Kremlin,55.751999,37.617734,Moscow,Russia
+Blue Mosque,41.005409,28.976814,Istanbul,Turkey
+Hagia Sophia,41.008583,28.980175,Istanbul,Turkey
+Bosphorus Bridge,41.043964,29.034546,Istanbul,Turkey
+Petra,30.328457,35.444362,Jordan,Historic archaeological city
+Central Park,40.785091,-73.968285,New York, NY
+Eiffel Tower,48.858844,2.294351,Paris,France
+Colosseum,41.890251,12.492373,Rome,Italy
+Statue of Liberty,40.689247,-74.044502,New York, NY
+Great Wall of China,40.431908,116.570374,China,Historic wall stretching across northern China
+Taj Mahal,27.175015,78.042155,Agra,India
+Sydney Opera House,-33.856784,151.215297,Sydney,Australia
+Mount Fuji,35.360555,138.727778,Japan,Highest mountain in Japan
+Christ the Redeemer,-22.951916,-43.210487,Rio de Janeiro,Brazil
+Machu Picchu,-13.163141,-72.544963,Peru,Inca citadel in the Andes Mountains
+Stonehenge,51.178882,-1.826215,England,Prehistoric stone circle
+Louvre Museum,48.860611,2.337644,Paris,France
+Pyramids of Giza,29.979235,31.134202,Egypt,Ancient pyramid structures
+Golden Gate Bridge,37.819929,-122.478255,San Francisco, CA
+Grand Canyon,36.106965,-112.112997,Arizona,USA
+Niagara Falls,43.096214,-79.037739,New York, NY
+Big Ben,51.500729,-0.124625,London,England
+Buckingham Palace,51.501364,-0.14189,London,England
+Empire State Building,40.748817,-73.985428,New York, NY
+Times Square,40.758896,-73.98513,New York, NY
+Hollywood Sign,34.134115,-118.321548,Los Angeles, CA
+Las Vegas Strip,36.114647,-115.172813,Las Vegas, NV
+Walt Disney World,28.385233,-81.563874,Orlando, FL
+White House,38.897676,-77.03653,Washington, D.C.
+Pentagon,38.87098,-77.05596,Washington, D.C.
+Lincoln Memorial,38.889269,-77.050176,Washington, D.C.
+Capitol Hill,38.889939,-77.009051,Washington, D.C.
+Metropolitan Museum of Art,40.779437,-73.963244,New York, NY
+Brooklyn Bridge,40.706086,-73.996864,New York, NY
+Liberty Bell,39.94961,-75.150282,Philadelphia, PA
+Alcatraz Island,37.826977,-122.422956,San Francisco, CA
+Space Needle,47.620506,-122.349277,Seattle, WA
+Yellowstone National Park,44.428,-110.5885,Wyoming,USA
+Mount Rushmore,43.879102,-103.459067,South Dakota,USA
+Walt Disney Concert Hall,34.055345,-118.249845,Los Angeles, CA
+CN Tower,43.642566,-79.387057,Toronto,Canada
+Banff National Park,51.496846,-115.928056,Alberta,Canada
+Niagara Falls,43.096214,-79.037739,Ontario,Canada
+Notre Dame Cathedral,48.852968,2.349902,Paris,France
+Versailles Palace,48.804865,2.120355,Versailles,France
+Berlin Wall,52.516275,13.377704,Berlin,Germany
+Neuschwanstein Castle,47.557574,10.7498,Germany,Fairy-tale castle in Bavaria
+St. Basil's Cathedral,55.752523,37.623073,Moscow,Russia
+Red Square,55.753913,37.620836,Moscow,Russia
+Kremlin,55.751999,37.617734,Moscow,Russia
+Blue Mosque,41.005409,28.976814,Istanbul,Turkey
+Hagia Sophia,41.008583,28.980175,Istanbul,Turkey
+Bosphorus Bridge,41.043964,29.034546,Istanbul,Turkey
+Petra,30.328457,35.444362,Jordan,Historic archaeological city
+Central Park,40.785091,-73.968285,New York, NY
+Eiffel Tower,48.858844,2.294351,Paris,France
+Colosseum,41.890251,12.492373,Rome,Italy
+Statue of Liberty,40.689247,-74.044502,New York, NY
+Great Wall of China,40.431908,116.570374,China,Historic wall stretching across northern China
+Taj Mahal,27.175015,78.042155,Agra,India
+Sydney Opera House,-33.856784,151.215297,Sydney,Australia
+Mount Fuji,35.360555,138.727778,Japan,Highest mountain in Japan
+Christ the Redeemer,-22.951916,-43.210487,Rio de Janeiro,Brazil
+Machu Picchu,-13.163141,-72.544963,Peru,Inca citadel in the Andes Mountains
+Stonehenge,51.178882,-1.826215,England,Prehistoric stone circle
+Louvre Museum,48.860611,2.337644,Paris,France
+Pyramids of Giza,29.979235,31.134202,Egypt,Ancient pyramid structures
+Golden Gate Bridge,37.819929,-122.478255,San Francisco, CA
+Grand Canyon,36.106965,-112.112997,Arizona,USA
+Niagara Falls,43.096214,-79.037739,New York, NY
+Big Ben,51.500729,-0.124625,London,England
+Buckingham Palace,51.501364,-0.14189,London,England
+Empire State Building,40.748817,-73.985428,New York, NY
+Times Square,40.758896,-73.98513,New York, NY
+Hollywood Sign,34.134115,-118.321548,Los Angeles, CA
+Las Vegas Strip,36.114647,-115.172813,Las Vegas, NV
+Walt Disney World,28.385233,-81.563874,Orlando, FL
+White House,38.897676,-77.03653,Washington, D.C.
+Pentagon,38.87098,-77.05596,Washington, D.C.
+Lincoln Memorial,38.889269,-77.050176,Washington, D.C.
+Capitol Hill,38.889939,-77.009051,Washington, D.C.
+Metropolitan Museum of Art,40.779437,-73.963244,New York, NY
+Brooklyn Bridge,40.706086,-73.996864,New York, NY
+Liberty Bell,39.94961,-75.150282,Philadelphia, PA
+Alcatraz Island,37.826977,-122.422956,San Francisco, CA
+Space Needle,47.620506,-122.349277,Seattle, WA
+Yellowstone National Park,44.428,-110.5885,Wyoming,USA
+Mount Rushmore,43.879102,-103.459067,South Dakota,USA
+Walt Disney Concert Hall,34.055345,-118.249845,Los Angeles, CA
+CN Tower,43.642566,-79.387057,Toronto,Canada
+Banff National Park,51.496846,-115.928056,Alberta,Canada
+Niagara Falls,43.096214,-79.037739,Ontario,Canada
+Notre Dame Cathedral,48.852968,2.349902,Paris,France
+Versailles Palace,48.804865,2.120355,Versailles,France
+Berlin Wall,52.516275,13.377704,Berlin,Germany
+Neuschwanstein Castle,47.557574,10.7498,Germany,Fairy-tale castle in Bavaria
+St. Basil's Cathedral,55.752523,37.623073,Moscow,Russia
+Red Square,55.753913,37.620836,Moscow,Russia
+Kremlin,55.751999,37.617734,Moscow,Russia
+Blue Mosque,41.005409,28.976814,Istanbul,Turkey
+Hagia Sophia,41.008583,28.980175,Istanbul,Turkey
+Bosphorus Bridge,41.043964,29.034546,Istanbul,Turkey
+Petra,30.328457,35.444362,Jordan,Historic archaeological city
+Central Park,40.785091,-73.968285,New York, NY
+Eiffel Tower,48.858844,2.294351,Paris,France
+Colosseum,41.890251,12.492373,Rome,Italy
+Statue of Liberty,40.689247,-74.044502,New York, NY
+Great Wall of China,40.431908,116.570374,China,Historic wall stretching across northern China
+Taj Mahal,27.175015,78.042155,Agra,India
+Sydney Opera House,-33.856784,151.215297,Sydney,Australia
+Mount Fuji,35.360555,138.727778,Japan,Highest mountain in Japan
+Christ the Redeemer,-22.951916,-43.210487,Rio de Janeiro,Brazil
+Machu Picchu,-13.163141,-72.544963,Peru,Inca citadel in the Andes Mountains
+Stonehenge,51.178882,-1.826215,England,Prehistoric stone circle
+Louvre Museum,48.860611,2.337644,Paris,France
+Pyramids of Giza,29.979235,31.134202,Egypt,Ancient pyramid structures
+Golden Gate Bridge,37.819929,-122.478255,San Francisco, CA
+Grand Canyon,36.106965,-112.112997,Arizona,USA
+Niagara Falls,43.096214,-79.037739,New York, NY
+Big Ben,51.500729,-0.124625,London,England
+Buckingham Palace,51.501364,-0.14189,London,England
+Empire State Building,40.748817,-73.985428,New York, NY
+Times Square,40.758896,-73.98513,New York, NY
+Hollywood Sign,34.134115,-118.321548,Los Angeles, CA
+Las Vegas Strip,36.114647,-115.172813,Las Vegas, NV
+Walt Disney World,28.385233,-81.563874,Orlando, FL
+White House,38.897676,-77.03653,Washington, D.C.
+Pentagon,38.87098,-77.05596,Washington, D.C.
+Lincoln Memorial,38.889269,-77.050176,Washington, D.C.
+Capitol Hill,38.889939,-77.009051,Washington, D.C.
+Metropolitan Museum of Art,40.779437,-73.963244,New York, NY
+Brooklyn Bridge,40.706086,-73.996864,New York, NY
+Liberty Bell,39.94961,-75.150282,Philadelphia, PA
+Alcatraz Island,37.826977,-122.422956,San Francisco, CA
+Space Needle,47.620506,-122.349277,Seattle, WA
+Yellowstone National Park,44.428,-110.5885,Wyoming,USA
+Mount Rushmore,43.879102,-103.459067,South Dakota,USA
+Walt Disney Concert Hall,34.055345,-118.249845,Los Angeles, CA
+CN Tower,43.642566,-79.387057,Toronto,Canada
+Banff National Park,51.496846,-115.928056,Alberta,Canada
+Niagara Falls,43.096214,-79.037739,Ontario,Canada
+Notre Dame Cathedral,48.852968,2.349902,Paris,France
+Versailles Palace,48.804865,2.120355,Versailles,France
+Berlin Wall,52.516275,13.377704,Berlin,Germany
+Neuschwanstein Castle,47.557574,10.7498,Germany,Fairy-tale castle in Bavaria
+St. Basil's Cathedral,55.752523,37.623073,Moscow,Russia
+Red Square,55.753913,37.620836,Moscow,Russia
+Kremlin,55.751999,37.617734,Moscow,Russia
+Blue Mosque,41.005409,28.976814,Istanbul,Turkey
+Hagia Sophia,41.008583,28.980175,Istanbul,Turkey
+Bosphorus Bridge,41.043964,29.034546,Istanbul,Turkey
+Petra,30.328457,35.444362,Jordan,Historic archaeological city
+Central Park,40.785091,-73.968285,New York, NY
+Eiffel Tower,48.858844,2.294351,Paris,France
+Colosseum,41.890251,12.492373,Rome,Italy
+Statue of Liberty,40.689247,-74.044502,New York, NY
+Great Wall of China,40.431908,116.570374,China,Historic wall stretching across northern China
+Taj Mahal,27.175015,78.042155,Agra,India
+Sydney Opera House,-33.856784,151.215297,Sydney,Australia
+Mount Fuji,35.360555,138.727778,Japan,Highest mountain in Japan
+Christ the Redeemer,-22.951916,-43.210487,Rio de Janeiro,Brazil
+Machu Picchu,-13.163141,-72.544963,Peru,Inca citadel in the Andes Mountains
+Stonehenge,51.178882,-1.826215,England,Prehistoric stone circle
+Louvre Museum,48.860611,2.337644,Paris,France
+Pyramids of Giza,29.979235,31.134202,Egypt,Ancient pyramid structures
+Golden Gate Bridge,37.819929,-122.478255,San Francisco, CA
+Grand Canyon,36.106965,-112.112997,Arizona,USA
+Niagara Falls,43.096214,-79.037739,New York, NY
+Big Ben,51.500729,-0.124625,London,England
+Buckingham Palace,51.501364,-0.14189,London,England
+Empire State Building,40.748817,-73.985428,New York, NY
+Times Square,40.758896,-73.98513,New York, NY
+Hollywood Sign,34.134115,-118.321548,Los Angeles, CA
+Las Vegas Strip,36.114647,-115.172813,Las Vegas, NV
+Walt Disney World,28.385233,-81.563874,Orlando, FL
+White House,38.897676,-77.03653,Washington, D.C.
+Pentagon,38.87098,-77.05596,Washington, D.C.
+Lincoln Memorial,38.889269,-77.050176,Washington, D.C.
+Capitol Hill,38.889939,-77.009051,Washington, D.C.
+Metropolitan Museum of Art,40.779437,-73.963244,New York, NY
+Brooklyn Bridge,40.706086,-73.996864,New York, NY
+Liberty Bell,39.94961,-75.150282,Philadelphia, PA
+Alcatraz Island,37.826977,-122.422956,San Francisco, CA
+Space Needle,47.620506,-122.349277,Seattle, WA
+Yellowstone National Park,44.428,-110.5885,Wyoming,USA
+Mount Rushmore,43.879102,-103.459067,South Dakota,USA
+Walt Disney Concert Hall,34.055345,-118.249845,Los Angeles, CA
+CN Tower,43.642566,-79.387057,Toronto,Canada
+Banff National Park,51.496846,-115.928056,Alberta,Canada
+Niagara Falls,43.096214,-79.037739,Ontario,Canada
+Notre Dame Cathedral,48.852968,2.349902,Paris,France
+Versailles Palace,48.804865,2.120355,Versailles,France
+Berlin Wall,52.516275,13.377704,Berlin,Germany
+Neuschwanstein Castle,47.557574,10.7498,Germany,Fairy-tale castle in Bavaria
+St. Basil's Cathedral,55.752523,37.623073,Moscow,Russia
+Red Square,55.753913,37.620836,Moscow,Russia
+Kremlin,55.751999,37.617734,Moscow,Russia
+Blue Mosque,41.005409,28.976814,Istanbul,Turkey
+Hagia Sophia,41.008583,28.980175,Istanbul,Turkey
+Bosphorus Bridge,41.043964,29.034546,Istanbul,Turkey
+Petra,30.328457,35.444362,Jordan,Historic archaeological city
+Central Park,40.785091,-73.968285,New York, NY
+Eiffel Tower,48.858844,2.294351,Paris,France
+Colosseum,41.890251,12.492373,Rome,Italy
+Statue of Liberty,40.689247,-74.044502,New York, NY
+Great Wall of China,40.431908,116.570374,China,Historic wall stretching across northern China
+Taj Mahal,27.175015,78.042155,Agra,India
+Sydney Opera House,-33.856784,151.215297,Sydney,Australia
+Mount Fuji,35.360555,138.727778,Japan,Highest mountain in Japan
+Christ the Redeemer,-22.951916,-43.210487,Rio de Janeiro,Brazil
+Machu Picchu,-13.163141,-72.544963,Peru,Inca citadel in the Andes Mountains
+Stonehenge,51.178882,-1.826215,England,Prehistoric stone circle
+Louvre Museum,48.860611,2.337644,Paris,France
+Pyramids of Giza,29.979235,31.134202,Egypt,Ancient pyramid structures
+Golden Gate Bridge,37.819929,-122.478255,San Francisco, CA
+Grand Canyon,36.106965,-112.112997,Arizona,USA
+Niagara Falls,43.096214,-79.037739,New York, NY
+Big Ben,51.500729,-0.124625,London,England
+Buckingham Palace,51.501364,-0.14189,London,England
+Empire State Building,40.748817,-73.985428,New York, NY
+Times Square,40.758896,-73.98513,New York, NY
+Hollywood Sign,34.134115,-118.321548,Los Angeles, CA
+Las Vegas Strip,36.114647,-115.172813,Las Vegas, NV
+Walt Disney World,28.385233,-81.563874,Orlando, FL
+White House,38.897676,-77.03653,Washington, D.C.
+Pentagon,38.87098,-77.05596,Washington, D.C.
+Lincoln Memorial,38.889269,-77.050176,Washington, D.C.
+Capitol Hill,38.889939,-77.009051,Washington, D.C.
+Metropolitan Museum of Art,40.779437,-73.963244,New York, NY
+Brooklyn Bridge,40.706086,-73.996864,New York, NY
+Liberty Bell,39.94961,-75.150282,Philadelphia, PA
+Alcatraz Island,37.826977,-122.422956,San Francisco, CA
+Space Needle,47.620506,-122.349277,Seattle, WA
+Yellowstone National Park,44.428,-110.5885,Wyoming,USA
+Mount Rushmore,43.879102,-103.459067,South Dakota,USA
+Walt Disney Concert Hall,34.055345,-118.249845,Los Angeles, CA
+CN Tower,43.642566,-79.387057,Toronto,Canada
+Banff National Park,51.496846,-115.928056,Alberta,Canada
+Niagara Falls,43.096214,-79.037739,Ontario,Canada
+Notre Dame Cathedral,48.852968,2.349902,Paris,France
+Versailles Palace,48.804865,2.120355,Versailles,France
+Berlin Wall,52.516275,13.377704,Berlin,Germany
+Neuschwanstein Castle,47.557574,10.7498,Germany,Fairy-tale castle in Bavaria
+St. Basil's Cathedral,55.752523,37.623073,Moscow,Russia
+Red Square,55.753913,37.620836,Moscow,Russia
+Kremlin,55.751999,37.617734,Moscow,Russia
+Blue Mosque,41.005409,28.976814,Istanbul,Turkey
+Hagia Sophia,41.008583,28.980175,Istanbul,Turkey
+Bosphorus Bridge,41.043964,29.034546,Istanbul,Turkey
+Petra,30.328457,35.444362,Jordan,Historic archaeological city
+Central Park,40.785091,-73.968285,New York, NY
+Eiffel Tower,48.858844,2.294351,Paris,France
+Colosseum,41.890251,12.492373,Rome,Italy
+Statue of Liberty,40.689247,-74.044502,New York, NY
+Great Wall of China,40.431908,116.570374,China,Historic wall stretching across northern China
+Taj Mahal,27.175015,78.042155,Agra,India
+Sydney Opera House,-33.856784,151.215297,Sydney,Australia
+Mount Fuji,35.360555,138.727778,Japan,Highest mountain in Japan
+Christ the Redeemer,-22.951916,-43.210487,Rio de Janeiro,Brazil
+Machu Picchu,-13.163141,-72.544963,Peru,Inca citadel in the Andes Mountains
+Stonehenge,51.178882,-1.826215,England,Prehistoric stone circle
+Louvre Museum,48.860611,2.337644,Paris,France
+Pyramids of Giza,29.979235,31.134202,Egypt,Ancient pyramid structures
+Golden Gate Bridge,37.819929,-122.478255,San Francisco, CA
+Grand Canyon,36.106965,-112.112997,Arizona,USA
+Niagara Falls,43.096214,-79.037739,New York, NY
+Big Ben,51.500729,-0.124625,London,England
+Buckingham Palace,51.501364,-0.14189,London,England
+Empire State Building,40.748817,-73.985428,New York, NY
+Times Square,40.758896,-73.98513,New York, NY
+Hollywood Sign,34.134115,-118.321548,Los Angeles, CA
+Las Vegas Strip,36.114647,-115.172813,Las Vegas, NV
+Walt Disney World,28.385233,-81.563874,Orlando, FL
+White House,38.897676,-77.03653,Washington, D.C.
+Pentagon,38.87098,-77.05596,Washington, D.C.
+Lincoln Memorial,38.889269,-77.050176,Washington, D.C.
+Capitol Hill,38.889939,-77.009051,Washington, D.C.
+Metropolitan Museum of Art,40.779437,-73.963244,New York, NY
+Brooklyn Bridge,40.706086,-73.996864,New York, NY
+Liberty Bell,39.94961,-75.150282,Philadelphia, PA
+Alcatraz Island,37.826977,-122.422956,San Francisco, CA
+Space Needle,47.620506,-122.349277,Seattle, WA
+Yellowstone National Park,44.428,-110.5885,Wyoming,USA
+Mount Rushmore,43.879102,-103.459067,South Dakota,USA
+Walt Disney Concert Hall,34.055345,-118.249845,Los Angeles, CA
+CN Tower,43.642566,-79.387057,Toronto,Canada
+Banff National Park,51.496846,-115.928056,Alberta,Canada
+Niagara Falls,43.096214,-79.037739,Ontario,Canada
+Notre Dame Cathedral,48.852968,2.349902,Paris,France
+Versailles Palace,48.804865,2.120355,Versailles,France
+Berlin Wall,52.516275,13.377704,Berlin,Germany
+Neuschwanstein Castle,47.557574,10.7498,Germany,Fairy-tale castle in Bavaria
+St. Basil's Cathedral,55.752523,37.623073,Moscow,Russia
+Red Square,55.753913,37.620836,Moscow,Russia
+Kremlin,55.751999,37.617734,Moscow,Russia
+Blue Mosque,41.005409,28.976814,Istanbul,Turkey
+Hagia Sophia,41.008583,28.980175,Istanbul,Turkey
+Bosphorus Bridge,41.043964,29.034546,Istanbul,Turkey
+Petra,30.328457,35.444362,Jordan,Historic archaeological city
+Central Park,40.785091,-73.968285,New York, NY
+Eiffel Tower,48.858844,2.294351,Paris,France
+Colosseum,41.890251,12.492373,Rome,Italy
+Statue of Liberty,40.689247,-74.044502,New York, NY
+Great Wall of China,40.431908,116.570374,China,Historic wall stretching across northern China
+Taj Mahal,27.175015,78.042155,Agra,India
+Sydney Opera House,-33.856784,151.215297,Sydney,Australia
+Mount Fuji,35.360555,138.727778,Japan,Highest mountain in Japan
+Christ the Redeemer,-22.951916,-43.210487,Rio de Janeiro,Brazil
+Machu Picchu,-13.163141,-72.544963,Peru,Inca citadel in the Andes Mountains
+Stonehenge,51.178882,-1.826215,England,Prehistoric stone circle
+Louvre Museum,48.860611,2.337644,Paris,France
+Pyramids of Giza,29.979235,31.134202,Egypt,Ancient pyramid structures
+Golden Gate Bridge,37.819929,-122.478255,San Francisco, CA
+Grand Canyon,36.106965,-112.112997,Arizona,USA
+Niagara Falls,43.096214,-79.037739,New York, NY
+Big Ben,51.500729,-0.124625,London,England
+Buckingham Palace,51.501364,-0.14189,London,England
+Empire State Building,40.748817,-73.985428,New York, NY
+Times Square,40.758896,-73.98513,New York, NY
+Hollywood Sign,34.134115,-118.321548,Los Angeles, CA
+Las Vegas Strip,36.114647,-115.172813,Las Vegas, NV
+Walt Disney World,28.385233,-81.563874,Orlando, FL
+White House,38.897676,-77.03653,Washington, D.C.
+Pentagon,38.87098,-77.05596,Washington, D.C.
+Lincoln Memorial,38.889269,-77.050176,Washington, D.C.
+Capitol Hill,38.889939,-77.009051,Washington, D.C.
+Metropolitan Museum of Art,40.779437,-73.963244,New York, NY
+Brooklyn Bridge,40.706086,-73.996864,New York, NY
+Liberty Bell,39.94961,-75.150282,Philadelphia, PA
+Alcatraz Island,37.826977,-122.422956,San Francisco, CA
+Space Needle,47.620506,-122.349277,Seattle, WA
+Yellowstone National Park,44.428,-110.5885,Wyoming,USA
+Mount Rushmore,43.879102,-103.459067,South Dakota,USA
+Walt Disney Concert Hall,34.055345,-118.249845,Los Angeles, CA
+CN Tower,43.642566,-79.387057,Toronto,Canada
+Banff National Park,51.496846,-115.928056,Alberta,Canada
+Niagara Falls,43.096214,-79.037739,Ontario,Canada
+Notre Dame Cathedral,48.852968,2.349902,Paris,France
+Versailles Palace,48.804865,2.120355,Versailles,France
+Berlin Wall,52.516275,13.377704,Berlin,Germany
+Neuschwanstein Castle,47.557574,10.7498,Germany,Fairy-tale castle in Bavaria
+St. Basil's Cathedral,55.752523,37.623073,Moscow,Russia
+Red Square,55.753913,37.620836,Moscow,Russia
+Kremlin,55.751999,37.617734,Moscow,Russia
+Blue Mosque,41.005409,28.976814,Istanbul,Turkey
+Hagia Sophia,41.008583,28.980175,Istanbul,Turkey
+Bosphorus Bridge,41.043964,29.034546,Istanbul,Turkey
+Petra,30.328457,35.444362,Jordan,Historic archaeological city
+Central Park,40.785091,-73.968285,New York, NY
+Eiffel Tower,48.858844,2.294351,Paris,France
+Colosseum,41.890251,12.492373,Rome,Italy
+Statue of Liberty,40.689247,-74.044502,New York, NY
+Great Wall of China,40.431908,116.570374,China,Historic wall stretching across northern China
+Taj Mahal,27.175015,78.042155,Agra,India
+Sydney Opera House,-33.856784,151.215297,Sydney,Australia
+Mount Fuji,35.360555,138.727778,Japan,Highest mountain in Japan
+Christ the Redeemer,-22.951916,-43.210487,Rio de Janeiro,Brazil
+Machu Picchu,-13.163141,-72.544963,Peru,Inca citadel in the Andes Mountains
+Stonehenge,51.178882,-1.826215,England,Prehistoric stone circle
+Louvre Museum,48.860611,2.337644,Paris,France
+Pyramids of Giza,29.979235,31.134202,Egypt,Ancient pyramid structures
+Golden Gate Bridge,37.819929,-122.478255,San Francisco, CA
+Grand Canyon,36.106965,-112.112997,Arizona,USA
+Niagara Falls,43.096214,-79.037739,New York, NY
+Big Ben,51.500729,-0.124625,London,England
+Buckingham Palace,51.501364,-0.14189,London,England
+Empire State Building,40.748817,-73.985428,New York, NY
+Times Square,40.758896,-73.98513,New York, NY
+Hollywood Sign,34.134115,-118.321548,Los Angeles, CA
+Las Vegas Strip,36.114647,-115.172813,Las Vegas, NV
+Walt Disney World,28.385233,-81.563874,Orlando, FL
+White House,38.897676,-77.03653,Washington, D.C.
+Pentagon,38.87098,-77.05596,Washington, D.C.
+Lincoln Memorial,38.889269,-77.050176,Washington, D.C.
+Capitol Hill,38.889939,-77.009051,Washington, D.C.
+Metropolitan Museum of Art,40.779437,-73.963244,New York, NY
+Brooklyn Bridge,40.706086,-73.996864,New York, NY
+Liberty Bell,39.94961,-75.150282,Philadelphia, PA
+Alcatraz Island,37.826977,-122.422956,San Francisco, CA
+Space Needle,47.620506,-122.349277,Seattle, WA
+Yellowstone National Park,44.428,-110.5885,Wyoming,USA
+Mount Rushmore,43.879102,-103.459067,South Dakota,USA
+Walt Disney Concert Hall,34.055345,-118.249845,Los Angeles, CA
+CN Tower,43.642566,-79.387057,Toronto,Canada
+Banff National Park,51.496846,-115.928056,Alberta,Canada
+Niagara Falls,43.096214,-79.037739,Ontario,Canada
+Notre Dame Cathedral,48.852968,2.349902,Paris,France
+Versailles Palace,48.804865,2.120355,Versailles,France
+Berlin Wall,52.516275,13.377704,Berlin,Germany
+Neuschwanstein Castle,47.557574,10.7498,Germany,Fairy-tale castle in Bavaria
+St. Basil's Cathedral,55.752523,37.623073,Moscow,Russia
+Red Square,55.753913,37.620836,Moscow,Russia
+Kremlin,55.751999,37.617734,Moscow,Russia
+Blue Mosque,41.005409,28.976814,Istanbul,Turkey
+Hagia Sophia,41.008583,28.980175,Istanbul,Turkey
+Bosphorus Bridge,41.043964,29.034546,Istanbul,Turkey
+Petra,30.328457,35.444362,Jordan,Historic archaeological city
+Central Park,40.785091,-73.968285,New York, NY
+Eiffel Tower,48.858844,2.294351,Paris,France
+Colosseum,41.890251,12.492373,Rome,Italy
+Statue of Liberty,40.689247,-74.044502,New York, NY
+Great Wall of China,40.431908,116.570374,China,Historic wall stretching across northern China
+Taj Mahal,27.175015,78.042155,Agra,India
+Sydney Opera House,-33.856784,151.215297,Sydney,Australia
+Mount Fuji,35.360555,138.727778,Japan,Highest mountain in Japan
+Christ the Redeemer,-22.951916,-43.210487,Rio de Janeiro,Brazil
+Machu Picchu,-13.163141,-72.544963,Peru,Inca citadel in the Andes Mountains
+Stonehenge,51.178882,-1.826215,England,Prehistoric stone circle
+Louvre Museum,48.860611,2.337644,Paris,France
+Pyramids of Giza,29.979235,31.134202,Egypt,Ancient pyramid structures
+Golden Gate Bridge,37.819929,-122.478255,San Francisco, CA
+Grand Canyon,36.106965,-112.112997,Arizona,USA
+Niagara Falls,43.096214,-79.037739,New York, NY
+Big Ben,51.500729,-0.124625,London,England
+Buckingham Palace,51.501364,-0.14189,London,England
+Empire State Building,40.748817,-73.985428,New York, NY
+Times Square,40.758896,-73.98513,New York, NY
+Hollywood Sign,34.134115,-118.321548,Los Angeles, CA
+Las Vegas Strip,36.114647,-115.172813,Las Vegas, NV
+Walt Disney World,28.385233,-81.563874,Orlando, FL
+White House,38.897676,-77.03653,Washington, D.C.
+Pentagon,38.87098,-77.05596,Washington, D.C.
+Lincoln Memorial,38.889269,-77.050176,Washington, D.C.
+Capitol Hill,38.889939,-77.009051,Washington, D.C.
+Metropolitan Museum of Art,40.779437,-73.963244,New York, NY
+Brooklyn Bridge,40.706086,-73.996864,New York, NY
+Liberty Bell,39.94961,-75.150282,Philadelphia, PA
+Alcatraz Island,37.826977,-122.422956,San Francisco, CA
+Space Needle,47.620506,-122.349277,Seattle, WA
+Yellowstone National Park,44.428,-110.5885,Wyoming,USA
+Mount Rushmore,43.879102,-103.459067,South Dakota,USA
+Walt Disney Concert Hall,34.055345,-118.249845,Los Angeles, CA
+CN Tower,43.642566,-79.387057,Toronto,Canada
+Banff National Park,51.496846,-115.928056,Alberta,Canada
+Niagara Falls,43.096214,-79.037739,Ontario,Canada
+Notre Dame Cathedral,48.852968,2.349902,Paris,France
+Versailles Palace,48.804865,2.120355,Versailles,France
+Berlin Wall,52.516275,13.377704,Berlin,Germany
+Neuschwanstein Castle,47.557574,10.7498,Germany,Fairy-tale castle in Bavaria
+St. Basil's Cathedral,55.752523,37.623073,Moscow,Russia
+Red Square,55.753913,37.620836,Moscow,Russia
+Kremlin,55.751999,37.617734,Moscow,Russia
+Blue Mosque,41.005409,28.976814,Istanbul,Turkey
+Hagia Sophia,41.008583,28.980175,Istanbul,Turkey
+Bosphorus Bridge,41.043964,29.034546,Istanbul,Turkey
+Petra,30.328457,35.444362,Jordan,Historic archaeological city
+Central Park,40.785091,-73.968285,New York, NY
+Eiffel Tower,48.858844,2.294351,Paris,France
+Colosseum,41.890251,12.492373,Rome,Italy
+Statue of Liberty,40.689247,-74.044502,New York, NY
+Great Wall of China,40.431908,116.570374,China,Historic wall stretching across northern China
+Taj Mahal,27.175015,78.042155,Agra,India
+Sydney Opera House,-33.856784,151.215297,Sydney,Australia
+Mount Fuji,35.360555,138.727778,Japan,Highest mountain in Japan
+Christ the Redeemer,-22.951916,-43.210487,Rio de Janeiro,Brazil
+Machu Picchu,-13.163141,-72.544963,Peru,Inca citadel in the Andes Mountains
+Stonehenge,51.178882,-1.826215,England,Prehistoric stone circle
+Louvre Museum,48.860611,2.337644,Paris,France
+Pyramids of Giza,29.979235,31.134202,Egypt,Ancient pyramid structures
+Golden Gate Bridge,37.819929,-122.478255,San Francisco, CA
+Grand Canyon,36.106965,-112.112997,Arizona,USA
+Niagara Falls,43.096214,-79.037739,New York, NY
+Big Ben,51.500729,-0.124625,London,England
+Buckingham Palace,51.501364,-0.14189,London,England
+Empire State Building,40.748817,-73.985428,New York, NY
+Times Square,40.758896,-73.98513,New York, NY
+Hollywood Sign,34.134115,-118.321548,Los Angeles, CA
+Las Vegas Strip,36.114647,-115.172813,Las Vegas, NV
+Walt Disney World,28.385233,-81.563874,Orlando, FL
+White House,38.897676,-77.03653,Washington, D.C.
+Pentagon,38.87098,-77.05596,Washington, D.C.
+Lincoln Memorial,38.889269,-77.050176,Washington, D.C.
+Capitol Hill,38.889939,-77.009051,Washington, D.C.
+Metropolitan Museum of Art,40.779437,-73.963244,New York, NY
+Brooklyn Bridge,40.706086,-73.996864,New York, NY
+Liberty Bell,39.94961,-75.150282,Philadelphia, PA
+Alcatraz Island,37.826977,-122.422956,San Francisco, CA
+Space Needle,47.620506,-122.349277,Seattle, WA
+Yellowstone National Park,44.428,-110.5885,Wyoming,USA
+Mount Rushmore,43.879102,-103.459067,South Dakota,USA
+Walt Disney Concert Hall,34.055345,-118.249845,Los Angeles, CA
+CN Tower,43.642566,-79.387057,Toronto,Canada
+Banff National Park,51.496846,-115.928056,Alberta,Canada
+Niagara Falls,43.096214,-79.037739,Ontario,Canada
+Notre Dame Cathedral,48.852968,2.349902,Paris,France
+Versailles Palace,48.804865,2.120355,Versailles,France
+Berlin Wall,52.516275,13.377704,Berlin,Germany
+Neuschwanstein Castle,47.557574,10.7498,Germany,Fairy-tale castle in Bavaria
+St. Basil's Cathedral,55.752523,37.623073,Moscow,Russia
+Red Square,55.753913,37.620836,Moscow,Russia
+Kremlin,55.751999,37.617734,Moscow,Russia
+Blue Mosque,41.005409,28.976814,Istanbul,Turkey
+Hagia Sophia,41.008583,28.980175,Istanbul,Turkey
+Bosphorus Bridge,41.043964,29.034546,Istanbul,Turkey
+Petra,30.328457,35.444362,Jordan,Historic archaeological city
+Central Park,40.785091,-73.968285,New York, NY
+Eiffel Tower,48.858844,2.294351,Paris,France
+Colosseum,41.890251,12.492373,Rome,Italy
+Statue of Liberty,40.689247,-74.044502,New York, NY
+Great Wall of China,40.431908,116.570374,China,Historic wall stretching across northern China
+Taj Mahal,27.175015,78.042155,Agra,India
+Sydney Opera House,-33.856784,151.215297,Sydney,Australia
+Mount Fuji,35.360555,138.727778,Japan,Highest mountain in Japan
+Christ the Redeemer,-22.951916,-43.210487,Rio de Janeiro,Brazil
+Machu Picchu,-13.163141,-72.544963,Peru,Inca citadel in the Andes Mountains
+Stonehenge,51.178882,-1.826215,England,Prehistoric stone circle
+Louvre Museum,48.860611,2.337644,Paris,France
+Pyramids of Giza,29.979235,31.134202,Egypt,Ancient pyramid structures
+Golden Gate Bridge,37.819929,-122.478255,San Francisco, CA
+Grand Canyon,36.106965,-112.112997,Arizona,USA
+Niagara Falls,43.096214,-79.037739,New York, NY
+Big Ben,51.500729,-0.124625,London,England
+Buckingham Palace,51.501364,-0.14189,London,England
+Empire State Building,40.748817,-73.985428,New York, NY
+Times Square,40.758896,-73.98513,New York, NY
+Hollywood Sign,34.134115,-118.321548,Los Angeles, CA
+Las Vegas Strip,36.114647,-115.172813,Las Vegas, NV
+Walt Disney World,28.385233,-81.563874,Orlando, FL
+White House,38.897676,-77.03653,Washington, D.C.
+Pentagon,38.87098,-77.05596,Washington, D.C.
+Lincoln Memorial,38.889269,-77.050176,Washington, D.C.
+Capitol Hill,38.889939,-77.009051,Washington, D.C.
+Metropolitan Museum of Art,40.779437,-73.963244,New York, NY
+Brooklyn Bridge,40.706086,-73.996864,New York, NY
+Liberty Bell,39.94961,-75.150282,Philadelphia, PA
+Alcatraz Island,37.826977,-122.422956,San Francisco, CA
+Space Needle,47.620506,-122.349277,Seattle, WA
+Yellowstone National Park,44.428,-110.5885,Wyoming,USA
+Mount Rushmore,43.879102,-103.459067,South Dakota,USA
+Walt Disney Concert Hall,34.055345,-118.249845,Los Angeles, CA
+CN Tower,43.642566,-79.387057,Toronto,Canada
+Banff National Park,51.496846,-115.928056,Alberta,Canada
+Niagara Falls,43.096214,-79.037739,Ontario,Canada
+Notre Dame Cathedral,48.852968,2.349902,Paris,France
+Versailles Palace,48.804865,2.120355,Versailles,France
+Berlin Wall,52.516275,13.377704,Berlin,Germany
+Neuschwanstein Castle,47.557574,10.7498,Germany,Fairy-tale castle in Bavaria
+St. Basil's Cathedral,55.752523,37.623073,Moscow,Russia
+Red Square,55.753913,37.620836,Moscow,Russia
+Kremlin,55.751999,37.617734,Moscow,Russia
+Blue Mosque,41.005409,28.976814,Istanbul,Turkey
+Hagia Sophia,41.008583,28.980175,Istanbul,Turkey
+Bosphorus Bridge,41.043964,29.034546,Istanbul,Turkey
+Petra,30.328457,35.444362,Jordan,Historic archaeological city
+Central Park,40.785091,-73.968285,New York, NY
+Eiffel Tower,48.858844,2.294351,Paris,France
+Colosseum,41.890251,12.492373,Rome,Italy
+Statue of Liberty,40.689247,-74.044502,New York, NY
+Great Wall of China,40.431908,116.570374,China,Historic wall stretching across northern China
+Taj Mahal,27.175015,78.042155,Agra,India
+Sydney Opera House,-33.856784,151.215297,Sydney,Australia
+Mount Fuji,35.360555,138.727778,Japan,Highest mountain in Japan
+Christ the Redeemer,-22.951916,-43.210487,Rio de Janeiro,Brazil
+Machu Picchu,-13.163141,-72.544963,Peru,Inca citadel in the Andes Mountains
+Stonehenge,51.178882,-1.826215,England,Prehistoric stone circle
+Louvre Museum,48.860611,2.337644,Paris,France
+Pyramids of Giza,29.979235,31.134202,Egypt,Ancient pyramid structures
+Golden Gate Bridge,37.819929,-122.478255,San Francisco, CA
+Grand Canyon,36.106965,-112.112997,Arizona,USA
+Niagara Falls,43.096214,-79.037739,New York, NY
+Big Ben,51.500729,-0.124625,London,England
+Buckingham Palace,51.501364,-0.14189,London,England
+Empire State Building,40.748817,-73.985428,New York, NY
+Times Square,40.758896,-73.98513,New York, NY
+Hollywood Sign,34.134115,-118.321548,Los Angeles, CA
+Las Vegas Strip,36.114647,-115.172813,Las Vegas, NV
+Walt Disney World,28.385233,-81.563874,Orlando, FL
+White House,38.897676,-77.03653,Washington, D.C.
+Pentagon,38.87098,-77.05596,Washington, D.C.
+Lincoln Memorial,38.889269,-77.050176,Washington, D.C.
+Capitol Hill,38.889939,-77.009051,Washington, D.C.
+Metropolitan Museum of Art,40.779437,-73.963244,New York, NY
+Brooklyn Bridge,40.706086,-73.996864,New York, NY
+Liberty Bell,39.94961,-75.150282,Philadelphia, PA
+Alcatraz Island,37.826977,-122.422956,San Francisco, CA
+Space Needle,47.620506,-122.349277,Seattle, WA
+Yellowstone National Park,44.428,-110.5885,Wyoming,USA
+Mount Rushmore,43.879102,-103.459067,South Dakota,USA
+Walt Disney Concert Hall,34.055345,-118.249845,Los Angeles, CA
+CN Tower,43.642566,-79.387057,Toronto,Canada
+Banff National Park,51.496846,-115.928056,Alberta,Canada
+Niagara Falls,43.096214,-79.037739,Ontario,Canada
+Notre Dame Cathedral,48.852968,2.349902,Paris,France
+Versailles Palace,48.804865,2.120355,Versailles,France
+Berlin Wall,52.516275,13.377704,Berlin,Germany
+Neuschwanstein Castle,47.557574,10.7498,Germany,Fairy-tale castle in Bavaria
+St. Basil's Cathedral,55.752523,37.623073,Moscow,Russia
+Red Square,55.753913,37.620836,Moscow,Russia
+Kremlin,55.751999,37.617734,Moscow,Russia
+Blue Mosque,41.005409,28.976814,Istanbul,Turkey
+Hagia Sophia,41.008583,28.980175,Istanbul,Turkey
+Bosphorus Bridge,41.043964,29.034546,Istanbul,Turkey
+Petra,30.328457,35.444362,Jordan,Historic archaeological city
+Central Park,40.785091,-73.968285,New York, NY
+Eiffel Tower,48.858844,2.294351,Paris,France
+Colosseum,41.890251,12.492373,Rome,Italy
+Statue of Liberty,40.689247,-74.044502,New York, NY
+Great Wall of China,40.431908,116.570374,China,Historic wall stretching across northern China
+Taj Mahal,27.175015,78.042155,Agra,India
+Sydney Opera House,-33.856784,151.215297,Sydney,Australia
+Mount Fuji,35.360555,138.727778,Japan,Highest mountain in Japan
+Christ the Redeemer,-22.951916,-43.210487,Rio de Janeiro,Brazil
+Machu Picchu,-13.163141,-72.544963,Peru,Inca citadel in the Andes Mountains
+Stonehenge,51.178882,-1.826215,England,Prehistoric stone circle
+Louvre Museum,48.860611,2.337644,Paris,France
+Pyramids of Giza,29.979235,31.134202,Egypt,Ancient pyramid structures
+Golden Gate Bridge,37.819929,-122.478255,San Francisco, CA
+Grand Canyon,36.106965,-112.112997,Arizona,USA
+Niagara Falls,43.096214,-79.037739,New York, NY
+Big Ben,51.500729,-0.124625,London,England
+Buckingham Palace,51.501364,-0.14189,London,England
+Empire State Building,40.748817,-73.985428,New York, NY
+Times Square,40.758896,-73.98513,New York, NY
+Hollywood Sign,34.134115,-118.321548,Los Angeles, CA
+Las Vegas Strip,36.114647,-115.172813,Las Vegas, NV
+Walt Disney World,28.385233,-81.563874,Orlando, FL
+White House,38.897676,-77.03653,Washington, D.C.
+Pentagon,38.87098,-77.05596,Washington, D.C.
+Lincoln Memorial,38.889269,-77.050176,Washington, D.C.
+Capitol Hill,38.889939,-77.009051,Washington, D.C.
+Metropolitan Museum of Art,40.779437,-73.963244,New York, NY
+Brooklyn Bridge,40.706086,-73.996864,New York, NY
+Liberty Bell,39.94961,-75.150282,Philadelphia, PA
+Alcatraz Island,37.826977,-122.422956,San Francisco, CA
+Space Needle,47.620506,-122.349277,Seattle, WA
+Yellowstone National Park,44.428,-110.5885,Wyoming,USA
+Mount Rushmore,43.879102,-103.459067,South Dakota,USA
+Walt Disney Concert Hall,34.055345,-118.249845,Los Angeles, CA
+CN Tower,43.642566,-79.387057,Toronto,Canada
+Banff National Park,51.496846,-115.928056,Alberta,Canada
+Niagara Falls,43.096214,-79.037739,Ontario,Canada
+Notre Dame Cathedral,48.852968,2.349902,Paris,France
+Versailles Palace,48.804865,2.120355,Versailles,France
+Berlin Wall,52.516275,13.377704,Berlin,Germany
+Neuschwanstein Castle,47.557574,10.7498,Germany,Fairy-tale castle in Bavaria
+St. Basil's Cathedral,55.752523,37.623073,Moscow,Russia
+Red Square,55.753913,37.620836,Moscow,Russia
+Kremlin,55.751999,37.617734,Moscow,Russia
+Blue Mosque,41.005409,28.976814,Istanbul,Turkey
+Hagia Sophia,41.008583,28.980175,Istanbul,Turkey
+Bosphorus Bridge,41.043964,29.034546,Istanbul,Turkey
+Petra,30.328457,35.444362,Jordan,Historic archaeological city
+Central Park,40.785091,-73.968285,New York, NY
+Eiffel Tower,48.858844,2.294351,Paris,France
+Colosseum,41.890251,12.492373,Rome,Italy
+Statue of Liberty,40.689247,-74.044502,New York, NY
+Great Wall of China,40.431908,116.570374,China,Historic wall stretching across northern China
+Taj Mahal,27.175015,78.042155,Agra,India
+Sydney Opera House,-33.856784,151.215297,Sydney,Australia
+Mount Fuji,35.360555,138.727778,Japan,Highest mountain in Japan
+Christ the Redeemer,-22.951916,-43.210487,Rio de Janeiro,Brazil
+Machu Picchu,-13.163141,-72.544963,Peru,Inca citadel in the Andes Mountains
+Stonehenge,51.178882,-1.826215,England,Prehistoric stone circle
+Louvre Museum,48.860611,2.337644,Paris,France
+Pyramids of Giza,29.979235,31.134202,Egypt,Ancient pyramid structures
+Golden Gate Bridge,37.819929,-122.478255,San Francisco, CA
+Grand Canyon,36.106965,-112.112997,Arizona,USA
+Niagara Falls,43.096214,-79.037739,New York, NY
+Big Ben,51.500729,-0.124625,London,England
+Buckingham Palace,51.501364,-0.14189,London,England
+Empire State Building,40.748817,-73.985428,New York, NY
+Times Square,40.758896,-73.98513,New York, NY
+Hollywood Sign,34.134115,-118.321548,Los Angeles, CA
+Las Vegas Strip,36.114647,-115.172813,Las Vegas, NV
+Walt Disney World,28.385233,-81.563874,Orlando, FL
+White House,38.897676,-77.03653,Washington, D.C.
+Pentagon,38.87098,-77.05596,Washington, D.C.
+Lincoln Memorial,38.889269,-77.050176,Washington, D.C.
+Capitol Hill,38.889939,-77.009051,Washington, D.C.
+Metropolitan Museum of Art,40.779437,-73.963244,New York, NY
+Brooklyn Bridge,40.706086,-73.996864,New York, NY
+Liberty Bell,39.94961,-75.150282,Philadelphia, PA
+Alcatraz Island,37.826977,-122.422956,San Francisco, CA
+Space Needle,47.620506,-122.349277,Seattle, WA
+Yellowstone National Park,44.428,-110.5885,Wyoming,USA
+Mount Rushmore,43.879102,-103.459067,South Dakota,USA
+Walt Disney Concert Hall,34.055345,-118.249845,Los Angeles, CA
+CN Tower,43.642566,-79.387057,Toronto,Canada
+Banff National Park,51.496846,-115.928056,Alberta,Canada
+Niagara Falls,43.096214,-79.037739,Ontario,Canada
+Notre Dame Cathedral,48.852968,2.349902,Paris,France
+Versailles Palace,48.804865,2.120355,Versailles,France
+Berlin Wall,52.516275,13.377704,Berlin,Germany
+Neuschwanstein Castle,47.557574,10.7498,Germany,Fairy-tale castle in Bavaria
+St. Basil's Cathedral,55.752523,37.623073,Moscow,Russia
+Red Square,55.753913,37.620836,Moscow,Russia
+Kremlin,55.751999,37.617734,Moscow,Russia
+Blue Mosque,41.005409,28.976814,Istanbul,Turkey
+Hagia Sophia,41.008583,28.980175,Istanbul,Turkey
+Bosphorus Bridge,41.043964,29.034546,Istanbul,Turkey
+Petra,30.328457,35.444362,Jordan,Historic archaeological city
+Central Park,40.785091,-73.968285,New York, NY
+Eiffel Tower,48.858844,2.294351,Paris,France
+Colosseum,41.890251,12.492373,Rome,Italy
+Statue of Liberty,40.689247,-74.044502,New York, NY
+Great Wall of China,40.431908,116.570374,China,Historic wall stretching across northern China
+Taj Mahal,27.175015,78.042155,Agra,India
+Sydney Opera House,-33.856784,151.215297,Sydney,Australia
+Mount Fuji,35.360555,138.727778,Japan,Highest mountain in Japan
+Christ the Redeemer,-22.951916,-43.210487,Rio de Janeiro,Brazil
+Machu Picchu,-13.163141,-72.544963,Peru,Inca citadel in the Andes Mountains
+Stonehenge,51.178882,-1.826215,England,Prehistoric stone circle
+Louvre Museum,48.860611,2.337644,Paris,France
+Pyramids of Giza,29.979235,31.134202,Egypt,Ancient pyramid structures
+Golden Gate Bridge,37.819929,-122.478255,San Francisco, CA
+Grand Canyon,36.106965,-112.112997,Arizona,USA
+Niagara Falls,43.096214,-79.037739,New York, NY
+Big Ben,51.500729,-0.124625,London,England
+Buckingham Palace,51.501364,-0.14189,London,England
+Empire State Building,40.748817,-73.985428,New York, NY
+Times Square,40.758896,-73.98513,New York, NY
+Hollywood Sign,34.134115,-118.321548,Los Angeles, CA
+Las Vegas Strip,36.114647,-115.172813,Las Vegas, NV
+Walt Disney World,28.385233,-81.563874,Orlando, FL
+White House,38.897676,-77.03653,Washington, D.C.
+Pentagon,38.87098,-77.05596,Washington, D.C.
+Lincoln Memorial,38.889269,-77.050176,Washington, D.C.
+Capitol Hill,38.889939,-77.009051,Washington, D.C.
+Metropolitan Museum of Art,40.779437,-73.963244,New York, NY
+Brooklyn Bridge,40.706086,-73.996864,New York, NY
+Liberty Bell,39.94961,-75.150282,Philadelphia, PA
+Alcatraz Island,37.826977,-122.422956,San Francisco, CA
+Space Needle,47.620506,-122.349277,Seattle, WA
+Yellowstone National Park,44.428,-110.5885,Wyoming,USA
+Mount Rushmore,43.879102,-103.459067,South Dakota,USA
+Walt Disney Concert Hall,34.055345,-118.249845,Los Angeles, CA
+CN Tower,43.642566,-79.387057,Toronto,Canada
+Banff National Park,51.496846,-115.928056,Alberta,Canada
+Niagara Falls,43.096214,-79.037739,Ontario,Canada
+Notre Dame Cathedral,48.852968,2.349902,Paris,France
+Versailles Palace,48.804865,2.120355,Versailles,France
+Berlin Wall,52.516275,13.377704,Berlin,Germany
+Neuschwanstein Castle,47.557574,10.7498,Germany,Fairy-tale castle in Bavaria
+St. Basil's Cathedral,55.752523,37.623073,Moscow,Russia
+Red Square,55.753913,37.620836,Moscow,Russia
+Kremlin,55.751999,37.617734,Moscow,Russia
+Blue Mosque,41.005409,28.976814,Istanbul,Turkey
+Hagia Sophia,41.008583,28.980175,Istanbul,Turkey
+Bosphorus Bridge,41.043964,29.034546,Istanbul,Turkey
+Petra,30.328457,35.444362,Jordan,Historic archaeological city
+Central Park,40.785091,-73.968285,New York, NY
+Eiffel Tower,48.858844,2.294351,Paris,France
+Colosseum,41.890251,12.492373,Rome,Italy
+Statue of Liberty,40.689247,-74.044502,New York, NY
+Great Wall of China,40.431908,116.570374,China,Historic wall stretching across northern China
+Taj Mahal,27.175015,78.042155,Agra,India
+Sydney Opera House,-33.856784,151.215297,Sydney,Australia
+Mount Fuji,35.360555,138.727778,Japan,Highest mountain in Japan
+Christ the Redeemer,-22.951916,-43.210487,Rio de Janeiro,Brazil
+Machu Picchu,-13.163141,-72.544963,Peru,Inca citadel in the Andes Mountains
+Stonehenge,51.178882,-1.826215,England,Prehistoric stone circle
+Louvre Museum,48.860611,2.337644,Paris,France
+Pyramids of Giza,29.979235,31.134202,Egypt,Ancient pyramid structures
+Golden Gate Bridge,37.819929,-122.478255,San Francisco, CA
+Grand Canyon,36.106965,-112.112997,Arizona,USA
+Niagara Falls,43.096214,-79.037739,New York, NY
+Big Ben,51.500729,-0.124625,London,England
+Buckingham Palace,51.501364,-0.14189,London,England
+Empire State Building,40.748817,-73.985428,New York, NY
+Times Square,40.758896,-73.98513,New York, NY
+Hollywood Sign,34.134115,-118.321548,Los Angeles, CA
+Las Vegas Strip,36.114647,-115.172813,Las Vegas, NV
+Walt Disney World,28.385233,-81.563874,Orlando, FL
+White House,38.897676,-77.03653,Washington, D.C.
+Pentagon,38.87098,-77.05596,Washington, D.C.
+Lincoln Memorial,38.889269,-77.050176,Washington, D.C.
+Capitol Hill,38.889939,-77.009051,Washington, D.C.
+Metropolitan Museum of Art,40.779437,-73.963244,New York, NY
+Brooklyn Bridge,40.706086,-73.996864,New York, NY
+Liberty Bell,39.94961,-75.150282,Philadelphia, PA
+Alcatraz Island,37.826977,-122.422956,San Francisco, CA
+Space Needle,47.620506,-122.349277,Seattle, WA
+Yellowstone National Park,44.428,-110.5885,Wyoming,USA
+Mount Rushmore,43.879102,-103.459067,South Dakota,USA
+Walt Disney Concert Hall,34.055345,-118.249845,Los Angeles, CA
+CN Tower,43.642566,-79.387057,Toronto,Canada
+Banff National Park,51.496846,-115.928056,Alberta,Canada
+Niagara Falls,43.096214,-79.037739,Ontario,Canada
+Notre Dame Cathedral,48.852968,2.349902,Paris,France
+Versailles Palace,48.804865,2.120355,Versailles,France
+Berlin Wall,52.516275,13.377704,Berlin,Germany
+Neuschwanstein Castle,47.557574,10.7498,Germany,Fairy-tale castle in Bavaria
+St. Basil's Cathedral,55.752523,37.623073,Moscow,Russia
+Red Square,55.753913,37.620836,Moscow,Russia
+Kremlin,55.751999,37.617734,Moscow,Russia
+Blue Mosque,41.005409,28.976814,Istanbul,Turkey
+Hagia Sophia,41.008583,28.980175,Istanbul,Turkey
+Bosphorus Bridge,41.043964,29.034546,Istanbul,Turkey
+Petra,30.328457,35.444362,Jordan,Historic archaeological city
+Central Park,40.785091,-73.968285,New York, NY
+Eiffel Tower,48.858844,2.294351,Paris,France
+Colosseum,41.890251,12.492373,Rome,Italy
+Statue of Liberty,40.689247,-74.044502,New York, NY
+Great Wall of China,40.431908,116.570374,China,Historic wall stretching across northern China
+Taj Mahal,27.175015,78.042155,Agra,India
+Sydney Opera House,-33.856784,151.215297,Sydney,Australia
+Mount Fuji,35.360555,138.727778,Japan,Highest mountain in Japan
+Christ the Redeemer,-22.951916,-43.210487,Rio de Janeiro,Brazil
+Machu Picchu,-13.163141,-72.544963,Peru,Inca citadel in the Andes Mountains
+Stonehenge,51.178882,-1.826215,England,Prehistoric stone circle
+Louvre Museum,48.860611,2.337644,Paris,France
+Pyramids of Giza,29.979235,31.134202,Egypt,Ancient pyramid structures
+Golden Gate Bridge,37.819929,-122.478255,San Francisco, CA
+Grand Canyon,36.106965,-112.112997,Arizona,USA
+Niagara Falls,43.096214,-79.037739,New York, NY
+Big Ben,51.500729,-0.124625,London,England
+Buckingham Palace,51.501364,-0.14189,London,England
+Empire State Building,40.748817,-73.985428,New York, NY
+Times Square,40.758896,-73.98513,New York, NY
+Hollywood Sign,34.134115,-118.321548,Los Angeles, CA
+Las Vegas Strip,36.114647,-115.172813,Las Vegas, NV
+Walt Disney World,28.385233,-81.563874,Orlando, FL
+White House,38.897676,-77.03653,Washington, D.C.
+Pentagon,38.87098,-77.05596,Washington, D.C.
+Lincoln Memorial,38.889269,-77.050176,Washington, D.C.
+Capitol Hill,38.889939,-77.009051,Washington, D.C.
+Metropolitan Museum of Art,40.779437,-73.963244,New York, NY
+Brooklyn Bridge,40.706086,-73.996864,New York, NY
+Liberty Bell,39.94961,-75.150282,Philadelphia, PA
+Alcatraz Island,37.826977,-122.422956,San Francisco, CA
+Space Needle,47.620506,-122.349277,Seattle, WA
+Yellowstone National Park,44.428,-110.5885,Wyoming,USA
+Mount Rushmore,43.879102,-103.459067,South Dakota,USA
+Walt Disney Concert Hall,34.055345,-118.249845,Los Angeles, CA
+CN Tower,43.642566,-79.387057,Toronto,Canada
+Banff National Park,51.496846,-115.928056,Alberta,Canada
+Niagara Falls,43.096214,-79.037739,Ontario,Canada
+Notre Dame Cathedral,48.852968,2.349902,Paris,France
+Versailles Palace,48.804865,2.120355,Versailles,France
+Berlin Wall,52.516275,13.377704,Berlin,Germany
+Neuschwanstein Castle,47.557574,10.7498,Germany,Fairy-tale castle in Bavaria
+St. Basil's Cathedral,55.752523,37.623073,Moscow,Russia
+Red Square,55.753913,37.620836,Moscow,Russia
+Kremlin,55.751999,37.617734,Moscow,Russia
+Blue Mosque,41.005409,28.976814,Istanbul,Turkey
+Hagia Sophia,41.008583,28.980175,Istanbul,Turkey
+Bosphorus Bridge,41.043964,29.034546,Istanbul,Turkey
+Petra,30.328457,35.444362,Jordan,Historic archaeological city
+Central Park,40.785091,-73.968285,New York, NY
+Eiffel Tower,48.858844,2.294351,Paris,France
+Colosseum,41.890251,12.492373,Rome,Italy
+Statue of Liberty,40.689247,-74.044502,New York, NY
+Great Wall of China,40.431908,116.570374,China,Historic wall stretching across northern China
+Taj Mahal,27.175015,78.042155,Agra,India
+Sydney Opera House,-33.856784,151.215297,Sydney,Australia
+Mount Fuji,35.360555,138.727778,Japan,Highest mountain in Japan
+Christ the Redeemer,-22.951916,-43.210487,Rio de Janeiro,Brazil
+Machu Picchu,-13.163141,-72.544963,Peru,Inca citadel in the Andes Mountains
+Stonehenge,51.178882,-1.826215,England,Prehistoric stone circle
+Louvre Museum,48.860611,2.337644,Paris,France
+Pyramids of Giza,29.979235,31.134202,Egypt,Ancient pyramid structures
+Golden Gate Bridge,37.819929,-122.478255,San Francisco, CA
+Grand Canyon,36.106965,-112.112997,Arizona,USA
+Niagara Falls,43.096214,-79.037739,New York, NY
+Big Ben,51.500729,-0.124625,London,England
+Buckingham Palace,51.501364,-0.14189,London,England
+Empire State Building,40.748817,-73.985428,New York, NY
+Times Square,40.758896,-73.98513,New York, NY
+Hollywood Sign,34.134115,-118.321548,Los Angeles, CA
+Las Vegas Strip,36.114647,-115.172813,Las Vegas, NV
+Walt Disney World,28.385233,-81.563874,Orlando, FL
+White House,38.897676,-77.03653,Washington, D.C.
+Pentagon,38.87098,-77.05596,Washington, D.C.
+Lincoln Memorial,38.889269,-77.050176,Washington, D.C.
+Capitol Hill,38.889939,-77.009051,Washington, D.C.
+Metropolitan Museum of Art,40.779437,-73.963244,New York, NY
+Brooklyn Bridge,40.706086,-73.996864,New York, NY
+Liberty Bell,39.94961,-75.150282,Philadelphia, PA
+Alcatraz Island,37.826977,-122.422956,San Francisco, CA
+Space Needle,47.620506,-122.349277,Seattle, WA
+Yellowstone National Park,44.428,-110.5885,Wyoming,USA
+Mount Rushmore,43.879102,-103.459067,South Dakota,USA
+Walt Disney Concert Hall,34.055345,-118.249845,Los Angeles, CA
+CN Tower,43.642566,-79.387057,Toronto,Canada
+Banff National Park,51.496846,-115.928056,Alberta,Canada
+Niagara Falls,43.096214,-79.037739,Ontario,Canada
+Notre Dame Cathedral,48.852968,2.349902,Paris,France
+Versailles Palace,48.804865,2.120355,Versailles,France
+Berlin Wall,52.516275,13.377704,Berlin,Germany
+Neuschwanstein Castle,47.557574,10.7498,Germany,Fairy-tale castle in Bavaria
+St. Basil's Cathedral,55.752523,37.623073,Moscow,Russia
+Red Square,55.753913,37.620836,Moscow,Russia
+Kremlin,55.751999,37.617734,Moscow,Russia
+Blue Mosque,41.005409,28.976814,Istanbul,Turkey
+Hagia Sophia,41.008583,28.980175,Istanbul,Turkey
+Bosphorus Bridge,41.043964,29.034546,Istanbul,Turkey
+Petra,30.328457,35.444362,Jordan,Historic archaeological city
+Central Park,40.785091,-73.968285,New York, NY
+Eiffel Tower,48.858844,2.294351,Paris,France
+Colosseum,41.890251,12.492373,Rome,Italy
+Statue of Liberty,40.689247,-74.044502,New York, NY
+Great Wall of China,40.431908,116.570374,China,Historic wall stretching across northern China
+Taj Mahal,27.175015,78.042155,Agra,India
+Sydney Opera House,-33.856784,151.215297,Sydney,Australia
+Mount Fuji,35.360555,138.727778,Japan,Highest mountain in Japan
+Christ the Redeemer,-22.951916,-43.210487,Rio de Janeiro,Brazil
+Machu Picchu,-13.163141,-72.544963,Peru,Inca citadel in the Andes Mountains
+Stonehenge,51.178882,-1.826215,England,Prehistoric stone circle
+Louvre Museum,48.860611,2.337644,Paris,France
+Pyramids of Giza,29.979235,31.134202,Egypt,Ancient pyramid structures
+Golden Gate Bridge,37.819929,-122.478255,San Francisco, CA
+Grand Canyon,36.106965,-112.112997,Arizona,USA
+Niagara Falls,43.096214,-79.037739,New York, NY
+Big Ben,51.500729,-0.124625,London,England
+Buckingham Palace,51.501364,-0.14189,London,England
+Empire State Building,40.748817,-73.985428,New York, NY
+Times Square,40.758896,-73.98513,New York, NY
+Hollywood Sign,34.134115,-118.321548,Los Angeles, CA
+Las Vegas Strip,36.114647,-115.172813,Las Vegas, NV
+Walt Disney World,28.385233,-81.563874,Orlando, FL
+White House,38.897676,-77.03653,Washington, D.C.
+Pentagon,38.87098,-77.05596,Washington, D.C.
+Lincoln Memorial,38.889269,-77.050176,Washington, D.C.
+Capitol Hill,38.889939,-77.009051,Washington, D.C.
+Metropolitan Museum of Art,40.779437,-73.963244,New York, NY
+Brooklyn Bridge,40.706086,-73.996864,New York, NY
+Liberty Bell,39.94961,-75.150282,Philadelphia, PA
+Alcatraz Island,37.826977,-122.422956,San Francisco, CA
+Space Needle,47.620506,-122.349277,Seattle, WA
+Yellowstone National Park,44.428,-110.5885,Wyoming,USA
+Mount Rushmore,43.879102,-103.459067,South Dakota,USA
+Walt Disney Concert Hall,34.055345,-118.249845,Los Angeles, CA
+CN Tower,43.642566,-79.387057,Toronto,Canada
+Banff National Park,51.496846,-115.928056,Alberta,Canada
+Niagara Falls,43.096214,-79.037739,Ontario,Canada
+Notre Dame Cathedral,48.852968,2.349902,Paris,France
+Versailles Palace,48.804865,2.120355,Versailles,France
+Berlin Wall,52.516275,13.377704,Berlin,Germany
+Neuschwanstein Castle,47.557574,10.7498,Germany,Fairy-tale castle in Bavaria
+St. Basil's Cathedral,55.752523,37.623073,Moscow,Russia
+Red Square,55.753913,37.620836,Moscow,Russia
+Kremlin,55.751999,37.617734,Moscow,Russia
+Blue Mosque,41.005409,28.976814,Istanbul,Turkey
+Hagia Sophia,41.008583,28.980175,Istanbul,Turkey
+Bosphorus Bridge,41.043964,29.034546,Istanbul,Turkey
+Petra,30.328457,35.444362,Jordan,Historic archaeological city
+Central Park,40.785091,-73.968285,New York, NY
+Eiffel Tower,48.858844,2.294351,Paris,France
+Colosseum,41.890251,12.492373,Rome,Italy
+Statue of Liberty,40.689247,-74.044502,New York, NY
+Great Wall of China,40.431908,116.570374,China,Historic wall stretching across northern China
+Taj Mahal,27.175015,78.042155,Agra,India
+Sydney Opera House,-33.856784,151.215297,Sydney,Australia
+Mount Fuji,35.360555,138.727778,Japan,Highest mountain in Japan
+Christ the Redeemer,-22.951916,-43.210487,Rio de Janeiro,Brazil
+Machu Picchu,-13.163141,-72.544963,Peru,Inca citadel in the Andes Mountains
+Stonehenge,51.178882,-1.826215,England,Prehistoric stone circle
+Louvre Museum,48.860611,2.337644,Paris,France
+Pyramids of Giza,29.979235,31.134202,Egypt,Ancient pyramid structures
+Golden Gate Bridge,37.819929,-122.478255,San Francisco, CA
+Grand Canyon,36.106965,-112.112997,Arizona,USA
+Niagara Falls,43.096214,-79.037739,New York, NY
+Big Ben,51.500729,-0.124625,London,England
+Buckingham Palace,51.501364,-0.14189,London,England
+Empire State Building,40.748817,-73.985428,New York, NY
+Times Square,40.758896,-73.98513,New York, NY
+Hollywood Sign,34.134115,-118.321548,Los Angeles, CA
+Las Vegas Strip,36.114647,-115.172813,Las Vegas, NV
+Walt Disney World,28.385233,-81.563874,Orlando, FL
+White House,38.897676,-77.03653,Washington, D.C.
+Pentagon,38.87098,-77.05596,Washington, D.C.
+Lincoln Memorial,38.889269,-77.050176,Washington, D.C.
+Capitol Hill,38.889939,-77.009051,Washington, D.C.
+Metropolitan Museum of Art,40.779437,-73.963244,New York, NY
+Brooklyn Bridge,40.706086,-73.996864,New York, NY
+Liberty Bell,39.94961,-75.150282,Philadelphia, PA
+Alcatraz Island,37.826977,-122.422956,San Francisco, CA
+Space Needle,47.620506,-122.349277,Seattle, WA
+Yellowstone National Park,44.428,-110.5885,Wyoming,USA
+Mount Rushmore,43.879102,-103.459067,South Dakota,USA
+Walt Disney Concert Hall,34.055345,-118.249845,Los Angeles, CA
+CN Tower,43.642566,-79.387057,Toronto,Canada
+Banff National Park,51.496846,-115.928056,Alberta,Canada
+Niagara Falls,43.096214,-79.037739,Ontario,Canada
+Notre Dame Cathedral,48.852968,2.349902,Paris,France
+Versailles Palace,48.804865,2.120355,Versailles,France
+Berlin Wall,52.516275,13.377704,Berlin,Germany
+Neuschwanstein Castle,47.557574,10.7498,Germany,Fairy-tale castle in Bavaria
+St. Basil's Cathedral,55.752523,37.623073,Moscow,Russia
+Red Square,55.753913,37.620836,Moscow,Russia
+Kremlin,55.751999,37.617734,Moscow,Russia
+Blue Mosque,41.005409,28.976814,Istanbul,Turkey
+Hagia Sophia,41.008583,28.980175,Istanbul,Turkey
+Bosphorus Bridge,41.043964,29.034546,Istanbul,Turkey
+Petra,30.328457,35.444362,Jordan,Historic archaeological city
+Central Park,40.785091,-73.968285,New York, NY
+Eiffel Tower,48.858844,2.294351,Paris,France
+Colosseum,41.890251,12.492373,Rome,Italy
+Statue of Liberty,40.689247,-74.044502,New York, NY
+Great Wall of China,40.431908,116.570374,China,Historic wall stretching across northern China
+Taj Mahal,27.175015,78.042155,Agra,India
+Sydney Opera House,-33.856784,151.215297,Sydney,Australia
+Mount Fuji,35.360555,138.727778,Japan,Highest mountain in Japan
+Christ the Redeemer,-22.951916,-43.210487,Rio de Janeiro,Brazil
+Machu Picchu,-13.163141,-72.544963,Peru,Inca citadel in the Andes Mountains
+Stonehenge,51.178882,-1.826215,England,Prehistoric stone circle
+Louvre Museum,48.860611,2.337644,Paris,France
+Pyramids of Giza,29.979235,31.134202,Egypt,Ancient pyramid structures
+Golden Gate Bridge,37.819929,-122.478255,San Francisco, CA
+Grand Canyon,36.106965,-112.112997,Arizona,USA
+Niagara Falls,43.096214,-79.037739,New York, NY
+Big Ben,51.500729,-0.124625,London,England
+Buckingham Palace,51.501364,-0.14189,London,England
+Empire State Building,40.748817,-73.985428,New York, NY
+Times Square,40.758896,-73.98513,New York, NY
+Hollywood Sign,34.134115,-118.321548,Los Angeles, CA
+Las Vegas Strip,36.114647,-115.172813,Las Vegas, NV
+Walt Disney World,28.385233,-81.563874,Orlando, FL
+White House,38.897676,-77.03653,Washington, D.C.
+Pentagon,38.87098,-77.05596,Washington, D.C.
+Lincoln Memorial,38.889269,-77.050176,Washington, D.C.
+Capitol Hill,38.889939,-77.009051,Washington, D.C.
+Metropolitan Museum of Art,40.779437,-73.963244,New York, NY
+Brooklyn Bridge,40.706086,-73.996864,New York, NY
+Liberty Bell,39.94961,-75.150282,Philadelphia, PA
+Alcatraz Island,37.826977,-122.422956,San Francisco, CA
+Space Needle,47.620506,-122.349277,Seattle, WA
+Yellowstone National Park,44.428,-110.5885,Wyoming,USA
+Mount Rushmore,43.879102,-103.459067,South Dakota,USA
+Walt Disney Concert Hall,34.055345,-118.249845,Los Angeles, CA
+CN Tower,43.642566,-79.387057,Toronto,Canada
+Banff National Park,51.496846,-115.928056,Alberta,Canada
+Niagara Falls,43.096214,-79.037739,Ontario,Canada
+Notre Dame Cathedral,48.852968,2.349902,Paris,France
+Versailles Palace,48.804865,2.120355,Versailles,France
+Berlin Wall,52.516275,13.377704,Berlin,Germany
+Neuschwanstein Castle,47.557574,10.7498,Germany,Fairy-tale castle in Bavaria
+St. Basil's Cathedral,55.752523,37.623073,Moscow,Russia
+Red Square,55.753913,37.620836,Moscow,Russia
+Kremlin,55.751999,37.617734,Moscow,Russia
+Blue Mosque,41.005409,28.976814,Istanbul,Turkey
+Hagia Sophia,41.008583,28.980175,Istanbul,Turkey
+Bosphorus Bridge,41.043964,29.034546,Istanbul,Turkey
+Petra,30.328457,35.444362,Jordan,Historic archaeological city
+Central Park,40.785091,-73.968285,New York, NY
+Eiffel Tower,48.858844,2.294351,Paris,France
+Colosseum,41.890251,12.492373,Rome,Italy
+Statue of Liberty,40.689247,-74.044502,New York, NY
+Great Wall of China,40.431908,116.570374,China,Historic wall stretching across northern China
+Taj Mahal,27.175015,78.042155,Agra,India
+Sydney Opera House,-33.856784,151.215297,Sydney,Australia
+Mount Fuji,35.360555,138.727778,Japan,Highest mountain in Japan
+Christ the Redeemer,-22.951916,-43.210487,Rio de Janeiro,Brazil
+Machu Picchu,-13.163141,-72.544963,Peru,Inca citadel in the Andes Mountains
+Stonehenge,51.178882,-1.826215,England,Prehistoric stone circle
+Louvre Museum,48.860611,2.337644,Paris,France
+Pyramids of Giza,29.979235,31.134202,Egypt,Ancient pyramid structures
+Golden Gate Bridge,37.819929,-122.478255,San Francisco, CA
+Grand Canyon,36.106965,-112.112997,Arizona,USA
+Niagara Falls,43.096214,-79.037739,New York, NY
+Big Ben,51.500729,-0.124625,London,England
+Buckingham Palace,51.501364,-0.14189,London,England
+Empire State Building,40.748817,-73.985428,New York, NY
+Times Square,40.758896,-73.98513,New York, NY
+Hollywood Sign,34.134115,-118.321548,Los Angeles, CA
+Las Vegas Strip,36.114647,-115.172813,Las Vegas, NV
+Walt Disney World,28.385233,-81.563874,Orlando, FL
+White House,38.897676,-77.03653,Washington, D.C.
+Pentagon,38.87098,-77.05596,Washington, D.C.
+Lincoln Memorial,38.889269,-77.050176,Washington, D.C.
+Capitol Hill,38.889939,-77.009051,Washington, D.C.
+Metropolitan Museum of Art,40.779437,-73.963244,New York, NY
+Brooklyn Bridge,40.706086,-73.996864,New York, NY
+Liberty Bell,39.94961,-75.150282,Philadelphia, PA
+Alcatraz Island,37.826977,-122.422956,San Francisco, CA
+Space Needle,47.620506,-122.349277,Seattle, WA
+Yellowstone National Park,44.428,-110.5885,Wyoming,USA
+Mount Rushmore,43.879102,-103.459067,South Dakota,USA
+Walt Disney Concert Hall,34.055345,-118.249845,Los Angeles, CA
+CN Tower,43.642566,-79.387057,Toronto,Canada
+Banff National Park,51.496846,-115.928056,Alberta,Canada
+Niagara Falls,43.096214,-79.037739,Ontario,Canada
+Notre Dame Cathedral,48.852968,2.349902,Paris,France
+Versailles Palace,48.804865,2.120355,Versailles,France
+Berlin Wall,52.516275,13.377704,Berlin,Germany
+Neuschwanstein Castle,47.557574,10.7498,Germany,Fairy-tale castle in Bavaria
+St. Basil's Cathedral,55.752523,37.623073,Moscow,Russia
+Red Square,55.753913,37.620836,Moscow,Russia
+Kremlin,55.751999,37.617734,Moscow,Russia
+Blue Mosque,41.005409,28.976814,Istanbul,Turkey
+Hagia Sophia,41.008583,28.980175,Istanbul,Turkey
+Bosphorus Bridge,41.043964,29.034546,Istanbul,Turkey
+Petra,30.328457,35.444362,Jordan,Historic archaeological city
+Central Park,40.785091,-73.968285,New York, NY
+Eiffel Tower,48.858844,2.294351,Paris,France
+Colosseum,41.890251,12.492373,Rome,Italy
+Statue of Liberty,40.689247,-74.044502,New York, NY
+Great Wall of China,40.431908,116.570374,China,Historic wall stretching across northern China
+Taj Mahal,27.175015,78.042155,Agra,India
+Sydney Opera House,-33.856784,151.215297,Sydney,Australia
+Mount Fuji,35.360555,138.727778,Japan,Highest mountain in Japan
+Christ the Redeemer,-22.951916,-43.210487,Rio de Janeiro,Brazil
+Machu Picchu,-13.163141,-72.544963,Peru,Inca citadel in the Andes Mountains
+Stonehenge,51.178882,-1.826215,England,Prehistoric stone circle
+Louvre Museum,48.860611,2.337644,Paris,France
+Pyramids of Giza,29.979235,31.134202,Egypt,Ancient pyramid structures
+Golden Gate Bridge,37.819929,-122.478255,San Francisco, CA
+Grand Canyon,36.106965,-112.112997,Arizona,USA
+Niagara Falls,43.096214,-79.037739,New York, NY
+Big Ben,51.500729,-0.124625,London,England
+Buckingham Palace,51.501364,-0.14189,London,England
+Empire State Building,40.748817,-73.985428,New York, NY
+Times Square,40.758896,-73.98513,New York, NY
+Hollywood Sign,34.134115,-118.321548,Los Angeles, CA
+Las Vegas Strip,36.114647,-115.172813,Las Vegas, NV
+Walt Disney World,28.385233,-81.563874,Orlando, FL
+White House,38.897676,-77.03653,Washington, D.C.
+Pentagon,38.87098,-77.05596,Washington, D.C.
+Lincoln Memorial,38.889269,-77.050176,Washington, D.C.
+Capitol Hill,38.889939,-77.009051,Washington, D.C.
+Metropolitan Museum of Art,40.779437,-73.963244,New York, NY
+Brooklyn Bridge,40.706086,-73.996864,New York, NY
+Liberty Bell,39.94961,-75.150282,Philadelphia, PA
+Alcatraz Island,37.826977,-122.422956,San Francisco, CA
+Space Needle,47.620506,-122.349277,Seattle, WA
+Yellowstone National Park,44.428,-110.5885,Wyoming,USA
+Mount Rushmore,43.879102,-103.459067,South Dakota,USA
+Walt Disney Concert Hall,34.055345,-118.249845,Los Angeles, CA
+CN Tower,43.642566,-79.387057,Toronto,Canada
+Banff National Park,51.496846,-115.928056,Alberta,Canada
+Niagara Falls,43.096214,-79.037739,Ontario,Canada
+Notre Dame Cathedral,48.852968,2.349902,Paris,France
+Versailles Palace,48.804865,2.120355,Versailles,France
+Berlin Wall,52.516275,13.377704,Berlin,Germany
+Neuschwanstein Castle,47.557574,10.7498,Germany,Fairy-tale castle in Bavaria
+St. Basil's Cathedral,55.752523,37.623073,Moscow,Russia
+Red Square,55.753913,37.620836,Moscow,Russia
+Kremlin,55.751999,37.617734,Moscow,Russia
+Blue Mosque,41.005409,28.976814,Istanbul,Turkey
+Hagia Sophia,41.008583,28.980175,Istanbul,Turkey
+Bosphorus Bridge,41.043964,29.034546,Istanbul,Turkey
+Petra,30.328457,35.444362,Jordan,Historic archaeological city
+Central Park,40.785091,-73.968285,New York, NY
+Eiffel Tower,48.858844,2.294351,Paris,France
+Colosseum,41.890251,12.492373,Rome,Italy
+Statue of Liberty,40.689247,-74.044502,New York, NY
+Great Wall of China,40.431908,116.570374,China,Historic wall stretching across northern China
+Taj Mahal,27.175015,78.042155,Agra,India
+Sydney Opera House,-33.856784,151.215297,Sydney,Australia
+Mount Fuji,35.360555,138.727778,Japan,Highest mountain in Japan
+Christ the Redeemer,-22.951916,-43.210487,Rio de Janeiro,Brazil
+Machu Picchu,-13.163141,-72.544963,Peru,Inca citadel in the Andes Mountains
+Stonehenge,51.178882,-1.826215,England,Prehistoric stone circle
+Louvre Museum,48.860611,2.337644,Paris,France
+Pyramids of Giza,29.979235,31.134202,Egypt,Ancient pyramid structures
+Golden Gate Bridge,37.819929,-122.478255,San Francisco, CA
+Grand Canyon,36.106965,-112.112997,Arizona,USA
+Niagara Falls,43.096214,-79.037739,New York, NY
+Big Ben,51.500729,-0.124625,London,England
+Buckingham Palace,51.501364,-0.14189,London,England
+Empire State Building,40.748817,-73.985428,New York, NY
+Times Square,40.758896,-73.98513,New York, NY
+Hollywood Sign,34.134115,-118.321548,Los Angeles, CA
+Las Vegas Strip,36.114647,-115.172813,Las Vegas, NV
+Walt Disney World,28.385233,-81.563874,Orlando, FL
+White House,38.897676,-77.03653,Washington, D.C.
+Pentagon,38.87098,-77.05596,Washington, D.C.
+Lincoln Memorial,38.889269,-77.050176,Washington, D.C.
+Capitol Hill,38.889939,-77.009051,Washington, D.C.
+Metropolitan Museum of Art,40.779437,-73.963244,New York, NY
+Brooklyn Bridge,40.706086,-73.996864,New York, NY
+Liberty Bell,39.94961,-75.150282,Philadelphia, PA
+Alcatraz Island,37.826977,-122.422956,San Francisco, CA
+Space Needle,47.620506,-122.349277,Seattle, WA
+Yellowstone National Park,44.428,-110.5885,Wyoming,USA
+Mount Rushmore,43.879102,-103.459067,South Dakota,USA
+Walt Disney Concert Hall,34.055345,-118.249845,Los Angeles, CA
+CN Tower,43.642566,-79.387057,Toronto,Canada
+Banff National Park,51.496846,-115.928056,Alberta,Canada
+Niagara Falls,43.096214,-79.037739,Ontario,Canada
+Notre Dame Cathedral,48.852968,2.349902,Paris,France
+Versailles Palace,48.804865,2.120355,Versailles,France
+Berlin Wall,52.516275,13.377704,Berlin,Germany
+Neuschwanstein Castle,47.557574,10.7498,Germany,Fairy-tale castle in Bavaria
+St. Basil's Cathedral,55.752523,37.623073,Moscow,Russia
+Red Square,55.753913,37.620836,Moscow,Russia
+Kremlin,55.751999,37.617734,Moscow,Russia
+Blue Mosque,41.005409,28.976814,Istanbul,Turkey
+Hagia Sophia,41.008583,28.980175,Istanbul,Turkey
+Bosphorus Bridge,41.043964,29.034546,Istanbul,Turkey
+Petra,30.328457,35.444362,Jordan,Historic archaeological city
+Central Park,40.785091,-73.968285,New York, NY
+Eiffel Tower,48.858844,2.294351,Paris,France
+Colosseum,41.890251,12.492373,Rome,Italy
+Statue of Liberty,40.689247,-74.044502,New York, NY
+Great Wall of China,40.431908,116.570374,China,Historic wall stretching across northern China
+Taj Mahal,27.175015,78.042155,Agra,India
+Sydney Opera House,-33.856784,151.215297,Sydney,Australia
+Mount Fuji,35.360555,138.727778,Japan,Highest mountain in Japan
+Christ the Redeemer,-22.951916,-43.210487,Rio de Janeiro,Brazil
+Machu Picchu,-13.163141,-72.544963,Peru,Inca citadel in the Andes Mountains
+Stonehenge,51.178882,-1.826215,England,Prehistoric stone circle
+Louvre Museum,48.860611,2.337644,Paris,France
+Pyramids of Giza,29.979235,31.134202,Egypt,Ancient pyramid structures
+Golden Gate Bridge,37.819929,-122.478255,San Francisco, CA
+Grand Canyon,36.106965,-112.112997,Arizona,USA
+Niagara Falls,43.096214,-79.037739,New York, NY
+Big Ben,51.500729,-0.124625,London,England
+Buckingham Palace,51.501364,-0.14189,London,England
+Empire State Building,40.748817,-73.985428,New York, NY
+Times Square,40.758896,-73.98513,New York, NY
+Hollywood Sign,34.134115,-118.321548,Los Angeles, CA
+Las Vegas Strip,36.114647,-115.172813,Las Vegas, NV
+Walt Disney World,28.385233,-81.563874,Orlando, FL
+White House,38.897676,-77.03653,Washington, D.C.
+Pentagon,38.87098,-77.05596,Washington, D.C.
+Lincoln Memorial,38.889269,-77.050176,Washington, D.C.
+Capitol Hill,38.889939,-77.009051,Washington, D.C.
+Metropolitan Museum of Art,40.779437,-73.963244,New York, NY
+Brooklyn Bridge,40.706086,-73.996864,New York, NY
+Liberty Bell,39.94961,-75.150282,Philadelphia, PA
+Alcatraz Island,37.826977,-122.422956,San Francisco, CA
+Space Needle,47.620506,-122.349277,Seattle, WA
+Yellowstone National Park,44.428,-110.5885,Wyoming,USA
+Mount Rushmore,43.879102,-103.459067,South Dakota,USA
+Walt Disney Concert Hall,34.055345,-118.249845,Los Angeles, CA
+CN Tower,43.642566,-79.387057,Toronto,Canada
+Banff National Park,51.496846,-115.928056,Alberta,Canada
+Niagara Falls,43.096214,-79.037739,Ontario,Canada
+Notre Dame Cathedral,48.852968,2.349902,Paris,France
+Versailles Palace,48.804865,2.120355,Versailles,France
+Berlin Wall,52.516275,13.377704,Berlin,Germany
+Neuschwanstein Castle,47.557574,10.7498,Germany,Fairy-tale castle in Bavaria
+St. Basil's Cathedral,55.752523,37.623073,Moscow,Russia
+Red Square,55.753913,37.620836,Moscow,Russia
+Kremlin,55.751999,37.617734,Moscow,Russia
+Blue Mosque,41.005409,28.976814,Istanbul,Turkey
+Hagia Sophia,41.008583,28.980175,Istanbul,Turkey
+Bosphorus Bridge,41.043964,29.034546,Istanbul,Turkey
+Petra,30.328457,35.444362,Jordan,Historic archaeological city
+Central Park,40.785091,-73.968285,New York, NY
+Eiffel Tower,48.858844,2.294351,Paris,France
+Colosseum,41.890251,12.492373,Rome,Italy
+Statue of Liberty,40.689247,-74.044502,New York, NY
+Great Wall of China,40.431908,116.570374,China,Historic wall stretching across northern China
+Taj Mahal,27.175015,78.042155,Agra,India
+Sydney Opera House,-33.856784,151.215297,Sydney,Australia
+Mount Fuji,35.360555,138.727778,Japan,Highest mountain in Japan
+Christ the Redeemer,-22.951916,-43.210487,Rio de Janeiro,Brazil
+Machu Picchu,-13.163141,-72.544963,Peru,Inca citadel in the Andes Mountains
+Stonehenge,51.178882,-1.826215,England,Prehistoric stone circle
+Louvre Museum,48.860611,2.337644,Paris,France
+Pyramids of Giza,29.979235,31.134202,Egypt,Ancient pyramid structures
+Golden Gate Bridge,37.819929,-122.478255,San Francisco, CA
+Grand Canyon,36.106965,-112.112997,Arizona,USA
+Niagara Falls,43.096214,-79.037739,New York, NY
+Big Ben,51.500729,-0.124625,London,England
+Buckingham Palace,51.501364,-0.14189,London,England
+Empire State Building,40.748817,-73.985428,New York, NY
+Times Square,40.758896,-73.98513,New York, NY
+Hollywood Sign,34.134115,-118.321548,Los Angeles, CA
+Las Vegas Strip,36.114647,-115.172813,Las Vegas, NV
+Walt Disney World,28.385233,-81.563874,Orlando, FL
+White House,38.897676,-77.03653,Washington, D.C.
+Pentagon,38.87098,-77.05596,Washington, D.C.
+Lincoln Memorial,38.889269,-77.050176,Washington, D.C.
+Capitol Hill,38.889939,-77.009051,Washington, D.C.
+Metropolitan Museum of Art,40.779437,-73.963244,New York, NY
+Brooklyn Bridge,40.706086,-73.996864,New York, NY
+Liberty Bell,39.94961,-75.150282,Philadelphia, PA
+Alcatraz Island,37.826977,-122.422956,San Francisco, CA
+Space Needle,47.620506,-122.349277,Seattle, WA
+Yellowstone National Park,44.428,-110.5885,Wyoming,USA
+Mount Rushmore,43.879102,-103.459067,South Dakota,USA
+Walt Disney Concert Hall,34.055345,-118.249845,Los Angeles, CA
+CN Tower,43.642566,-79.387057,Toronto,Canada
+Banff National Park,51.496846,-115.928056,Alberta,Canada
+Niagara Falls,43.096214,-79.037739,Ontario,Canada
+Notre Dame Cathedral,48.852968,2.349902,Paris,France
+Versailles Palace,48.804865,2.120355,Versailles,France
+Berlin Wall,52.516275,13.377704,Berlin,Germany
+Neuschwanstein Castle,47.557574,10.7498,Germany,Fairy-tale castle in Bavaria
+St. Basil's Cathedral,55.752523,37.623073,Moscow,Russia
+Red Square,55.753913,37.620836,Moscow,Russia
+Kremlin,55.751999,37.617734,Moscow,Russia
+Blue Mosque,41.005409,28.976814,Istanbul,Turkey
+Hagia Sophia,41.008583,28.980175,Istanbul,Turkey
+Bosphorus Bridge,41.043964,29.034546,Istanbul,Turkey
+Petra,30.328457,35.444362,Jordan,Historic archaeological city
+Central Park,40.785091,-73.968285,New York, NY
+Eiffel Tower,48.858844,2.294351,Paris,France
+Colosseum,41.890251,12.492373,Rome,Italy
+Statue of Liberty,40.689247,-74.044502,New York, NY
+Great Wall of China,40.431908,116.570374,China,Historic wall stretching across northern China
+Taj Mahal,27.175015,78.042155,Agra,India
+Sydney Opera House,-33.856784,151.215297,Sydney,Australia
+Mount Fuji,35.360555,138.727778,Japan,Highest mountain in Japan
+Christ the Redeemer,-22.951916,-43.210487,Rio de Janeiro,Brazil
+Machu Picchu,-13.163141,-72.544963,Peru,Inca citadel in the Andes Mountains
+Stonehenge,51.178882,-1.826215,England,Prehistoric stone circle
+Louvre Museum,48.860611,2.337644,Paris,France
+Pyramids of Giza,29.979235,31.134202,Egypt,Ancient pyramid structures
+Golden Gate Bridge,37.819929,-122.478255,San Francisco, CA
+Grand Canyon,36.106965,-112.112997,Arizona,USA
+Niagara Falls,43.096214,-79.037739,New York, NY
+Big Ben,51.500729,-0.124625,London,England
+Buckingham Palace,51.501364,-0.14189,London,England
+Empire State Building,40.748817,-73.985428,New York, NY
+Times Square,40.758896,-73.98513,New York, NY
+Hollywood Sign,34.134115,-118.321548,Los Angeles, CA
+Las Vegas Strip,36.114647,-115.172813,Las Vegas, NV
+Walt Disney World,28.385233,-81.563874,Orlando, FL
+White House,38.897676,-77.03653,Washington, D.C.
+Pentagon,38.87098,-77.05596,Washington, D.C.
+Lincoln Memorial,38.889269,-77.050176,Washington, D.C.
+Capitol Hill,38.889939,-77.009051,Washington, D.C.
+Metropolitan Museum of Art,40.779437,-73.963244,New York, NY
+Brooklyn Bridge,40.706086,-73.996864,New York, NY
+Liberty Bell,39.94961,-75.150282,Philadelphia, PA
+Alcatraz Island,37.826977,-122.422956,San Francisco, CA
+Space Needle,47.620506,-122.349277,Seattle, WA
+Yellowstone National Park,44.428,-110.5885,Wyoming,USA
+Mount Rushmore,43.879102,-103.459067,South Dakota,USA
+Walt Disney Concert Hall,34.055345,-118.249845,Los Angeles, CA
+CN Tower,43.642566,-79.387057,Toronto,Canada
+Banff National Park,51.496846,-115.928056,Alberta,Canada
+Niagara Falls,43.096214,-79.037739,Ontario,Canada
+Notre Dame Cathedral,48.852968,2.349902,Paris,France
+Versailles Palace,48.804865,2.120355,Versailles,France
+Berlin Wall,52.516275,13.377704,Berlin,Germany
+Neuschwanstein Castle,47.557574,10.7498,Germany,Fairy-tale castle in Bavaria
+St. Basil's Cathedral,55.752523,37.623073,Moscow,Russia
+Red Square,55.753913,37.620836,Moscow,Russia
+Kremlin,55.751999,37.617734,Moscow,Russia
+Blue Mosque,41.005409,28.976814,Istanbul,Turkey
+Hagia Sophia,41.008583,28.980175,Istanbul,Turkey
+Bosphorus Bridge,41.043964,29.034546,Istanbul,Turkey
+Petra,30.328457,35.444362,Jordan,Historic archaeological city
+Central Park,40.785091,-73.968285,New York, NY
+Eiffel Tower,48.858844,2.294351,Paris,France
+Colosseum,41.890251,12.492373,Rome,Italy
+Statue of Liberty,40.689247,-74.044502,New York, NY
+Great Wall of China,40.431908,116.570374,China,Historic wall stretching across northern China
+Taj Mahal,27.175015,78.042155,Agra,India
+Sydney Opera House,-33.856784,151.215297,Sydney,Australia
+Mount Fuji,35.360555,138.727778,Japan,Highest mountain in Japan
+Christ the Redeemer,-22.951916,-43.210487,Rio de Janeiro,Brazil
+Machu Picchu,-13.163141,-72.544963,Peru,Inca citadel in the Andes Mountains
+Stonehenge,51.178882,-1.826215,England,Prehistoric stone circle
+Louvre Museum,48.860611,2.337644,Paris,France
+Pyramids of Giza,29.979235,31.134202,Egypt,Ancient pyramid structures
+Golden Gate Bridge,37.819929,-122.478255,San Francisco, CA
+Grand Canyon,36.106965,-112.112997,Arizona,USA
+Niagara Falls,43.096214,-79.037739,New York, NY
+Big Ben,51.500729,-0.124625,London,England
+Buckingham Palace,51.501364,-0.14189,London,England
+Empire State Building,40.748817,-73.985428,New York, NY
+Times Square,40.758896,-73.98513,New York, NY
+Hollywood Sign,34.134115,-118.321548,Los Angeles, CA
+Las Vegas Strip,36.114647,-115.172813,Las Vegas, NV
+Walt Disney World,28.385233,-81.563874,Orlando, FL
+White House,38.897676,-77.03653,Washington, D.C.
+Pentagon,38.87098,-77.05596,Washington, D.C.
+Lincoln Memorial,38.889269,-77.050176,Washington, D.C.
+Capitol Hill,38.889939,-77.009051,Washington, D.C.
+Metropolitan Museum of Art,40.779437,-73.963244,New York, NY
+Brooklyn Bridge,40.706086,-73.996864,New York, NY
+Liberty Bell,39.94961,-75.150282,Philadelphia, PA
+Alcatraz Island,37.826977,-122.422956,San Francisco, CA
+Space Needle,47.620506,-122.349277,Seattle, WA
+Yellowstone National Park,44.428,-110.5885,Wyoming,USA
+Mount Rushmore,43.879102,-103.459067,South Dakota,USA
+Walt Disney Concert Hall,34.055345,-118.249845,Los Angeles, CA
+CN Tower,43.642566,-79.387057,Toronto,Canada
+Banff National Park,51.496846,-115.928056,Alberta,Canada
+Niagara Falls,43.096214,-79.037739,Ontario,Canada
+Notre Dame Cathedral,48.852968,2.349902,Paris,France
+Versailles Palace,48.804865,2.120355,Versailles,France
+Berlin Wall,52.516275,13.377704,Berlin,Germany
+Neuschwanstein Castle,47.557574,10.7498,Germany,Fairy-tale castle in Bavaria
+St. Basil's Cathedral,55.752523,37.623073,Moscow,Russia
+Red Square,55.753913,37.620836,Moscow,Russia
+Kremlin,55.751999,37.617734,Moscow,Russia
+Blue Mosque,41.005409,28.976814,Istanbul,Turkey
+Hagia Sophia,41.008583,28.980175,Istanbul,Turkey
+Bosphorus Bridge,41.043964,29.034546,Istanbul,Turkey
+Petra,30.328457,35.444362,Jordan,Historic archaeological city
+Central Park,40.785091,-73.968285,New York, NY
+Eiffel Tower,48.858844,2.294351,Paris,France
+Colosseum,41.890251,12.492373,Rome,Italy
+Statue of Liberty,40.689247,-74.044502,New York, NY
+Great Wall of China,40.431908,116.570374,China,Historic wall stretching across northern China
+Taj Mahal,27.175015,78.042155,Agra,India
+Sydney Opera House,-33.856784,151.215297,Sydney,Australia
+Mount Fuji,35.360555,138.727778,Japan,Highest mountain in Japan
+Christ the Redeemer,-22.951916,-43.210487,Rio de Janeiro,Brazil
+Machu Picchu,-13.163141,-72.544963,Peru,Inca citadel in the Andes Mountains
+Stonehenge,51.178882,-1.826215,England,Prehistoric stone circle
+Louvre Museum,48.860611,2.337644,Paris,France
+Pyramids of Giza,29.979235,31.134202,Egypt,Ancient pyramid structures
+Golden Gate Bridge,37.819929,-122.478255,San Francisco, CA
+Grand Canyon,36.106965,-112.112997,Arizona,USA
+Niagara Falls,43.096214,-79.037739,New York, NY
+Big Ben,51.500729,-0.124625,London,England
+Buckingham Palace,51.501364,-0.14189,London,England
+Empire State Building,40.748817,-73.985428,New York, NY
+Times Square,40.758896,-73.98513,New York, NY
+Hollywood Sign,34.134115,-118.321548,Los Angeles, CA
+Las Vegas Strip,36.114647,-115.172813,Las Vegas, NV
+Walt Disney World,28.385233,-81.563874,Orlando, FL
+White House,38.897676,-77.03653,Washington, D.C.
+Pentagon,38.87098,-77.05596,Washington, D.C.
+Lincoln Memorial,38.889269,-77.050176,Washington, D.C.
+Capitol Hill,38.889939,-77.009051,Washington, D.C.
+Metropolitan Museum of Art,40.779437,-73.963244,New York, NY
+Brooklyn Bridge,40.706086,-73.996864,New York, NY
+Liberty Bell,39.94961,-75.150282,Philadelphia, PA
+Alcatraz Island,37.826977,-122.422956,San Francisco, CA
+Space Needle,47.620506,-122.349277,Seattle, WA
+Yellowstone National Park,44.428,-110.5885,Wyoming,USA
+Mount Rushmore,43.879102,-103.459067,South Dakota,USA
+Walt Disney Concert Hall,34.055345,-118.249845,Los Angeles, CA
+CN Tower,43.642566,-79.387057,Toronto,Canada
+Banff National Park,51.496846,-115.928056,Alberta,Canada
+Niagara Falls,43.096214,-79.037739,Ontario,Canada
+Notre Dame Cathedral,48.852968,2.349902,Paris,France
+Versailles Palace,48.804865,2.120355,Versailles,France
+Berlin Wall,52.516275,13.377704,Berlin,Germany
+Neuschwanstein Castle,47.557574,10.7498,Germany,Fairy-tale castle in Bavaria
+St. Basil's Cathedral,55.752523,37.623073,Moscow,Russia
+Red Square,55.753913,37.620836,Moscow,Russia
+Kremlin,55.751999,37.617734,Moscow,Russia
+Blue Mosque,41.005409,28.976814,Istanbul,Turkey
+Hagia Sophia,41.008583,28.980175,Istanbul,Turkey
+Bosphorus Bridge,41.043964,29.034546,Istanbul,Turkey
+Petra,30.328457,35.444362,Jordan,Historic archaeological city
+Central Park,40.785091,-73.968285,New York, NY
+Eiffel Tower,48.858844,2.294351,Paris,France
+Colosseum,41.890251,12.492373,Rome,Italy
+Statue of Liberty,40.689247,-74.044502,New York, NY
+Great Wall of China,40.431908,116.570374,China,Historic wall stretching across northern China
+Taj Mahal,27.175015,78.042155,Agra,India
+Sydney Opera House,-33.856784,151.215297,Sydney,Australia
+Mount Fuji,35.360555,138.727778,Japan,Highest mountain in Japan
+Christ the Redeemer,-22.951916,-43.210487,Rio de Janeiro,Brazil
+Machu Picchu,-13.163141,-72.544963,Peru,Inca citadel in the Andes Mountains
+Stonehenge,51.178882,-1.826215,England,Prehistoric stone circle
+Louvre Museum,48.860611,2.337644,Paris,France
+Pyramids of Giza,29.979235,31.134202,Egypt,Ancient pyramid structures
+Golden Gate Bridge,37.819929,-122.478255,San Francisco, CA
+Grand Canyon,36.106965,-112.112997,Arizona,USA
+Niagara Falls,43.096214,-79.037739,New York, NY
+Big Ben,51.500729,-0.124625,London,England
+Buckingham Palace,51.501364,-0.14189,London,England
+Empire State Building,40.748817,-73.985428,New York, NY
+Times Square,40.758896,-73.98513,New York, NY
+Hollywood Sign,34.134115,-118.321548,Los Angeles, CA
+Las Vegas Strip,36.114647,-115.172813,Las Vegas, NV
+Walt Disney World,28.385233,-81.563874,Orlando, FL
+White House,38.897676,-77.03653,Washington, D.C.
+Pentagon,38.87098,-77.05596,Washington, D.C.
+Lincoln Memorial,38.889269,-77.050176,Washington, D.C.
+Capitol Hill,38.889939,-77.009051,Washington, D.C.
+Metropolitan Museum of Art,40.779437,-73.963244,New York, NY
+Brooklyn Bridge,40.706086,-73.996864,New York, NY
+Liberty Bell,39.94961,-75.150282,Philadelphia, PA
+Alcatraz Island,37.826977,-122.422956,San Francisco, CA
+Space Needle,47.620506,-122.349277,Seattle, WA
+Yellowstone National Park,44.428,-110.5885,Wyoming,USA
+Mount Rushmore,43.879102,-103.459067,South Dakota,USA
+Walt Disney Concert Hall,34.055345,-118.249845,Los Angeles, CA
+CN Tower,43.642566,-79.387057,Toronto,Canada
+Banff National Park,51.496846,-115.928056,Alberta,Canada
+Niagara Falls,43.096214,-79.037739,Ontario,Canada
+Notre Dame Cathedral,48.852968,2.349902,Paris,France
+Versailles Palace,48.804865,2.120355,Versailles,France
+Berlin Wall,52.516275,13.377704,Berlin,Germany
+Neuschwanstein Castle,47.557574,10.7498,Germany,Fairy-tale castle in Bavaria
+St. Basil's Cathedral,55.752523,37.623073,Moscow,Russia
+Red Square,55.753913,37.620836,Moscow,Russia
+Kremlin,55.751999,37.617734,Moscow,Russia
+Blue Mosque,41.005409,28.976814,Istanbul,Turkey
+Hagia Sophia,41.008583,28.980175,Istanbul,Turkey
+Bosphorus Bridge,41.043964,29.034546,Istanbul,Turkey
+Petra,30.328457,35.444362,Jordan,Historic archaeological city
+Central Park,40.785091,-73.968285,New York, NY
+Eiffel Tower,48.858844,2.294351,Paris,France
+Colosseum,41.890251,12.492373,Rome,Italy
+Statue of Liberty,40.689247,-74.044502,New York, NY
+Great Wall of China,40.431908,116.570374,China,Historic wall stretching across northern China
+Taj Mahal,27.175015,78.042155,Agra,India
+Sydney Opera House,-33.856784,151.215297,Sydney,Australia
+Mount Fuji,35.360555,138.727778,Japan,Highest mountain in Japan
+Christ the Redeemer,-22.951916,-43.210487,Rio de Janeiro,Brazil
+Machu Picchu,-13.163141,-72.544963,Peru,Inca citadel in the Andes Mountains
+Stonehenge,51.178882,-1.826215,England,Prehistoric stone circle
+Louvre Museum,48.860611,2.337644,Paris,France
+Pyramids of Giza,29.979235,31.134202,Egypt,Ancient pyramid structures
+Golden Gate Bridge,37.819929,-122.478255,San Francisco, CA
+Grand Canyon,36.106965,-112.112997,Arizona,USA
+Niagara Falls,43.096214,-79.037739,New York, NY
+Big Ben,51.500729,-0.124625,London,England
+Buckingham Palace,51.501364,-0.14189,London,England
+Empire State Building,40.748817,-73.985428,New York, NY
+Times Square,40.758896,-73.98513,New York, NY
+Hollywood Sign,34.134115,-118.321548,Los Angeles, CA
+Las Vegas Strip,36.114647,-115.172813,Las Vegas, NV
+Walt Disney World,28.385233,-81.563874,Orlando, FL
+White House,38.897676,-77.03653,Washington, D.C.
+Pentagon,38.87098,-77.05596,Washington, D.C.
+Lincoln Memorial,38.889269,-77.050176,Washington, D.C.
+Capitol Hill,38.889939,-77.009051,Washington, D.C.
+Metropolitan Museum of Art,40.779437,-73.963244,New York, NY
+Brooklyn Bridge,40.706086,-73.996864,New York, NY
+Liberty Bell,39.94961,-75.150282,Philadelphia, PA
+Alcatraz Island,37.826977,-122.422956,San Francisco, CA
+Space Needle,47.620506,-122.349277,Seattle, WA
+Yellowstone National Park,44.428,-110.5885,Wyoming,USA
+Mount Rushmore,43.879102,-103.459067,South Dakota,USA
+Walt Disney Concert Hall,34.055345,-118.249845,Los Angeles, CA
+CN Tower,43.642566,-79.387057,Toronto,Canada
+Banff National Park,51.496846,-115.928056,Alberta,Canada
+Niagara Falls,43.096214,-79.037739,Ontario,Canada
+Notre Dame Cathedral,48.852968,2.349902,Paris,France
+Versailles Palace,48.804865,2.120355,Versailles,France
+Berlin Wall,52.516275,13.377704,Berlin,Germany
+Neuschwanstein Castle,47.557574,10.7498,Germany,Fairy-tale castle in Bavaria
+St. Basil's Cathedral,55.752523,37.623073,Moscow,Russia
+Red Square,55.753913,37.620836,Moscow,Russia
+Kremlin,55.751999,37.617734,Moscow,Russia
+Blue Mosque,41.005409,28.976814,Istanbul,Turkey
+Hagia Sophia,41.008583,28.980175,Istanbul,Turkey
+Bosphorus Bridge,41.043964,29.034546,Istanbul,Turkey
+Petra,30.328457,35.444362,Jordan,Historic archaeological city
+Central Park,40.785091,-73.968285,New York, NY
+Eiffel Tower,48.858844,2.294351,Paris,France
+Colosseum,41.890251,12.492373,Rome,Italy
+Statue of Liberty,40.689247,-74.044502,New York, NY
+Great Wall of China,40.431908,116.570374,China,Historic wall stretching across northern China
+Taj Mahal,27.175015,78.042155,Agra,India
+Sydney Opera House,-33.856784,151.215297,Sydney,Australia
+Mount Fuji,35.360555,138.727778,Japan,Highest mountain in Japan
+Christ the Redeemer,-22.951916,-43.210487,Rio de Janeiro,Brazil
+Machu Picchu,-13.163141,-72.544963,Peru,Inca citadel in the Andes Mountains
+Stonehenge,51.178882,-1.826215,England,Prehistoric stone circle
+Louvre Museum,48.860611,2.337644,Paris,France
+Pyramids of Giza,29.979235,31.134202,Egypt,Ancient pyramid structures
+Golden Gate Bridge,37.819929,-122.478255,San Francisco, CA
+Grand Canyon,36.106965,-112.112997,Arizona,USA
+Niagara Falls,43.096214,-79.037739,New York, NY
+Big Ben,51.500729,-0.124625,London,England
+Buckingham Palace,51.501364,-0.14189,London,England
+Empire State Building,40.748817,-73.985428,New York, NY
+Times Square,40.758896,-73.98513,New York, NY
+Hollywood Sign,34.134115,-118.321548,Los Angeles, CA
+Las Vegas Strip,36.114647,-115.172813,Las Vegas, NV
+Walt Disney World,28.385233,-81.563874,Orlando, FL
+White House,38.897676,-77.03653,Washington, D.C.
+Pentagon,38.87098,-77.05596,Washington, D.C.
+Lincoln Memorial,38.889269,-77.050176,Washington, D.C.
+Capitol Hill,38.889939,-77.009051,Washington, D.C.
+Metropolitan Museum of Art,40.779437,-73.963244,New York, NY
+Brooklyn Bridge,40.706086,-73.996864,New York, NY
+Liberty Bell,39.94961,-75.150282,Philadelphia, PA
+Alcatraz Island,37.826977,-122.422956,San Francisco, CA
+Space Needle,47.620506,-122.349277,Seattle, WA
+Yellowstone National Park,44.428,-110.5885,Wyoming,USA
+Mount Rushmore,43.879102,-103.459067,South Dakota,USA
+Walt Disney Concert Hall,34.055345,-118.249845,Los Angeles, CA
+CN Tower,43.642566,-79.387057,Toronto,Canada
+Banff National Park,51.496846,-115.928056,Alberta,Canada
+Niagara Falls,43.096214,-79.037739,Ontario,Canada
+Notre Dame Cathedral,48.852968,2.349902,Paris,France
+Versailles Palace,48.804865,2.120355,Versailles,France
+Berlin Wall,52.516275,13.377704,Berlin,Germany
+Neuschwanstein Castle,47.557574,10.7498,Germany,Fairy-tale castle in Bavaria
+St. Basil's Cathedral,55.752523,37.623073,Moscow,Russia
+Red Square,55.753913,37.620836,Moscow,Russia
+Kremlin,55.751999,37.617734,Moscow,Russia
+Blue Mosque,41.005409,28.976814,Istanbul,Turkey
+Hagia Sophia,41.008583,28.980175,Istanbul,Turkey
+Bosphorus Bridge,41.043964,29.034546,Istanbul,Turkey
+Petra,30.328457,35.444362,Jordan,Historic archaeological city
+Central Park,40.785091,-73.968285,New York, NY
+Eiffel Tower,48.858844,2.294351,Paris,France
+Colosseum,41.890251,12.492373,Rome,Italy
+Statue of Liberty,40.689247,-74.044502,New York, NY
+Great Wall of China,40.431908,116.570374,China,Historic wall stretching across northern China
+Taj Mahal,27.175015,78.042155,Agra,India
+Sydney Opera House,-33.856784,151.215297,Sydney,Australia
+Mount Fuji,35.360555,138.727778,Japan,Highest mountain in Japan
+Christ the Redeemer,-22.951916,-43.210487,Rio de Janeiro,Brazil
+Machu Picchu,-13.163141,-72.544963,Peru,Inca citadel in the Andes Mountains
+Stonehenge,51.178882,-1.826215,England,Prehistoric stone circle
+Louvre Museum,48.860611,2.337644,Paris,France
+Pyramids of Giza,29.979235,31.134202,Egypt,Ancient pyramid structures
+Golden Gate Bridge,37.819929,-122.478255,San Francisco, CA
+Grand Canyon,36.106965,-112.112997,Arizona,USA
+Niagara Falls,43.096214,-79.037739,New York, NY
+Big Ben,51.500729,-0.124625,London,England
+Buckingham Palace,51.501364,-0.14189,London,England
+Empire State Building,40.748817,-73.985428,New York, NY
+Times Square,40.758896,-73.98513,New York, NY
+Hollywood Sign,34.134115,-118.321548,Los Angeles, CA
+Las Vegas Strip,36.114647,-115.172813,Las Vegas, NV
+Walt Disney World,28.385233,-81.563874,Orlando, FL
+White House,38.897676,-77.03653,Washington, D.C.
+Pentagon,38.87098,-77.05596,Washington, D.C.
+Lincoln Memorial,38.889269,-77.050176,Washington, D.C.
+Capitol Hill,38.889939,-77.009051,Washington, D.C.
+Metropolitan Museum of Art,40.779437,-73.963244,New York, NY
+Brooklyn Bridge,40.706086,-73.996864,New York, NY
+Liberty Bell,39.94961,-75.150282,Philadelphia, PA
+Alcatraz Island,37.826977,-122.422956,San Francisco, CA
+Space Needle,47.620506,-122.349277,Seattle, WA
+Yellowstone National Park,44.428,-110.5885,Wyoming,USA
+Mount Rushmore,43.879102,-103.459067,South Dakota,USA
+Walt Disney Concert Hall,34.055345,-118.249845,Los Angeles, CA
+CN Tower,43.642566,-79.387057,Toronto,Canada
+Banff National Park,51.496846,-115.928056,Alberta,Canada
+Niagara Falls,43.096214,-79.037739,Ontario,Canada
+Notre Dame Cathedral,48.852968,2.349902,Paris,France
+Versailles Palace,48.804865,2.120355,Versailles,France
+Berlin Wall,52.516275,13.377704,Berlin,Germany
+Neuschwanstein Castle,47.557574,10.7498,Germany,Fairy-tale castle in Bavaria
+St. Basil's Cathedral,55.752523,37.623073,Moscow,Russia
+Red Square,55.753913,37.620836,Moscow,Russia
+Kremlin,55.751999,37.617734,Moscow,Russia
+Blue Mosque,41.005409,28.976814,Istanbul,Turkey
+Hagia Sophia,41.008583,28.980175,Istanbul,Turkey
+Bosphorus Bridge,41.043964,29.034546,Istanbul,Turkey
+Petra,30.328457,35.444362,Jordan,Historic archaeological city
+Central Park,40.785091,-73.968285,New York, NY
+Eiffel Tower,48.858844,2.294351,Paris,France
+Colosseum,41.890251,12.492373,Rome,Italy
+Statue of Liberty,40.689247,-74.044502,New York, NY
+Great Wall of China,40.431908,116.570374,China,Historic wall stretching across northern China
+Taj Mahal,27.175015,78.042155,Agra,India
+Sydney Opera House,-33.856784,151.215297,Sydney,Australia
+Mount Fuji,35.360555,138.727778,Japan,Highest mountain in Japan
+Christ the Redeemer,-22.951916,-43.210487,Rio de Janeiro,Brazil
+Machu Picchu,-13.163141,-72.544963,Peru,Inca citadel in the Andes Mountains
+Stonehenge,51.178882,-1.826215,England,Prehistoric stone circle
+Louvre Museum,48.860611,2.337644,Paris,France
+Pyramids of Giza,29.979235,31.134202,Egypt,Ancient pyramid structures
+Golden Gate Bridge,37.819929,-122.478255,San Francisco, CA
+Grand Canyon,36.106965,-112.112997,Arizona,USA
+Niagara Falls,43.096214,-79.037739,New York, NY
+Big Ben,51.500729,-0.124625,London,England
+Buckingham Palace,51.501364,-0.14189,London,England
+Empire State Building,40.748817,-73.985428,New York, NY
+Times Square,40.758896,-73.98513,New York, NY
+Hollywood Sign,34.134115,-118.321548,Los Angeles, CA
+Las Vegas Strip,36.114647,-115.172813,Las Vegas, NV
+Walt Disney World,28.385233,-81.563874,Orlando, FL
+White House,38.897676,-77.03653,Washington, D.C.
+Pentagon,38.87098,-77.05596,Washington, D.C.
+Lincoln Memorial,38.889269,-77.050176,Washington, D.C.
+Capitol Hill,38.889939,-77.009051,Washington, D.C.
+Metropolitan Museum of Art,40.779437,-73.963244,New York, NY
+Brooklyn Bridge,40.706086,-73.996864,New York, NY
+Liberty Bell,39.94961,-75.150282,Philadelphia, PA
+Alcatraz Island,37.826977,-122.422956,San Francisco, CA
+Space Needle,47.620506,-122.349277,Seattle, WA
+Yellowstone National Park,44.428,-110.5885,Wyoming,USA
+Mount Rushmore,43.879102,-103.459067,South Dakota,USA
+Walt Disney Concert Hall,34.055345,-118.249845,Los Angeles, CA
+CN Tower,43.642566,-79.387057,Toronto,Canada
+Banff National Park,51.496846,-115.928056,Alberta,Canada
+Niagara Falls,43.096214,-79.037739,Ontario,Canada
+Notre Dame Cathedral,48.852968,2.349902,Paris,France
+Versailles Palace,48.804865,2.120355,Versailles,France
+Berlin Wall,52.516275,13.377704,Berlin,Germany
+Neuschwanstein Castle,47.557574,10.7498,Germany,Fairy-tale castle in Bavaria
+St. Basil's Cathedral,55.752523,37.623073,Moscow,Russia
+Red Square,55.753913,37.620836,Moscow,Russia
+Kremlin,55.751999,37.617734,Moscow,Russia
+Blue Mosque,41.005409,28.976814,Istanbul,Turkey
+Hagia Sophia,41.008583,28.980175,Istanbul,Turkey
+Bosphorus Bridge,41.043964,29.034546,Istanbul,Turkey
+Petra,30.328457,35.444362,Jordan,Historic archaeological city
+Central Park,40.785091,-73.968285,New York, NY
+Eiffel Tower,48.858844,2.294351,Paris,France
+Colosseum,41.890251,12.492373,Rome,Italy
+Statue of Liberty,40.689247,-74.044502,New York, NY
+Great Wall of China,40.431908,116.570374,China,Historic wall stretching across northern China
+Taj Mahal,27.175015,78.042155,Agra,India
+Sydney Opera House,-33.856784,151.215297,Sydney,Australia
+Mount Fuji,35.360555,138.727778,Japan,Highest mountain in Japan
+Christ the Redeemer,-22.951916,-43.210487,Rio de Janeiro,Brazil
+Machu Picchu,-13.163141,-72.544963,Peru,Inca citadel in the Andes Mountains
+Stonehenge,51.178882,-1.826215,England,Prehistoric stone circle
+Louvre Museum,48.860611,2.337644,Paris,France
+Pyramids of Giza,29.979235,31.134202,Egypt,Ancient pyramid structures
+Golden Gate Bridge,37.819929,-122.478255,San Francisco, CA
+Grand Canyon,36.106965,-112.112997,Arizona,USA
+Niagara Falls,43.096214,-79.037739,New York, NY
+Big Ben,51.500729,-0.124625,London,England
+Buckingham Palace,51.501364,-0.14189,London,England
+Empire State Building,40.748817,-73.985428,New York, NY
+Times Square,40.758896,-73.98513,New York, NY
+Hollywood Sign,34.134115,-118.321548,Los Angeles, CA
+Las Vegas Strip,36.114647,-115.172813,Las Vegas, NV
+Walt Disney World,28.385233,-81.563874,Orlando, FL
+White House,38.897676,-77.03653,Washington, D.C.
+Pentagon,38.87098,-77.05596,Washington, D.C.
+Lincoln Memorial,38.889269,-77.050176,Washington, D.C.
+Capitol Hill,38.889939,-77.009051,Washington, D.C.
+Metropolitan Museum of Art,40.779437,-73.963244,New York, NY
+Brooklyn Bridge,40.706086,-73.996864,New York, NY
+Liberty Bell,39.94961,-75.150282,Philadelphia, PA
+Alcatraz Island,37.826977,-122.422956,San Francisco, CA
+Space Needle,47.620506,-122.349277,Seattle, WA
+Yellowstone National Park,44.428,-110.5885,Wyoming,USA
+Mount Rushmore,43.879102,-103.459067,South Dakota,USA
+Walt Disney Concert Hall,34.055345,-118.249845,Los Angeles, CA
+CN Tower,43.642566,-79.387057,Toronto,Canada
+Banff National Park,51.496846,-115.928056,Alberta,Canada
+Niagara Falls,43.096214,-79.037739,Ontario,Canada
+Notre Dame Cathedral,48.852968,2.349902,Paris,France
+Versailles Palace,48.804865,2.120355,Versailles,France
+Berlin Wall,52.516275,13.377704,Berlin,Germany
+Neuschwanstein Castle,47.557574,10.7498,Germany,Fairy-tale castle in Bavaria
+St. Basil's Cathedral,55.752523,37.623073,Moscow,Russia
+Red Square,55.753913,37.620836,Moscow,Russia
+Kremlin,55.751999,37.617734,Moscow,Russia
+Blue Mosque,41.005409,28.976814,Istanbul,Turkey
+Hagia Sophia,41.008583,28.980175,Istanbul,Turkey
+Bosphorus Bridge,41.043964,29.034546,Istanbul,Turkey
+Petra,30.328457,35.444362,Jordan,Historic archaeological city
+Central Park,40.785091,-73.968285,New York, NY
+Eiffel Tower,48.858844,2.294351,Paris,France
+Colosseum,41.890251,12.492373,Rome,Italy
+Statue of Liberty,40.689247,-74.044502,New York, NY
+Great Wall of China,40.431908,116.570374,China,Historic wall stretching across northern China
+Taj Mahal,27.175015,78.042155,Agra,India
+Sydney Opera House,-33.856784,151.215297,Sydney,Australia
+Mount Fuji,35.360555,138.727778,Japan,Highest mountain in Japan
+Christ the Redeemer,-22.951916,-43.210487,Rio de Janeiro,Brazil
+Machu Picchu,-13.163141,-72.544963,Peru,Inca citadel in the Andes Mountains
+Stonehenge,51.178882,-1.826215,England,Prehistoric stone circle
+Louvre Museum,48.860611,2.337644,Paris,France
+Pyramids of Giza,29.979235,31.134202,Egypt,Ancient pyramid structures
+Golden Gate Bridge,37.819929,-122.478255,San Francisco, CA
+Grand Canyon,36.106965,-112.112997,Arizona,USA
+Niagara Falls,43.096214,-79.037739,New York, NY
+Big Ben,51.500729,-0.124625,London,England
+Buckingham Palace,51.501364,-0.14189,London,England
+Empire State Building,40.748817,-73.985428,New York, NY
+Times Square,40.758896,-73.98513,New York, NY
+Hollywood Sign,34.134115,-118.321548,Los Angeles, CA
+Las Vegas Strip,36.114647,-115.172813,Las Vegas, NV
+Walt Disney World,28.385233,-81.563874,Orlando, FL
+White House,38.897676,-77.03653,Washington, D.C.
+Pentagon,38.87098,-77.05596,Washington, D.C.
+Lincoln Memorial,38.889269,-77.050176,Washington, D.C.
+Capitol Hill,38.889939,-77.009051,Washington, D.C.
+Metropolitan Museum of Art,40.779437,-73.963244,New York, NY
+Brooklyn Bridge,40.706086,-73.996864,New York, NY
+Liberty Bell,39.94961,-75.150282,Philadelphia, PA
+Alcatraz Island,37.826977,-122.422956,San Francisco, CA
+Space Needle,47.620506,-122.349277,Seattle, WA
+Yellowstone National Park,44.428,-110.5885,Wyoming,USA
+Mount Rushmore,43.879102,-103.459067,South Dakota,USA
+Walt Disney Concert Hall,34.055345,-118.249845,Los Angeles, CA
+CN Tower,43.642566,-79.387057,Toronto,Canada
+Banff National Park,51.496846,-115.928056,Alberta,Canada
+Niagara Falls,43.096214,-79.037739,Ontario,Canada
+Notre Dame Cathedral,48.852968,2.349902,Paris,France
+Versailles Palace,48.804865,2.120355,Versailles,France
+Berlin Wall,52.516275,13.377704,Berlin,Germany
+Neuschwanstein Castle,47.557574,10.7498,Germany,Fairy-tale castle in Bavaria
+St. Basil's Cathedral,55.752523,37.623073,Moscow,Russia
+Red Square,55.753913,37.620836,Moscow,Russia
+Kremlin,55.751999,37.617734,Moscow,Russia
+Blue Mosque,41.005409,28.976814,Istanbul,Turkey
+Hagia Sophia,41.008583,28.980175,Istanbul,Turkey
+Bosphorus Bridge,41.043964,29.034546,Istanbul,Turkey
+Petra,30.328457,35.444362,Jordan,Historic archaeological city
+Central Park,40.785091,-73.968285,New York, NY
+Eiffel Tower,48.858844,2.294351,Paris,France
+Colosseum,41.890251,12.492373,Rome,Italy
+Statue of Liberty,40.689247,-74.044502,New York, NY
+Great Wall of China,40.431908,116.570374,China,Historic wall stretching across northern China
+Taj Mahal,27.175015,78.042155,Agra,India
+Sydney Opera House,-33.856784,151.215297,Sydney,Australia
+Mount Fuji,35.360555,138.727778,Japan,Highest mountain in Japan
+Christ the Redeemer,-22.951916,-43.210487,Rio de Janeiro,Brazil
+Machu Picchu,-13.163141,-72.544963,Peru,Inca citadel in the Andes Mountains
+Stonehenge,51.178882,-1.826215,England,Prehistoric stone circle
+Louvre Museum,48.860611,2.337644,Paris,France
+Pyramids of Giza,29.979235,31.134202,Egypt,Ancient pyramid structures
+Golden Gate Bridge,37.819929,-122.478255,San Francisco, CA
+Grand Canyon,36.106965,-112.112997,Arizona,USA
+Niagara Falls,43.096214,-79.037739,New York, NY
+Big Ben,51.500729,-0.124625,London,England
+Buckingham Palace,51.501364,-0.14189,London,England
+Empire State Building,40.748817,-73.985428,New York, NY
+Times Square,40.758896,-73.98513,New York, NY
+Hollywood Sign,34.134115,-118.321548,Los Angeles, CA
+Las Vegas Strip,36.114647,-115.172813,Las Vegas, NV
+Walt Disney World,28.385233,-81.563874,Orlando, FL
+White House,38.897676,-77.03653,Washington, D.C.
+Pentagon,38.87098,-77.05596,Washington, D.C.
+Lincoln Memorial,38.889269,-77.050176,Washington, D.C.
+Capitol Hill,38.889939,-77.009051,Washington, D.C.
+Metropolitan Museum of Art,40.779437,-73.963244,New York, NY
+Brooklyn Bridge,40.706086,-73.996864,New York, NY
+Liberty Bell,39.94961,-75.150282,Philadelphia, PA
+Alcatraz Island,37.826977,-122.422956,San Francisco, CA
+Space Needle,47.620506,-122.349277,Seattle, WA
+Yellowstone National Park,44.428,-110.5885,Wyoming,USA
+Mount Rushmore,43.879102,-103.459067,South Dakota,USA
+Walt Disney Concert Hall,34.055345,-118.249845,Los Angeles, CA
+CN Tower,43.642566,-79.387057,Toronto,Canada
+Banff National Park,51.496846,-115.928056,Alberta,Canada
+Niagara Falls,43.096214,-79.037739,Ontario,Canada
+Notre Dame Cathedral,48.852968,2.349902,Paris,France
+Versailles Palace,48.804865,2.120355,Versailles,France
+Berlin Wall,52.516275,13.377704,Berlin,Germany
+Neuschwanstein Castle,47.557574,10.7498,Germany,Fairy-tale castle in Bavaria
+St. Basil's Cathedral,55.752523,37.623073,Moscow,Russia
+Red Square,55.753913,37.620836,Moscow,Russia
+Kremlin,55.751999,37.617734,Moscow,Russia
+Blue Mosque,41.005409,28.976814,Istanbul,Turkey
+Hagia Sophia,41.008583,28.980175,Istanbul,Turkey
+Bosphorus Bridge,41.043964,29.034546,Istanbul,Turkey
+Petra,30.328457,35.444362,Jordan,Historic archaeological city
+Central Park,40.785091,-73.968285,New York, NY
+Eiffel Tower,48.858844,2.294351,Paris,France
+Colosseum,41.890251,12.492373,Rome,Italy
+Statue of Liberty,40.689247,-74.044502,New York, NY
+Great Wall of China,40.431908,116.570374,China,Historic wall stretching across northern China
+Taj Mahal,27.175015,78.042155,Agra,India
+Sydney Opera House,-33.856784,151.215297,Sydney,Australia
+Mount Fuji,35.360555,138.727778,Japan,Highest mountain in Japan
+Christ the Redeemer,-22.951916,-43.210487,Rio de Janeiro,Brazil
+Machu Picchu,-13.163141,-72.544963,Peru,Inca citadel in the Andes Mountains
+Stonehenge,51.178882,-1.826215,England,Prehistoric stone circle
+Louvre Museum,48.860611,2.337644,Paris,France
+Pyramids of Giza,29.979235,31.134202,Egypt,Ancient pyramid structures
+Golden Gate Bridge,37.819929,-122.478255,San Francisco, CA
+Grand Canyon,36.106965,-112.112997,Arizona,USA
+Niagara Falls,43.096214,-79.037739,New York, NY
+Big Ben,51.500729,-0.124625,London,England
+Buckingham Palace,51.501364,-0.14189,London,England
+Empire State Building,40.748817,-73.985428,New York, NY
+Times Square,40.758896,-73.98513,New York, NY
+Hollywood Sign,34.134115,-118.321548,Los Angeles, CA
+Las Vegas Strip,36.114647,-115.172813,Las Vegas, NV
+Walt Disney World,28.385233,-81.563874,Orlando, FL
+White House,38.897676,-77.03653,Washington, D.C.
+Pentagon,38.87098,-77.05596,Washington, D.C.
+Lincoln Memorial,38.889269,-77.050176,Washington, D.C.
+Capitol Hill,38.889939,-77.009051,Washington, D.C.
+Metropolitan Museum of Art,40.779437,-73.963244,New York, NY
+Brooklyn Bridge,40.706086,-73.996864,New York, NY
+Liberty Bell,39.94961,-75.150282,Philadelphia, PA
+Alcatraz Island,37.826977,-122.422956,San Francisco, CA
+Space Needle,47.620506,-122.349277,Seattle, WA
+Yellowstone National Park,44.428,-110.5885,Wyoming,USA
+Mount Rushmore,43.879102,-103.459067,South Dakota,USA
+Walt Disney Concert Hall,34.055345,-118.249845,Los Angeles, CA
+CN Tower,43.642566,-79.387057,Toronto,Canada
+Banff National Park,51.496846,-115.928056,Alberta,Canada
+Niagara Falls,43.096214,-79.037739,Ontario,Canada
+Notre Dame Cathedral,48.852968,2.349902,Paris,France
+Versailles Palace,48.804865,2.120355,Versailles,France
+Berlin Wall,52.516275,13.377704,Berlin,Germany
+Neuschwanstein Castle,47.557574,10.7498,Germany,Fairy-tale castle in Bavaria
+St. Basil's Cathedral,55.752523,37.623073,Moscow,Russia
+Red Square,55.753913,37.620836,Moscow,Russia
+Kremlin,55.751999,37.617734,Moscow,Russia
+Blue Mosque,41.005409,28.976814,Istanbul,Turkey
+Hagia Sophia,41.008583,28.980175,Istanbul,Turkey
+Bosphorus Bridge,41.043964,29.034546,Istanbul,Turkey
+Petra,30.328457,35.444362,Jordan,Historic archaeological city
+Central Park,40.785091,-73.968285,New York, NY
+Eiffel Tower,48.858844,2.294351,Paris,France
+Colosseum,41.890251,12.492373,Rome,Italy
+Statue of Liberty,40.689247,-74.044502,New York, NY
+Great Wall of China,40.431908,116.570374,China,Historic wall stretching across northern China
+Taj Mahal,27.175015,78.042155,Agra,India
+Sydney Opera House,-33.856784,151.215297,Sydney,Australia
+Mount Fuji,35.360555,138.727778,Japan,Highest mountain in Japan
+Christ the Redeemer,-22.951916,-43.210487,Rio de Janeiro,Brazil
+Machu Picchu,-13.163141,-72.544963,Peru,Inca citadel in the Andes Mountains
+Stonehenge,51.178882,-1.826215,England,Prehistoric stone circle
+Louvre Museum,48.860611,2.337644,Paris,France
+Pyramids of Giza,29.979235,31.134202,Egypt,Ancient pyramid structures
+Golden Gate Bridge,37.819929,-122.478255,San Francisco, CA
+Grand Canyon,36.106965,-112.112997,Arizona,USA
+Niagara Falls,43.096214,-79.037739,New York, NY
+Big Ben,51.500729,-0.124625,London,England
+Buckingham Palace,51.501364,-0.14189,London,England
+Empire State Building,40.748817,-73.985428,New York, NY
+Times Square,40.758896,-73.98513,New York, NY
+Hollywood Sign,34.134115,-118.321548,Los Angeles, CA
+Las Vegas Strip,36.114647,-115.172813,Las Vegas, NV
+Walt Disney World,28.385233,-81.563874,Orlando, FL
+White House,38.897676,-77.03653,Washington, D.C.
+Pentagon,38.87098,-77.05596,Washington, D.C.
+Lincoln Memorial,38.889269,-77.050176,Washington, D.C.
+Capitol Hill,38.889939,-77.009051,Washington, D.C.
+Metropolitan Museum of Art,40.779437,-73.963244,New York, NY
+Brooklyn Bridge,40.706086,-73.996864,New York, NY
+Liberty Bell,39.94961,-75.150282,Philadelphia, PA
+Alcatraz Island,37.826977,-122.422956,San Francisco, CA
+Space Needle,47.620506,-122.349277,Seattle, WA
+Yellowstone National Park,44.428,-110.5885,Wyoming,USA
+Mount Rushmore,43.879102,-103.459067,South Dakota,USA
+Walt Disney Concert Hall,34.055345,-118.249845,Los Angeles, CA
+CN Tower,43.642566,-79.387057,Toronto,Canada
+Banff National Park,51.496846,-115.928056,Alberta,Canada
+Niagara Falls,43.096214,-79.037739,Ontario,Canada
+Notre Dame Cathedral,48.852968,2.349902,Paris,France
+Versailles Palace,48.804865,2.120355,Versailles,France
+Berlin Wall,52.516275,13.377704,Berlin,Germany
+Neuschwanstein Castle,47.557574,10.7498,Germany,Fairy-tale castle in Bavaria
+St. Basil's Cathedral,55.752523,37.623073,Moscow,Russia
+Red Square,55.753913,37.620836,Moscow,Russia
+Kremlin,55.751999,37.617734,Moscow,Russia
+Blue Mosque,41.005409,28.976814,Istanbul,Turkey
+Hagia Sophia,41.008583,28.980175,Istanbul,Turkey
+Bosphorus Bridge,41.043964,29.034546,Istanbul,Turkey
+Petra,30.328457,35.444362,Jordan,Historic archaeological city
+Central Park,40.785091,-73.968285,New York, NY
+Eiffel Tower,48.858844,2.294351,Paris,France
+Colosseum,41.890251,12.492373,Rome,Italy
+Statue of Liberty,40.689247,-74.044502,New York, NY
+Great Wall of China,40.431908,116.570374,China,Historic wall stretching across northern China
+Taj Mahal,27.175015,78.042155,Agra,India
+Sydney Opera House,-33.856784,151.215297,Sydney,Australia
+Mount Fuji,35.360555,138.727778,Japan,Highest mountain in Japan
+Christ the Redeemer,-22.951916,-43.210487,Rio de Janeiro,Brazil
+Machu Picchu,-13.163141,-72.544963,Peru,Inca citadel in the Andes Mountains
+Stonehenge,51.178882,-1.826215,England,Prehistoric stone circle
+Louvre Museum,48.860611,2.337644,Paris,France
+Pyramids of Giza,29.979235,31.134202,Egypt,Ancient pyramid structures
+Golden Gate Bridge,37.819929,-122.478255,San Francisco, CA
+Grand Canyon,36.106965,-112.112997,Arizona,USA
+Niagara Falls,43.096214,-79.037739,New York, NY
+Big Ben,51.500729,-0.124625,London,England
+Buckingham Palace,51.501364,-0.14189,London,England
+Empire State Building,40.748817,-73.985428,New York, NY
+Times Square,40.758896,-73.98513,New York, NY
+Hollywood Sign,34.134115,-118.321548,Los Angeles, CA
+Las Vegas Strip,36.114647,-115.172813,Las Vegas, NV
+Walt Disney World,28.385233,-81.563874,Orlando, FL
+White House,38.897676,-77.03653,Washington, D.C.
+Pentagon,38.87098,-77.05596,Washington, D.C.
+Lincoln Memorial,38.889269,-77.050176,Washington, D.C.
+Capitol Hill,38.889939,-77.009051,Washington, D.C.
+Metropolitan Museum of Art,40.779437,-73.963244,New York, NY
+Brooklyn Bridge,40.706086,-73.996864,New York, NY
+Liberty Bell,39.94961,-75.150282,Philadelphia, PA
+Alcatraz Island,37.826977,-122.422956,San Francisco, CA
+Space Needle,47.620506,-122.349277,Seattle, WA
+Yellowstone National Park,44.428,-110.5885,Wyoming,USA
+Mount Rushmore,43.879102,-103.459067,South Dakota,USA
+Walt Disney Concert Hall,34.055345,-118.249845,Los Angeles, CA
+CN Tower,43.642566,-79.387057,Toronto,Canada
+Banff National Park,51.496846,-115.928056,Alberta,Canada
+Niagara Falls,43.096214,-79.037739,Ontario,Canada
+Notre Dame Cathedral,48.852968,2.349902,Paris,France
+Versailles Palace,48.804865,2.120355,Versailles,France
+Berlin Wall,52.516275,13.377704,Berlin,Germany
+Neuschwanstein Castle,47.557574,10.7498,Germany,Fairy-tale castle in Bavaria
+St. Basil's Cathedral,55.752523,37.623073,Moscow,Russia
+Red Square,55.753913,37.620836,Moscow,Russia
+Kremlin,55.751999,37.617734,Moscow,Russia
+Blue Mosque,41.005409,28.976814,Istanbul,Turkey
+Hagia Sophia,41.008583,28.980175,Istanbul,Turkey
+Bosphorus Bridge,41.043964,29.034546,Istanbul,Turkey
+Petra,30.328457,35.444362,Jordan,Historic archaeological city
+Central Park,40.785091,-73.968285,New York, NY
+Eiffel Tower,48.858844,2.294351,Paris,France
+Colosseum,41.890251,12.492373,Rome,Italy
+Statue of Liberty,40.689247,-74.044502,New York, NY
+Great Wall of China,40.431908,116.570374,China,Historic wall stretching across northern China
+Taj Mahal,27.175015,78.042155,Agra,India
+Sydney Opera House,-33.856784,151.215297,Sydney,Australia
+Mount Fuji,35.360555,138.727778,Japan,Highest mountain in Japan
+Christ the Redeemer,-22.951916,-43.210487,Rio de Janeiro,Brazil
+Machu Picchu,-13.163141,-72.544963,Peru,Inca citadel in the Andes Mountains
+Stonehenge,51.178882,-1.826215,England,Prehistoric stone circle
+Louvre Museum,48.860611,2.337644,Paris,France
+Pyramids of Giza,29.979235,31.134202,Egypt,Ancient pyramid structures
+Golden Gate Bridge,37.819929,-122.478255,San Francisco, CA
+Grand Canyon,36.106965,-112.112997,Arizona,USA
+Niagara Falls,43.096214,-79.037739,New York, NY
+Big Ben,51.500729,-0.124625,London,England
+Buckingham Palace,51.501364,-0.14189,London,England
+Empire State Building,40.748817,-73.985428,New York, NY
+Times Square,40.758896,-73.98513,New York, NY
+Hollywood Sign,34.134115,-118.321548,Los Angeles, CA
+Las Vegas Strip,36.114647,-115.172813,Las Vegas, NV
+Walt Disney World,28.385233,-81.563874,Orlando, FL
+White House,38.897676,-77.03653,Washington, D.C.
+Pentagon,38.87098,-77.05596,Washington, D.C.
+Lincoln Memorial,38.889269,-77.050176,Washington, D.C.
+Capitol Hill,38.889939,-77.009051,Washington, D.C.
+Metropolitan Museum of Art,40.779437,-73.963244,New York, NY
+Brooklyn Bridge,40.706086,-73.996864,New York, NY
+Liberty Bell,39.94961,-75.150282,Philadelphia, PA
+Alcatraz Island,37.826977,-122.422956,San Francisco, CA
+Space Needle,47.620506,-122.349277,Seattle, WA
+Yellowstone National Park,44.428,-110.5885,Wyoming,USA
+Mount Rushmore,43.879102,-103.459067,South Dakota,USA
+Walt Disney Concert Hall,34.055345,-118.249845,Los Angeles, CA
+CN Tower,43.642566,-79.387057,Toronto,Canada
+Banff National Park,51.496846,-115.928056,Alberta,Canada
+Niagara Falls,43.096214,-79.037739,Ontario,Canada
+Notre Dame Cathedral,48.852968,2.349902,Paris,France
+Versailles Palace,48.804865,2.120355,Versailles,France
+Berlin Wall,52.516275,13.377704,Berlin,Germany
+Neuschwanstein Castle,47.557574,10.7498,Germany,Fairy-tale castle in Bavaria
+St. Basil's Cathedral,55.752523,37.623073,Moscow,Russia
+Red Square,55.753913,37.620836,Moscow,Russia
+Kremlin,55.751999,37.617734,Moscow,Russia
+Blue Mosque,41.005409,28.976814,Istanbul,Turkey
+Hagia Sophia,41.008583,28.980175,Istanbul,Turkey
+Bosphorus Bridge,41.043964,29.034546,Istanbul,Turkey
+Petra,30.328457,35.444362,Jordan,Historic archaeological city
+Central Park,40.785091,-73.968285,New York, NY
+Eiffel Tower,48.858844,2.294351,Paris,France
+Colosseum,41.890251,12.492373,Rome,Italy
+Statue of Liberty,40.689247,-74.044502,New York, NY
+Great Wall of China,40.431908,116.570374,China,Historic wall stretching across northern China
+Taj Mahal,27.175015,78.042155,Agra,India
+Sydney Opera House,-33.856784,151.215297,Sydney,Australia
+Mount Fuji,35.360555,138.727778,Japan,Highest mountain in Japan
+Christ the Redeemer,-22.951916,-43.210487,Rio de Janeiro,Brazil
+Machu Picchu,-13.163141,-72.544963,Peru,Inca citadel in the Andes Mountains
+Stonehenge,51.178882,-1.826215,England,Prehistoric stone circle
+Louvre Museum,48.860611,2.337644,Paris,France
+Pyramids of Giza,29.979235,31.134202,Egypt,Ancient pyramid structures
+Golden Gate Bridge,37.819929,-122.478255,San Francisco, CA
+Grand Canyon,36.106965,-112.112997,Arizona,USA
+Niagara Falls,43.096214,-79.037739,New York, NY
+Big Ben,51.500729,-0.124625,London,England
+Buckingham Palace,51.501364,-0.14189,London,England
+Empire State Building,40.748817,-73.985428,New York, NY
+Times Square,40.758896,-73.98513,New York, NY
+Hollywood Sign,34.134115,-118.321548,Los Angeles, CA
+Las Vegas Strip,36.114647,-115.172813,Las Vegas, NV
+Walt Disney World,28.385233,-81.563874,Orlando, FL
+White House,38.897676,-77.03653,Washington, D.C.
+Pentagon,38.87098,-77.05596,Washington, D.C.
+Lincoln Memorial,38.889269,-77.050176,Washington, D.C.
+Capitol Hill,38.889939,-77.009051,Washington, D.C.
+Metropolitan Museum of Art,40.779437,-73.963244,New York, NY
+Brooklyn Bridge,40.706086,-73.996864,New York, NY
+Liberty Bell,39.94961,-75.150282,Philadelphia, PA
+Alcatraz Island,37.826977,-122.422956,San Francisco, CA
+Space Needle,47.620506,-122.349277,Seattle, WA
+Yellowstone National Park,44.428,-110.5885,Wyoming,USA
+Mount Rushmore,43.879102,-103.459067,South Dakota,USA
+Walt Disney Concert Hall,34.055345,-118.249845,Los Angeles, CA
+CN Tower,43.642566,-79.387057,Toronto,Canada
+Banff National Park,51.496846,-115.928056,Alberta,Canada
+Niagara Falls,43.096214,-79.037739,Ontario,Canada
+Notre Dame Cathedral,48.852968,2.349902,Paris,France
+Versailles Palace,48.804865,2.120355,Versailles,France
+Berlin Wall,52.516275,13.377704,Berlin,Germany
+Neuschwanstein Castle,47.557574,10.7498,Germany,Fairy-tale castle in Bavaria
+St. Basil's Cathedral,55.752523,37.623073,Moscow,Russia
+Red Square,55.753913,37.620836,Moscow,Russia
+Kremlin,55.751999,37.617734,Moscow,Russia
+Blue Mosque,41.005409,28.976814,Istanbul,Turkey
+Hagia Sophia,41.008583,28.980175,Istanbul,Turkey
+Bosphorus Bridge,41.043964,29.034546,Istanbul,Turkey
+Petra,30.328457,35.444362,Jordan,Historic archaeological city
+Central Park,40.785091,-73.968285,New York, NY
+Eiffel Tower,48.858844,2.294351,Paris,France
+Colosseum,41.890251,12.492373,Rome,Italy
+Statue of Liberty,40.689247,-74.044502,New York, NY
+Great Wall of China,40.431908,116.570374,China,Historic wall stretching across northern China
+Taj Mahal,27.175015,78.042155,Agra,India
+Sydney Opera House,-33.856784,151.215297,Sydney,Australia
+Mount Fuji,35.360555,138.727778,Japan,Highest mountain in Japan
+Christ the Redeemer,-22.951916,-43.210487,Rio de Janeiro,Brazil
+Machu Picchu,-13.163141,-72.544963,Peru,Inca citadel in the Andes Mountains
+Stonehenge,51.178882,-1.826215,England,Prehistoric stone circle
+Louvre Museum,48.860611,2.337644,Paris,France
+Pyramids of Giza,29.979235,31.134202,Egypt,Ancient pyramid structures
+Golden Gate Bridge,37.819929,-122.478255,San Francisco, CA
+Grand Canyon,36.106965,-112.112997,Arizona,USA
+Niagara Falls,43.096214,-79.037739,New York, NY
+Big Ben,51.500729,-0.124625,London,England
+Buckingham Palace,51.501364,-0.14189,London,England
+Empire State Building,40.748817,-73.985428,New York, NY
+Times Square,40.758896,-73.98513,New York, NY
+Hollywood Sign,34.134115,-118.321548,Los Angeles, CA
+Las Vegas Strip,36.114647,-115.172813,Las Vegas, NV
+Walt Disney World,28.385233,-81.563874,Orlando, FL
+White House,38.897676,-77.03653,Washington, D.C.
+Pentagon,38.87098,-77.05596,Washington, D.C.
+Lincoln Memorial,38.889269,-77.050176,Washington, D.C.
+Capitol Hill,38.889939,-77.009051,Washington, D.C.
+Metropolitan Museum of Art,40.779437,-73.963244,New York, NY
+Brooklyn Bridge,40.706086,-73.996864,New York, NY
+Liberty Bell,39.94961,-75.150282,Philadelphia, PA
+Alcatraz Island,37.826977,-122.422956,San Francisco, CA
+Space Needle,47.620506,-122.349277,Seattle, WA
+Yellowstone National Park,44.428,-110.5885,Wyoming,USA
+Mount Rushmore,43.879102,-103.459067,South Dakota,USA
+Walt Disney Concert Hall,34.055345,-118.249845,Los Angeles, CA
+CN Tower,43.642566,-79.387057,Toronto,Canada
+Banff National Park,51.496846,-115.928056,Alberta,Canada
+Niagara Falls,43.096214,-79.037739,Ontario,Canada
+Notre Dame Cathedral,48.852968,2.349902,Paris,France
+Versailles Palace,48.804865,2.120355,Versailles,France
+Berlin Wall,52.516275,13.377704,Berlin,Germany
+Neuschwanstein Castle,47.557574,10.7498,Germany,Fairy-tale castle in Bavaria
+St. Basil's Cathedral,55.752523,37.623073,Moscow,Russia
+Red Square,55.753913,37.620836,Moscow,Russia
+Kremlin,55.751999,37.617734,Moscow,Russia
+Blue Mosque,41.005409,28.976814,Istanbul,Turkey
+Hagia Sophia,41.008583,28.980175,Istanbul,Turkey
+Bosphorus Bridge,41.043964,29.034546,Istanbul,Turkey
+Petra,30.328457,35.444362,Jordan,Historic archaeological city
+Central Park,40.785091,-73.968285,New York, NY
+Eiffel Tower,48.858844,2.294351,Paris,France
+Colosseum,41.890251,12.492373,Rome,Italy
+Statue of Liberty,40.689247,-74.044502,New York, NY
+Great Wall of China,40.431908,116.570374,China,Historic wall stretching across northern China
+Taj Mahal,27.175015,78.042155,Agra,India
+Sydney Opera House,-33.856784,151.215297,Sydney,Australia
+Mount Fuji,35.360555,138.727778,Japan,Highest mountain in Japan
+Christ the Redeemer,-22.951916,-43.210487,Rio de Janeiro,Brazil
+Machu Picchu,-13.163141,-72.544963,Peru,Inca citadel in the Andes Mountains
+Stonehenge,51.178882,-1.826215,England,Prehistoric stone circle
+Louvre Museum,48.860611,2.337644,Paris,France
+Pyramids of Giza,29.979235,31.134202,Egypt,Ancient pyramid structures
+Golden Gate Bridge,37.819929,-122.478255,San Francisco, CA
+Grand Canyon,36.106965,-112.112997,Arizona,USA
+Niagara Falls,43.096214,-79.037739,New York, NY
+Big Ben,51.500729,-0.124625,London,England
+Buckingham Palace,51.501364,-0.14189,London,England
+Empire State Building,40.748817,-73.985428,New York, NY
+Times Square,40.758896,-73.98513,New York, NY
+Hollywood Sign,34.134115,-118.321548,Los Angeles, CA
+Las Vegas Strip,36.114647,-115.172813,Las Vegas, NV
+Walt Disney World,28.385233,-81.563874,Orlando, FL
+White House,38.897676,-77.03653,Washington, D.C.
+Pentagon,38.87098,-77.05596,Washington, D.C.
+Lincoln Memorial,38.889269,-77.050176,Washington, D.C.
+Capitol Hill,38.889939,-77.009051,Washington, D.C.
+Metropolitan Museum of Art,40.779437,-73.963244,New York, NY
+Brooklyn Bridge,40.706086,-73.996864,New York, NY
+Liberty Bell,39.94961,-75.150282,Philadelphia, PA
+Alcatraz Island,37.826977,-122.422956,San Francisco, CA
+Space Needle,47.620506,-122.349277,Seattle, WA
+Yellowstone National Park,44.428,-110.5885,Wyoming,USA
+Mount Rushmore,43.879102,-103.459067,South Dakota,USA
+Walt Disney Concert Hall,34.055345,-118.249845,Los Angeles, CA
+CN Tower,43.642566,-79.387057,Toronto,Canada
+Banff National Park,51.496846,-115.928056,Alberta,Canada
+Niagara Falls,43.096214,-79.037739,Ontario,Canada
+Notre Dame Cathedral,48.852968,2.349902,Paris,France
+Versailles Palace,48.804865,2.120355,Versailles,France
+Berlin Wall,52.516275,13.377704,Berlin,Germany
+Neuschwanstein Castle,47.557574,10.7498,Germany,Fairy-tale castle in Bavaria
+St. Basil's Cathedral,55.752523,37.623073,Moscow,Russia
+Red Square,55.753913,37.620836,Moscow,Russia
+Kremlin,55.751999,37.617734,Moscow,Russia
+Blue Mosque,41.005409,28.976814,Istanbul,Turkey
+Hagia Sophia,41.008583,28.980175,Istanbul,Turkey
+Bosphorus Bridge,41.043964,29.034546,Istanbul,Turkey
+Petra,30.328457,35.444362,Jordan,Historic archaeological city
+Central Park,40.785091,-73.968285,New York, NY
+Eiffel Tower,48.858844,2.294351,Paris,France
+Colosseum,41.890251,12.492373,Rome,Italy
+Statue of Liberty,40.689247,-74.044502,New York, NY
+Great Wall of China,40.431908,116.570374,China,Historic wall stretching across northern China
+Taj Mahal,27.175015,78.042155,Agra,India
+Sydney Opera House,-33.856784,151.215297,Sydney,Australia
+Mount Fuji,35.360555,138.727778,Japan,Highest mountain in Japan
+Christ the Redeemer,-22.951916,-43.210487,Rio de Janeiro,Brazil
+Machu Picchu,-13.163141,-72.544963,Peru,Inca citadel in the Andes Mountains
+Stonehenge,51.178882,-1.826215,England,Prehistoric stone circle
+Louvre Museum,48.860611,2.337644,Paris,France
+Pyramids of Giza,29.979235,31.134202,Egypt,Ancient pyramid structures
+Golden Gate Bridge,37.819929,-122.478255,San Francisco, CA
+Grand Canyon,36.106965,-112.112997,Arizona,USA
+Niagara Falls,43.096214,-79.037739,New York, NY
+Big Ben,51.500729,-0.124625,London,England
+Buckingham Palace,51.501364,-0.14189,London,England
+Empire State Building,40.748817,-73.985428,New York, NY
+Times Square,40.758896,-73.98513,New York, NY
+Hollywood Sign,34.134115,-118.321548,Los Angeles, CA
+Las Vegas Strip,36.114647,-115.172813,Las Vegas, NV
+Walt Disney World,28.385233,-81.563874,Orlando, FL
+White House,38.897676,-77.03653,Washington, D.C.
+Pentagon,38.87098,-77.05596,Washington, D.C.
+Lincoln Memorial,38.889269,-77.050176,Washington, D.C.
+Capitol Hill,38.889939,-77.009051,Washington, D.C.
+Metropolitan Museum of Art,40.779437,-73.963244,New York, NY
+Brooklyn Bridge,40.706086,-73.996864,New York, NY
+Liberty Bell,39.94961,-75.150282,Philadelphia, PA
+Alcatraz Island,37.826977,-122.422956,San Francisco, CA
+Space Needle,47.620506,-122.349277,Seattle, WA
+Yellowstone National Park,44.428,-110.5885,Wyoming,USA
+Mount Rushmore,43.879102,-103.459067,South Dakota,USA
+Walt Disney Concert Hall,34.055345,-118.249845,Los Angeles, CA
+CN Tower,43.642566,-79.387057,Toronto,Canada
+Banff National Park,51.496846,-115.928056,Alberta,Canada
+Niagara Falls,43.096214,-79.037739,Ontario,Canada
+Notre Dame Cathedral,48.852968,2.349902,Paris,France
+Versailles Palace,48.804865,2.120355,Versailles,France
+Berlin Wall,52.516275,13.377704,Berlin,Germany
+Neuschwanstein Castle,47.557574,10.7498,Germany,Fairy-tale castle in Bavaria
+St. Basil's Cathedral,55.752523,37.623073,Moscow,Russia
+Red Square,55.753913,37.620836,Moscow,Russia
+Kremlin,55.751999,37.617734,Moscow,Russia
+Blue Mosque,41.005409,28.976814,Istanbul,Turkey
+Hagia Sophia,41.008583,28.980175,Istanbul,Turkey
+Bosphorus Bridge,41.043964,29.034546,Istanbul,Turkey
+Petra,30.328457,35.444362,Jordan,Historic archaeological city
+Central Park,40.785091,-73.968285,New York, NY
+Eiffel Tower,48.858844,2.294351,Paris,France
+Colosseum,41.890251,12.492373,Rome,Italy
+Statue of Liberty,40.689247,-74.044502,New York, NY
+Great Wall of China,40.431908,116.570374,China,Historic wall stretching across northern China
+Taj Mahal,27.175015,78.042155,Agra,India
+Sydney Opera House,-33.856784,151.215297,Sydney,Australia
+Mount Fuji,35.360555,138.727778,Japan,Highest mountain in Japan
+Christ the Redeemer,-22.951916,-43.210487,Rio de Janeiro,Brazil
+Machu Picchu,-13.163141,-72.544963,Peru,Inca citadel in the Andes Mountains
+Stonehenge,51.178882,-1.826215,England,Prehistoric stone circle
+Louvre Museum,48.860611,2.337644,Paris,France
+Pyramids of Giza,29.979235,31.134202,Egypt,Ancient pyramid structures
+Golden Gate Bridge,37.819929,-122.478255,San Francisco, CA
+Grand Canyon,36.106965,-112.112997,Arizona,USA
+Niagara Falls,43.096214,-79.037739,New York, NY
+Big Ben,51.500729,-0.124625,London,England
+Buckingham Palace,51.501364,-0.14189,London,England
+Empire State Building,40.748817,-73.985428,New York, NY
+Times Square,40.758896,-73.98513,New York, NY
+Hollywood Sign,34.134115,-118.321548,Los Angeles, CA
+Las Vegas Strip,36.114647,-115.172813,Las Vegas, NV
+Walt Disney World,28.385233,-81.563874,Orlando, FL
+White House,38.897676,-77.03653,Washington, D.C.
+Pentagon,38.87098,-77.05596,Washington, D.C.
+Lincoln Memorial,38.889269,-77.050176,Washington, D.C.
+Capitol Hill,38.889939,-77.009051,Washington, D.C.
+Metropolitan Museum of Art,40.779437,-73.963244,New York, NY
+Brooklyn Bridge,40.706086,-73.996864,New York, NY
+Liberty Bell,39.94961,-75.150282,Philadelphia, PA
+Alcatraz Island,37.826977,-122.422956,San Francisco, CA
+Space Needle,47.620506,-122.349277,Seattle, WA
+Yellowstone National Park,44.428,-110.5885,Wyoming,USA
+Mount Rushmore,43.879102,-103.459067,South Dakota,USA
+Walt Disney Concert Hall,34.055345,-118.249845,Los Angeles, CA
+CN Tower,43.642566,-79.387057,Toronto,Canada
+Banff National Park,51.496846,-115.928056,Alberta,Canada
+Niagara Falls,43.096214,-79.037739,Ontario,Canada
+Notre Dame Cathedral,48.852968,2.349902,Paris,France
+Versailles Palace,48.804865,2.120355,Versailles,France
+Berlin Wall,52.516275,13.377704,Berlin,Germany
+Neuschwanstein Castle,47.557574,10.7498,Germany,Fairy-tale castle in Bavaria
+St. Basil's Cathedral,55.752523,37.623073,Moscow,Russia
+Red Square,55.753913,37.620836,Moscow,Russia
+Kremlin,55.751999,37.617734,Moscow,Russia
+Blue Mosque,41.005409,28.976814,Istanbul,Turkey
+Hagia Sophia,41.008583,28.980175,Istanbul,Turkey
+Bosphorus Bridge,41.043964,29.034546,Istanbul,Turkey
+Petra,30.328457,35.444362,Jordan,Historic archaeological city
+Central Park,40.785091,-73.968285,New York, NY
+Eiffel Tower,48.858844,2.294351,Paris,France
+Colosseum,41.890251,12.492373,Rome,Italy
+Statue of Liberty,40.689247,-74.044502,New York, NY
+Great Wall of China,40.431908,116.570374,China,Historic wall stretching across northern China
+Taj Mahal,27.175015,78.042155,Agra,India
+Sydney Opera House,-33.856784,151.215297,Sydney,Australia
+Mount Fuji,35.360555,138.727778,Japan,Highest mountain in Japan
+Christ the Redeemer,-22.951916,-43.210487,Rio de Janeiro,Brazil
+Machu Picchu,-13.163141,-72.544963,Peru,Inca citadel in the Andes Mountains
+Stonehenge,51.178882,-1.826215,England,Prehistoric stone circle
+Louvre Museum,48.860611,2.337644,Paris,France
+Pyramids of Giza,29.979235,31.134202,Egypt,Ancient pyramid structures
+Golden Gate Bridge,37.819929,-122.478255,San Francisco, CA
+Grand Canyon,36.106965,-112.112997,Arizona,USA
+Niagara Falls,43.096214,-79.037739,New York, NY
+Big Ben,51.500729,-0.124625,London,England
+Buckingham Palace,51.501364,-0.14189,London,England
+Empire State Building,40.748817,-73.985428,New York, NY
+Times Square,40.758896,-73.98513,New York, NY
+Hollywood Sign,34.134115,-118.321548,Los Angeles, CA
+Las Vegas Strip,36.114647,-115.172813,Las Vegas, NV
+Walt Disney World,28.385233,-81.563874,Orlando, FL
+White House,38.897676,-77.03653,Washington, D.C.
+Pentagon,38.87098,-77.05596,Washington, D.C.
+Lincoln Memorial,38.889269,-77.050176,Washington, D.C.
+Capitol Hill,38.889939,-77.009051,Washington, D.C.
+Metropolitan Museum of Art,40.779437,-73.963244,New York, NY
+Brooklyn Bridge,40.706086,-73.996864,New York, NY
+Liberty Bell,39.94961,-75.150282,Philadelphia, PA
+Alcatraz Island,37.826977,-122.422956,San Francisco, CA
+Space Needle,47.620506,-122.349277,Seattle, WA
+Yellowstone National Park,44.428,-110.5885,Wyoming,USA
+Mount Rushmore,43.879102,-103.459067,South Dakota,USA
+Walt Disney Concert Hall,34.055345,-118.249845,Los Angeles, CA
+CN Tower,43.642566,-79.387057,Toronto,Canada
+Banff National Park,51.496846,-115.928056,Alberta,Canada
+Niagara Falls,43.096214,-79.037739,Ontario,Canada
+Notre Dame Cathedral,48.852968,2.349902,Paris,France
+Versailles Palace,48.804865,2.120355,Versailles,France
+Berlin Wall,52.516275,13.377704,Berlin,Germany
+Neuschwanstein Castle,47.557574,10.7498,Germany,Fairy-tale castle in Bavaria
+St. Basil's Cathedral,55.752523,37.623073,Moscow,Russia
+Red Square,55.753913,37.620836,Moscow,Russia
+Kremlin,55.751999,37.617734,Moscow,Russia
+Blue Mosque,41.005409,28.976814,Istanbul,Turkey
+Hagia Sophia,41.008583,28.980175,Istanbul,Turkey
+Bosphorus Bridge,41.043964,29.034546,Istanbul,Turkey
+Petra,30.328457,35.444362,Jordan,Historic archaeological city
+Central Park,40.785091,-73.968285,New York, NY
+Eiffel Tower,48.858844,2.294351,Paris,France
+Colosseum,41.890251,12.492373,Rome,Italy
+Statue of Liberty,40.689247,-74.044502,New York, NY
+Great Wall of China,40.431908,116.570374,China,Historic wall stretching across northern China
+Taj Mahal,27.175015,78.042155,Agra,India
+Sydney Opera House,-33.856784,151.215297,Sydney,Australia
+Mount Fuji,35.360555,138.727778,Japan,Highest mountain in Japan
+Christ the Redeemer,-22.951916,-43.210487,Rio de Janeiro,Brazil
+Machu Picchu,-13.163141,-72.544963,Peru,Inca citadel in the Andes Mountains
+Stonehenge,51.178882,-1.826215,England,Prehistoric stone circle
+Louvre Museum,48.860611,2.337644,Paris,France
+Pyramids of Giza,29.979235,31.134202,Egypt,Ancient pyramid structures
+Golden Gate Bridge,37.819929,-122.478255,San Francisco, CA
+Grand Canyon,36.106965,-112.112997,Arizona,USA
+Niagara Falls,43.096214,-79.037739,New York, NY
+Big Ben,51.500729,-0.124625,London,England
+Buckingham Palace,51.501364,-0.14189,London,England
+Empire State Building,40.748817,-73.985428,New York, NY
+Times Square,40.758896,-73.98513,New York, NY
+Hollywood Sign,34.134115,-118.321548,Los Angeles, CA
+Las Vegas Strip,36.114647,-115.172813,Las Vegas, NV
+Walt Disney World,28.385233,-81.563874,Orlando, FL
+White House,38.897676,-77.03653,Washington, D.C.
+Pentagon,38.87098,-77.05596,Washington, D.C.
+Lincoln Memorial,38.889269,-77.050176,Washington, D.C.
+Capitol Hill,38.889939,-77.009051,Washington, D.C.
+Metropolitan Museum of Art,40.779437,-73.963244,New York, NY
+Brooklyn Bridge,40.706086,-73.996864,New York, NY
+Liberty Bell,39.94961,-75.150282,Philadelphia, PA
+Alcatraz Island,37.826977,-122.422956,San Francisco, CA
+Space Needle,47.620506,-122.349277,Seattle, WA
+Yellowstone National Park,44.428,-110.5885,Wyoming,USA
+Mount Rushmore,43.879102,-103.459067,South Dakota,USA
+Walt Disney Concert Hall,34.055345,-118.249845,Los Angeles, CA
+CN Tower,43.642566,-79.387057,Toronto,Canada
+Banff National Park,51.496846,-115.928056,Alberta,Canada
+Niagara Falls,43.096214,-79.037739,Ontario,Canada
+Notre Dame Cathedral,48.852968,2.349902,Paris,France
+Versailles Palace,48.804865,2.120355,Versailles,France
+Berlin Wall,52.516275,13.377704,Berlin,Germany
+Neuschwanstein Castle,47.557574,10.7498,Germany,Fairy-tale castle in Bavaria
+St. Basil's Cathedral,55.752523,37.623073,Moscow,Russia
+Red Square,55.753913,37.620836,Moscow,Russia
+Kremlin,55.751999,37.617734,Moscow,Russia
+Blue Mosque,41.005409,28.976814,Istanbul,Turkey
+Hagia Sophia,41.008583,28.980175,Istanbul,Turkey
+Bosphorus Bridge,41.043964,29.034546,Istanbul,Turkey
+Petra,30.328457,35.444362,Jordan,Historic archaeological city
+Central Park,40.785091,-73.968285,New York, NY
+Eiffel Tower,48.858844,2.294351,Paris,France
+Colosseum,41.890251,12.492373,Rome,Italy
+Statue of Liberty,40.689247,-74.044502,New York, NY
+Great Wall of China,40.431908,116.570374,China,Historic wall stretching across northern China
+Taj Mahal,27.175015,78.042155,Agra,India
+Sydney Opera House,-33.856784,151.215297,Sydney,Australia
+Mount Fuji,35.360555,138.727778,Japan,Highest mountain in Japan
+Christ the Redeemer,-22.951916,-43.210487,Rio de Janeiro,Brazil
+Machu Picchu,-13.163141,-72.544963,Peru,Inca citadel in the Andes Mountains
+Stonehenge,51.178882,-1.826215,England,Prehistoric stone circle
+Louvre Museum,48.860611,2.337644,Paris,France
+Pyramids of Giza,29.979235,31.134202,Egypt,Ancient pyramid structures
+Golden Gate Bridge,37.819929,-122.478255,San Francisco, CA
+Grand Canyon,36.106965,-112.112997,Arizona,USA
+Niagara Falls,43.096214,-79.037739,New York, NY
+Big Ben,51.500729,-0.124625,London,England
+Buckingham Palace,51.501364,-0.14189,London,England
+Empire State Building,40.748817,-73.985428,New York, NY
+Times Square,40.758896,-73.98513,New York, NY
+Hollywood Sign,34.134115,-118.321548,Los Angeles, CA
+Las Vegas Strip,36.114647,-115.172813,Las Vegas, NV
+Walt Disney World,28.385233,-81.563874,Orlando, FL
+White House,38.897676,-77.03653,Washington, D.C.
+Pentagon,38.87098,-77.05596,Washington, D.C.
+Lincoln Memorial,38.889269,-77.050176,Washington, D.C.
+Capitol Hill,38.889939,-77.009051,Washington, D.C.
+Metropolitan Museum of Art,40.779437,-73.963244,New York, NY
+Brooklyn Bridge,40.706086,-73.996864,New York, NY
+Liberty Bell,39.94961,-75.150282,Philadelphia, PA
+Alcatraz Island,37.826977,-122.422956,San Francisco, CA
+Space Needle,47.620506,-122.349277,Seattle, WA
+Yellowstone National Park,44.428,-110.5885,Wyoming,USA
+Mount Rushmore,43.879102,-103.459067,South Dakota,USA
+Walt Disney Concert Hall,34.055345,-118.249845,Los Angeles, CA
+CN Tower,43.642566,-79.387057,Toronto,Canada
+Banff National Park,51.496846,-115.928056,Alberta,Canada
+Niagara Falls,43.096214,-79.037739,Ontario,Canada
+Notre Dame Cathedral,48.852968,2.349902,Paris,France
+Versailles Palace,48.804865,2.120355,Versailles,France
+Berlin Wall,52.516275,13.377704,Berlin,Germany
+Neuschwanstein Castle,47.557574,10.7498,Germany,Fairy-tale castle in Bavaria
+St. Basil's Cathedral,55.752523,37.623073,Moscow,Russia
+Red Square,55.753913,37.620836,Moscow,Russia
+Kremlin,55.751999,37.617734,Moscow,Russia
+Blue Mosque,41.005409,28.976814,Istanbul,Turkey
+Hagia Sophia,41.008583,28.980175,Istanbul,Turkey
+Bosphorus Bridge,41.043964,29.034546,Istanbul,Turkey
+Petra,30.328457,35.444362,Jordan,Historic archaeological city
+Central Park,40.785091,-73.968285,New York, NY
+Eiffel Tower,48.858844,2.294351,Paris,France
+Colosseum,41.890251,12.492373,Rome,Italy
+Statue of Liberty,40.689247,-74.044502,New York, NY
+Great Wall of China,40.431908,116.570374,China,Historic wall stretching across northern China
+Taj Mahal,27.175015,78.042155,Agra,India
+Sydney Opera House,-33.856784,151.215297,Sydney,Australia
+Mount Fuji,35.360555,138.727778,Japan,Highest mountain in Japan
+Christ the Redeemer,-22.951916,-43.210487,Rio de Janeiro,Brazil
+Machu Picchu,-13.163141,-72.544963,Peru,Inca citadel in the Andes Mountains
+Stonehenge,51.178882,-1.826215,England,Prehistoric stone circle
+Louvre Museum,48.860611,2.337644,Paris,France
+Pyramids of Giza,29.979235,31.134202,Egypt,Ancient pyramid structures
+Golden Gate Bridge,37.819929,-122.478255,San Francisco, CA
+Grand Canyon,36.106965,-112.112997,Arizona,USA
+Niagara Falls,43.096214,-79.037739,New York, NY
+Big Ben,51.500729,-0.124625,London,England
+Buckingham Palace,51.501364,-0.14189,London,England
+Empire State Building,40.748817,-73.985428,New York, NY
+Times Square,40.758896,-73.98513,New York, NY
+Hollywood Sign,34.134115,-118.321548,Los Angeles, CA
+Las Vegas Strip,36.114647,-115.172813,Las Vegas, NV
+Walt Disney World,28.385233,-81.563874,Orlando, FL
+White House,38.897676,-77.03653,Washington, D.C.
+Pentagon,38.87098,-77.05596,Washington, D.C.
+Lincoln Memorial,38.889269,-77.050176,Washington, D.C.
+Capitol Hill,38.889939,-77.009051,Washington, D.C.
+Metropolitan Museum of Art,40.779437,-73.963244,New York, NY
+Brooklyn Bridge,40.706086,-73.996864,New York, NY
+Liberty Bell,39.94961,-75.150282,Philadelphia, PA
+Alcatraz Island,37.826977,-122.422956,San Francisco, CA
+Space Needle,47.620506,-122.349277,Seattle, WA
+Yellowstone National Park,44.428,-110.5885,Wyoming,USA
+Mount Rushmore,43.879102,-103.459067,South Dakota,USA
+Walt Disney Concert Hall,34.055345,-118.249845,Los Angeles, CA
+CN Tower,43.642566,-79.387057,Toronto,Canada
+Banff National Park,51.496846,-115.928056,Alberta,Canada
+Niagara Falls,43.096214,-79.037739,Ontario,Canada
+Notre Dame Cathedral,48.852968,2.349902,Paris,France
+Versailles Palace,48.804865,2.120355,Versailles,France
+Berlin Wall,52.516275,13.377704,Berlin,Germany
+Neuschwanstein Castle,47.557574,10.7498,Germany,Fairy-tale castle in Bavaria
+St. Basil's Cathedral,55.752523,37.623073,Moscow,Russia
+Red Square,55.753913,37.620836,Moscow,Russia
+Kremlin,55.751999,37.617734,Moscow,Russia
+Blue Mosque,41.005409,28.976814,Istanbul,Turkey
+Hagia Sophia,41.008583,28.980175,Istanbul,Turkey
+Bosphorus Bridge,41.043964,29.034546,Istanbul,Turkey
+Petra,30.328457,35.444362,Jordan,Historic archaeological city
+Central Park,40.785091,-73.968285,New York, NY
+Eiffel Tower,48.858844,2.294351,Paris,France
+Colosseum,41.890251,12.492373,Rome,Italy
+Statue of Liberty,40.689247,-74.044502,New York, NY
+Great Wall of China,40.431908,116.570374,China,Historic wall stretching across northern China
+Taj Mahal,27.175015,78.042155,Agra,India
+Sydney Opera House,-33.856784,151.215297,Sydney,Australia
+Mount Fuji,35.360555,138.727778,Japan,Highest mountain in Japan
+Christ the Redeemer,-22.951916,-43.210487,Rio de Janeiro,Brazil
+Machu Picchu,-13.163141,-72.544963,Peru,Inca citadel in the Andes Mountains
+Stonehenge,51.178882,-1.826215,England,Prehistoric stone circle
+Louvre Museum,48.860611,2.337644,Paris,France
+Pyramids of Giza,29.979235,31.134202,Egypt,Ancient pyramid structures
+Golden Gate Bridge,37.819929,-122.478255,San Francisco, CA
+Grand Canyon,36.106965,-112.112997,Arizona,USA
+Niagara Falls,43.096214,-79.037739,New York, NY
+Big Ben,51.500729,-0.124625,London,England
+Buckingham Palace,51.501364,-0.14189,London,England
+Empire State Building,40.748817,-73.985428,New York, NY
+Times Square,40.758896,-73.98513,New York, NY
+Hollywood Sign,34.134115,-118.321548,Los Angeles, CA
+Las Vegas Strip,36.114647,-115.172813,Las Vegas, NV
+Walt Disney World,28.385233,-81.563874,Orlando, FL
+White House,38.897676,-77.03653,Washington, D.C.
+Pentagon,38.87098,-77.05596,Washington, D.C.
+Lincoln Memorial,38.889269,-77.050176,Washington, D.C.
+Capitol Hill,38.889939,-77.009051,Washington, D.C.
+Metropolitan Museum of Art,40.779437,-73.963244,New York, NY
+Brooklyn Bridge,40.706086,-73.996864,New York, NY
+Liberty Bell,39.94961,-75.150282,Philadelphia, PA
+Alcatraz Island,37.826977,-122.422956,San Francisco, CA
+Space Needle,47.620506,-122.349277,Seattle, WA
+Yellowstone National Park,44.428,-110.5885,Wyoming,USA
+Mount Rushmore,43.879102,-103.459067,South Dakota,USA
+Walt Disney Concert Hall,34.055345,-118.249845,Los Angeles, CA
+CN Tower,43.642566,-79.387057,Toronto,Canada
+Banff National Park,51.496846,-115.928056,Alberta,Canada
+Niagara Falls,43.096214,-79.037739,Ontario,Canada
+Notre Dame Cathedral,48.852968,2.349902,Paris,France
+Versailles Palace,48.804865,2.120355,Versailles,France
+Berlin Wall,52.516275,13.377704,Berlin,Germany
+Neuschwanstein Castle,47.557574,10.7498,Germany,Fairy-tale castle in Bavaria
+St. Basil's Cathedral,55.752523,37.623073,Moscow,Russia
+Red Square,55.753913,37.620836,Moscow,Russia
+Kremlin,55.751999,37.617734,Moscow,Russia
+Blue Mosque,41.005409,28.976814,Istanbul,Turkey
+Hagia Sophia,41.008583,28.980175,Istanbul,Turkey
+Bosphorus Bridge,41.043964,29.034546,Istanbul,Turkey
+Petra,30.328457,35.444362,Jordan,Historic archaeological city
+Central Park,40.785091,-73.968285,New York, NY
+Eiffel Tower,48.858844,2.294351,Paris,France
+Colosseum,41.890251,12.492373,Rome,Italy
+Statue of Liberty,40.689247,-74.044502,New York, NY
+Great Wall of China,40.431908,116.570374,China,Historic wall stretching across northern China
+Taj Mahal,27.175015,78.042155,Agra,India
+Sydney Opera House,-33.856784,151.215297,Sydney,Australia
+Mount Fuji,35.360555,138.727778,Japan,Highest mountain in Japan
+Christ the Redeemer,-22.951916,-43.210487,Rio de Janeiro,Brazil
+Machu Picchu,-13.163141,-72.544963,Peru,Inca citadel in the Andes Mountains
+Stonehenge,51.178882,-1.826215,England,Prehistoric stone circle
+Louvre Museum,48.860611,2.337644,Paris,France
+Pyramids of Giza,29.979235,31.134202,Egypt,Ancient pyramid structures
+Golden Gate Bridge,37.819929,-122.478255,San Francisco, CA
+Grand Canyon,36.106965,-112.112997,Arizona,USA
+Niagara Falls,43.096214,-79.037739,New York, NY
+Big Ben,51.500729,-0.124625,London,England
+Buckingham Palace,51.501364,-0.14189,London,England
+Empire State Building,40.748817,-73.985428,New York, NY
+Times Square,40.758896,-73.98513,New York, NY
+Hollywood Sign,34.134115,-118.321548,Los Angeles, CA
+Las Vegas Strip,36.114647,-115.172813,Las Vegas, NV
+Walt Disney World,28.385233,-81.563874,Orlando, FL
+White House,38.897676,-77.03653,Washington, D.C.
+Pentagon,38.87098,-77.05596,Washington, D.C.
+Lincoln Memorial,38.889269,-77.050176,Washington, D.C.
+Capitol Hill,38.889939,-77.009051,Washington, D.C.
+Metropolitan Museum of Art,40.779437,-73.963244,New York, NY
+Brooklyn Bridge,40.706086,-73.996864,New York, NY
+Liberty Bell,39.94961,-75.150282,Philadelphia, PA
+Alcatraz Island,37.826977,-122.422956,San Francisco, CA
+Space Needle,47.620506,-122.349277,Seattle, WA
+Yellowstone National Park,44.428,-110.5885,Wyoming,USA
+Mount Rushmore,43.879102,-103.459067,South Dakota,USA
+Walt Disney Concert Hall,34.055345,-118.249845,Los Angeles, CA
+CN Tower,43.642566,-79.387057,Toronto,Canada
+Banff National Park,51.496846,-115.928056,Alberta,Canada
+Niagara Falls,43.096214,-79.037739,Ontario,Canada
+Notre Dame Cathedral,48.852968,2.349902,Paris,France
+Versailles Palace,48.804865,2.120355,Versailles,France
+Berlin Wall,52.516275,13.377704,Berlin,Germany
+Neuschwanstein Castle,47.557574,10.7498,Germany,Fairy-tale castle in Bavaria
+St. Basil's Cathedral,55.752523,37.623073,Moscow,Russia
+Red Square,55.753913,37.620836,Moscow,Russia
+Kremlin,55.751999,37.617734,Moscow,Russia
+Blue Mosque,41.005409,28.976814,Istanbul,Turkey
+Hagia Sophia,41.008583,28.980175,Istanbul,Turkey
+Bosphorus Bridge,41.043964,29.034546,Istanbul,Turkey
+Petra,30.328457,35.444362,Jordan,Historic archaeological city
