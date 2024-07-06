@@ -6,6 +6,7 @@ import com.georeference.entities.DetailedValidationError;
 import com.georeference.entities.Landmark;
 import com.georeference.repositories.CsvUploadRepository;
 import com.georeference.repositories.DetailedValidationErrorRepository;
+import com.georeference.repositories.LandmarkRepository;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.batch.core.Job;
@@ -46,9 +47,18 @@ public class CsvToDatabaseJobConfig {
 
     public static final Logger logger = LoggerFactory.getLogger(CsvToDatabaseJobConfig.class);
 
+    private static final String CORRECT = "Correcto";
+    private static final String NAME = "name";
+    private static final String LATITUDE = "latitude";
+    private static final String LONGITUDE = "longitude";
+    private static final String ADDRESS = "address";
+    private static final String DESCRIPTION = "description";
+
     private static final String INSERT_QUERY = """
       insert into landmarks (name, latitude, longitude, address, description, upload_id)
       values (:name,:latitude,:longitude,:address,:description,:uploadId)""";
+
+    private static final String[] NAMES = {NAME, LONGITUDE, LATITUDE, ADDRESS, DESCRIPTION};
 
     private final JobRepository jobRepository;
 
@@ -56,13 +66,17 @@ public class CsvToDatabaseJobConfig {
     private DetailedValidationErrorRepository detailedValidationErrorRepository;
 
     @Autowired
-    private CsvUploadRepository csvUploadRepository;
+    private LandmarkRepository landmarkRepository;
+
+
+    private final CsvUploadRepository csvUploadRepository;
 
     private final AtomicLong recordIdGenerator = new AtomicLong();
     private CsvUpload currentUpload;
 
-    public CsvToDatabaseJobConfig(JobRepository jobRepository) {
+    public CsvToDatabaseJobConfig(JobRepository jobRepository, CsvUploadRepository csvUploadRepository) {
         this.jobRepository = jobRepository;
+        this.csvUploadRepository = csvUploadRepository;
         this.currentUpload = new CsvUpload();
     }
 
@@ -75,11 +89,7 @@ public class CsvToDatabaseJobConfig {
     }
 
     @Bean
-    public Step step1(ItemReader<Landmark> reader,
-                      ItemWriter<Landmark> writer,
-                      ItemProcessor<Landmark, Landmark> processor,
-                      PlatformTransactionManager txManager) {
-
+    public Step step1(ItemReader<Landmark> reader, ItemWriter<Landmark> writer, ItemProcessor<Landmark, Landmark> processor, PlatformTransactionManager txManager) {
         var name = "INSERT CSV RECORDS To DB Step";
         var builder = new StepBuilder(name, jobRepository);
         return builder
@@ -92,8 +102,7 @@ public class CsvToDatabaseJobConfig {
     }
 
     @Bean
-    public FlatFileItemReader<Landmark> reader(
-            LineMapper<Landmark> lineMapper) {
+    public FlatFileItemReader<Landmark> reader(LineMapper<Landmark> lineMapper) {
         var itemReader = new FlatFileItemReader<Landmark>();
         itemReader.setLineMapper(lineMapper);
         itemReader.setLinesToSkip(1);
@@ -103,8 +112,7 @@ public class CsvToDatabaseJobConfig {
     }
 
     @Bean
-    public DefaultLineMapper<Landmark> lineMapper(LineTokenizer tokenizer,
-                                                  FieldSetMapper<Landmark> fieldSetMapper) {
+    public DefaultLineMapper<Landmark> lineMapper(LineTokenizer tokenizer, FieldSetMapper<Landmark> fieldSetMapper) {
         var lineMapper = new DefaultLineMapper<Landmark>();
         lineMapper.setLineTokenizer(tokenizer);
         lineMapper.setFieldSetMapper(fieldSetMapper);
@@ -122,7 +130,7 @@ public class CsvToDatabaseJobConfig {
     public DelimitedLineTokenizer tokenizer() {
         var tokenizer = new DelimitedLineTokenizer();
         tokenizer.setDelimiter(",");
-        tokenizer.setNames("name", "latitude", "longitude", "address", "description");
+        tokenizer.setNames(NAMES);
         return tokenizer;
     }
 
@@ -141,41 +149,44 @@ public class CsvToDatabaseJobConfig {
 
     @Bean
     public ItemProcessor<Landmark, Landmark> processor() {
-        return landmark -> {
-            Long recordId = recordIdGenerator.incrementAndGet();
-            List<DetailedValidationError> errors = new ArrayList<>();
-
-            if (landmark.getName() == null || landmark.getName().isEmpty()) {
-                errors.add(new DetailedValidationError(currentUpload.getId(), recordId, "name", "Name is required"));
-            } else {
-                errors.add(new DetailedValidationError(currentUpload.getId(), recordId, "name", "Correcto"));
-            }
-            if (!isValidCoordinates(landmark.getLatitude(), landmark.getLongitude())) {
-                errors.add(new DetailedValidationError(currentUpload.getId(), recordId, "latitude", "Invalid latitude"));
-                errors.add(new DetailedValidationError(currentUpload.getId(), recordId, "longitude", "Invalid longitude"));
-            } else {
-                errors.add(new DetailedValidationError(currentUpload.getId(), recordId, "latitude", "Correcto"));
-                errors.add(new DetailedValidationError(currentUpload.getId(), recordId, "longitude", "Correcto"));
-            }
-            if (landmark.getAddress() == null || landmark.getAddress().isEmpty()) {
-                errors.add(new DetailedValidationError(currentUpload.getId(), recordId, "address", "Address is required"));
-            } else {
-                errors.add(new DetailedValidationError(currentUpload.getId(), recordId, "address", "Correcto"));
-            }
-
-            detailedValidationErrorRepository.saveAll(errors);
-
-            if (errors.isEmpty()) {
-                landmark.setUploadId(currentUpload.getId());
-                return landmark;
-            } else {
-                return null;
-            }
-        };
+        return this::process;
     }
 
     private boolean isValidCoordinates(double latitude, double longitude) {
         return latitude >= -90 && latitude <= 90 && longitude >= -180 && longitude <= 180;
     }
 
+    private Landmark process(Landmark landmark) {
+        Long recordId = recordIdGenerator.incrementAndGet();
+        List<DetailedValidationError> errors = new ArrayList<>();
+
+        if (landmark.getName() == null || landmark.getName().isEmpty()) {
+            errors.add(new DetailedValidationError(currentUpload.getId(), recordId, "name", "Name is required"));
+        } else {
+            errors.add(new DetailedValidationError(currentUpload.getId(), recordId, "name", CORRECT));
+        }
+        if (!isValidCoordinates(landmark.getLatitude(), landmark.getLongitude())) {
+            errors.add(new DetailedValidationError(currentUpload.getId(), recordId, LATITUDE, "Invalid latitude"));
+            errors.add(new DetailedValidationError(currentUpload.getId(), recordId, LONGITUDE, "Invalid longitude"));
+        } else {
+            errors.add(new DetailedValidationError(currentUpload.getId(), recordId, LATITUDE, CORRECT));
+            errors.add(new DetailedValidationError(currentUpload.getId(), recordId, LONGITUDE, CORRECT));
+        }
+        if (landmark.getAddress() == null || landmark.getAddress().isEmpty()) {
+            errors.add(new DetailedValidationError(currentUpload.getId(), recordId, ADDRESS, "Address is required"));
+        } else {
+            errors.add(new DetailedValidationError(currentUpload.getId(), recordId, ADDRESS, CORRECT));
+        }
+
+        detailedValidationErrorRepository.saveAll(errors);
+        landmark.setUploadId(currentUpload.getId());
+        landmarkRepository.save(landmark);
+        logger.info("Successfully imported landmark {}", landmark.getName());
+        if (errors.isEmpty()) {
+            landmark.setUploadId(currentUpload.getId());
+            return landmark;
+        } else {
+            return null;
+        }
+    }
 }
