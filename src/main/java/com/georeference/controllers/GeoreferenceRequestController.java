@@ -51,18 +51,19 @@ public class GeoreferenceRequestController {
     }
 
     @PostMapping
-    public ResponseEntity<String> insertGeoreferenceRequest(@RequestParam("file") MultipartFile file) {
+    public ResponseEntity<String> insertGeoreferenceRequest(@RequestParam("file") MultipartFile file, @RequestParam("subject") String subject) {
+        System.out.println(subject);
         GeoreferenceRequest georeferenceRequest = new GeoreferenceRequest();
         georeferenceRequest.setExporterDocumentType("CE");
-        georeferenceRequest.setExporterDocumentNumber("1104567890");
+        georeferenceRequest.setExporterDocumentNumber(subject);
         georeferenceRequest.setReportName("report_" + UUID.randomUUID());
         georeferenceRequest.setFileName("fileName_" + UUID.randomUUID());
         georeferenceRequest.setZipId("zip_" + UUID.randomUUID());
         georeferenceRequest.setRequestDate(Date.from(Instant.now()));
-        georeferenceRequest.setStatus("PENDING");
-        GeoreferenceRequest newReoreferenceRequest = georeferenceRequestService.saveGeoreferenceRequest(georeferenceRequest);
+        georeferenceRequest.setStatus("EN PROCESO");
+        GeoreferenceRequest newGeorreferenceRequest = georeferenceRequestService.saveGeoreferenceRequest(georeferenceRequest);
         JobParameters parameters = new JobParametersBuilder()
-                .addLong("requestId", newReoreferenceRequest.getId())
+                .addLong("requestId", newGeorreferenceRequest.getId())
                 .toJobParameters();
         return getStringResponseEntity(file, csvImporterJob, parameters);
     }

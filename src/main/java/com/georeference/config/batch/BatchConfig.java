@@ -99,18 +99,25 @@ public class BatchConfig {
     public Job csvImporterJob(Step csvImporterStep, JobRepository jobRepository) {
         return new JobBuilder("csvImporterJob", jobRepository)
                 .incrementer(new RunIdIncrementer())
-                .validator(parameters -> System.out.println(parameters.getLong("requestId")))
+                //.validator(parameters -> System.out.println(parameters.getLong("requestId")))
                 .flow(csvImporterStep)
                 .end()
                 .build();
     }
 
     @Bean
-    public DefaultLineMapper<GeoreferenceRecord> lineMapper(LineTokenizer tokenizer) {
+    public DefaultLineMapper<GeoreferenceRecord> lineMapper(LineTokenizer tokenizer, FieldSetMapper<GeoreferenceRecord> fieldSetMapper) {
         var lineMapper = new DefaultLineMapper<GeoreferenceRecord>();
         lineMapper.setLineTokenizer(tokenizer);
-        //lineMapper.setFieldSetMapper(fieldSetMapper);
+        lineMapper.setFieldSetMapper(fieldSetMapper);
         return lineMapper;
+    }
+
+    @Bean
+    public BeanWrapperFieldSetMapper<GeoreferenceRecord> fieldSetMapper() {
+        var fieldSetMapper = new BeanWrapperFieldSetMapper<GeoreferenceRecord>();
+        fieldSetMapper.setTargetType(GeoreferenceRecord.class);
+        return fieldSetMapper;
     }
 
     @Bean

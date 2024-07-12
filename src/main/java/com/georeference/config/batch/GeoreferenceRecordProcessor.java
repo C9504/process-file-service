@@ -7,6 +7,7 @@ import com.georeference.repositories.GeoreferenceValidationErrorsRepository;
 import com.georeference.services.GeoreferenceRequestService;
 import org.springframework.batch.core.configuration.annotation.JobScope;
 import org.springframework.batch.item.ItemProcessor;
+import org.springframework.batch.item.file.transform.FieldSet;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
@@ -20,14 +21,13 @@ import java.util.List;
 public class GeoreferenceRecordProcessor implements ItemProcessor<GeoreferenceRecord, GeoreferenceRecord> {
 
     private final Long requestId;
+    private int row = 1;
 
     @Autowired
     GeoreferenceRequestService georeferenceRequestService;
 
     @Autowired
     GeoreferenceValidationErrorsRepository georeferenceValidationErrorsRepository;
-    @Autowired
-    private View error;
 
     GeoreferenceRecordProcessor(@Value("#{jobParameters['requestId']}") Long requestId) {
         this.requestId = requestId;
@@ -37,44 +37,87 @@ public class GeoreferenceRecordProcessor implements ItemProcessor<GeoreferenceRe
     public GeoreferenceRecord process(GeoreferenceRecord entity) {
         GeoreferenceRequest georeferenceRequest = georeferenceRequestService.getGeoreferenceRequestById(requestId).get();
         List<GeoreferenceRecordFail> errors = new ArrayList<>();
+        GeoreferenceRecordFail rf = null;
+        row++;
         if (entity.getFarmerName().equalsIgnoreCase("") || entity.getFarmerName().length() > 200) {
-            errors.add(new GeoreferenceRecordFail(georeferenceRequest, "farmerName", 1, "EL NOMBRE CAFICULTOR EXCEDE LOS 200 CARACTERES"));
-        } else
-        if (entity.getDocumentType().equalsIgnoreCase("") || entity.getDocumentType().length() > 4) {
-            errors.add(new GeoreferenceRecordFail(georeferenceRequest, "documentType", 1, "EL TIPO DE DOCUMENTO EXCEDE LA LONGITUD"));
-        } else
-        if (entity.getDocumentNumber().toString().length() > 15) {
-            errors.add(new GeoreferenceRecordFail(georeferenceRequest, "documentNumber", 1, "EL NÚMERO DE DOCUMENTO EXCEDE LA LONGITUD"));
-        } else
-        if (entity.getFarmName().length() > 200) {
-            errors.add(new GeoreferenceRecordFail(georeferenceRequest, "farmName", 1, "EL NOMBRE DE LA FINCA EXCEDE LOS 200 CARACTERES"));
-        } else
-        if (entity.getCultivationArea() == 0) {
-            errors.add(new GeoreferenceRecordFail(georeferenceRequest, "cultivationName", 1, "EL ÁREA DE CULTIVO NO CUMPLE CON EL FORMATO"));
-        } else
-        if (entity.getMunicipalityCode().equalsIgnoreCase("")) {
-            errors.add(new GeoreferenceRecordFail(georeferenceRequest, "municipalityCode", 1, "EL CÓDIGO DANE DEL MUNICIPIO NO EXISTE"));
-        } else
-        if (entity.getMunicipalityName().length() > 100) {
-            errors.add(new GeoreferenceRecordFail(georeferenceRequest, "municipalityName", 1, "EL NOMBRE DEL MUNICIPIO EXCEDE LOS 100 CARACTERES"));
-        } else
-        if (entity.getDepartmentCode().equalsIgnoreCase("")) {
-            errors.add(new GeoreferenceRecordFail(georeferenceRequest, "departmentCode", 1, "EL CÓDIGO DANE DEL DEPARTAMENTO NO EXISTE"));
-        } else
-        if (entity.getDepartmentName().length() > 100) {
-            errors.add(new GeoreferenceRecordFail(georeferenceRequest, "departmentName", 1, "EL NOMBRE DEL DEPARTAMENTO EXCEDE LOS 100 CARACTERES"));
+            rf = new GeoreferenceRecordFail();
+            rf.setGeoreferenceRequest(georeferenceRequest);
+            rf.setColumnName("farmerName");
+            rf.setRowNumber(row);
+            rf.setErrorMessage("EL NOMBRE CAFICULTOR EXCEDE LOS 200 CARACTERES");
+            errors.add(rf);
         }
-        /*for (GeoreferenceRecordFail georeferenceRecordFail : errors) {
-            System.out.println(georeferenceRecordFail.getErrorMessage());
-        }*/
-        System.out.println(errors);
-        //georeferenceValidationErrorsRepository.saveAll(errors);
-        return null;
-        /*if (errors.isEmpty()) {
+        if (entity.getDocumentType().equalsIgnoreCase("") || entity.getDocumentType().length() > 4) {
+            rf = new GeoreferenceRecordFail();
+            rf.setGeoreferenceRequest(georeferenceRequest);
+            rf.setColumnName("documentType");
+            rf.setRowNumber(row);
+            rf.setErrorMessage("EL TIPO DE DOCUMENTO EXCEDE LA LONGITUD");
+            errors.add(rf);
+        }
+        if (entity.getDocumentNumber().toString().length() > 15) {
+            rf = new GeoreferenceRecordFail();
+            rf.setGeoreferenceRequest(georeferenceRequest);
+            rf.setColumnName("documentNumber");
+            rf.setRowNumber(row);
+            rf.setErrorMessage("EL NÚMERO DE DOCUMENTO EXCEDE LA LONGITUD");
+            errors.add(rf);
+        }
+        if (entity.getFarmName().length() > 200) {
+            rf = new GeoreferenceRecordFail();
+            rf.setGeoreferenceRequest(georeferenceRequest);
+            rf.setColumnName("farmName");
+            rf.setRowNumber(row);
+            rf.setErrorMessage("EL NOMBRE DE LA FINCA EXCEDE LOS 200 CARACTERES");
+            errors.add(rf);
+        }
+        if (entity.getCultivationArea() == 0) {
+            rf = new GeoreferenceRecordFail();
+            rf.setGeoreferenceRequest(georeferenceRequest);
+            rf.setColumnName("cultivationName");
+            rf.setRowNumber(row);
+            rf.setErrorMessage("EL ÁREA DE CULTIVO NO CUMPLE CON EL FORMATO");
+            errors.add(rf);
+        }
+        if (entity.getMunicipalityCode().equalsIgnoreCase("")) {
+            rf = new GeoreferenceRecordFail();
+            rf.setGeoreferenceRequest(georeferenceRequest);
+            rf.setColumnName("municipalityCode");
+            rf.setRowNumber(row);
+            rf.setErrorMessage("EL CÓDIGO DANE DEL MUNICIPIO NO EXISTE");
+            errors.add(rf);
+        }
+        if (entity.getMunicipalityName().length() > 100) {
+            rf = new GeoreferenceRecordFail();
+            rf.setGeoreferenceRequest(georeferenceRequest);
+            rf.setColumnName("municipalityName");
+            rf.setRowNumber(row);
+            rf.setErrorMessage("EL NOMBRE DEL MUNICIPIO EXCEDE LOS 100 CARACTERES");
+            errors.add(rf);
+        }
+        if (entity.getDepartmentCode().equalsIgnoreCase("") || entity.getDepartmentCode().length() > 3) {
+            rf = new GeoreferenceRecordFail();
+            rf.setGeoreferenceRequest(georeferenceRequest);
+            rf.setColumnName("departmentCode");
+            rf.setRowNumber(row);
+            rf.setErrorMessage("EL CÓDIGO DANE DEL DEPARTAMENTO NO EXISTE");
+            errors.add(rf);
+        }
+        if (entity.getDepartmentName().length() > 100) {
+            rf = new GeoreferenceRecordFail();
+            rf.setGeoreferenceRequest(georeferenceRequest);
+            rf.setColumnName("departmentName");
+            rf.setRowNumber(row);
+            rf.setErrorMessage("EL NOMBRE DEL DEPARTAMENTO EXCEDE LOS 100 CARACTERES");
+            errors.add(rf);
+        }
+        georeferenceValidationErrorsRepository.saveAll(errors);
+        if (errors.isEmpty()) {
             entity.setGeoreferenceRequest(georeferenceRequest);
             return entity;
         } else {
+            errors.clear();
             return null;
-        }*/
+        }
     }
 }
