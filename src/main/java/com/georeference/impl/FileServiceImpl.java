@@ -110,27 +110,26 @@ public class FileServiceImpl implements FileService {
 
             try (BufferedWriter writer = new BufferedWriter(new FileWriter(outputPath))) {
                 for (Row row : sheet) {
-                    StringBuilder line = new StringBuilder();
                     for (Cell cell : row) {
                         switch (cell.getCellType()) {
                             case STRING:
-                                line.append('"').append(cell.getStringCellValue()).append('"').append(',');
+                                sb.append('"').append(cell.getStringCellValue()).append('"').append(',');
                                 break;
                             case NUMERIC:
-                                line.append(cell.getNumericCellValue()).append(',');
+                                sb.append(cell.getNumericCellValue()).append(',');
                                 break;
                             case BOOLEAN:
-                                line.append(cell.getBooleanCellValue()).append(',');
+                                sb.append(cell.getBooleanCellValue()).append(',');
                                 break;
                             case BLANK:
-                                line.append(',');
+                                sb.append(',');
                                 break;
                             default:
-                                line.append(cell).append(',');
+                                sb.append(cell).append(',');
                         }
                     }
-                    line.deleteCharAt(line.length() - 1); // Elimina la última coma
-                    writer.write(line.toString());
+                    sb.deleteCharAt(sb.length() - 1); // Elimina la última coma
+                    writer.write(sb.toString());
                     writer.newLine(); // Nueva línea al final de cada fila
                 }
             } catch (IOException e) {

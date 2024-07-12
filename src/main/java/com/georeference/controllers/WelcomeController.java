@@ -1,5 +1,6 @@
 package com.georeference.controllers;
 
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -11,7 +12,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class WelcomeController {
 
     @GetMapping
-    public String getWelcome() {
-        return "Welcome to Georeference Service";
+    public ResponseEntity<String> getWelcome() {
+        return ResponseEntity.ok().body("Welcome to Georeference Service");
     }
 }
