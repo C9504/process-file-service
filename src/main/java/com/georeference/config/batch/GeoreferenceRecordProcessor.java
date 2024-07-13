@@ -7,11 +7,9 @@ import com.georeference.repositories.GeoreferenceValidationErrorsRepository;
 import com.georeference.services.GeoreferenceRequestService;
 import org.springframework.batch.core.configuration.annotation.JobScope;
 import org.springframework.batch.item.ItemProcessor;
-import org.springframework.batch.item.file.transform.FieldSet;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
-import org.springframework.web.servlet.View;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -116,6 +114,8 @@ public class GeoreferenceRecordProcessor implements ItemProcessor<GeoreferenceRe
             entity.setGeoreferenceRequest(georeferenceRequest);
             return entity;
         } else {
+            georeferenceRequest.setStatus("CON ERROR");
+            georeferenceRequestService.updateGeoreferenceRequest(georeferenceRequest);
             errors.clear();
             return null;
         }

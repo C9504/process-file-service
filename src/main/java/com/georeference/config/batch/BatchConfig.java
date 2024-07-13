@@ -21,19 +21,18 @@ import org.springframework.batch.item.file.mapping.DefaultLineMapper;
 import org.springframework.batch.item.file.mapping.FieldSetMapper;
 import org.springframework.batch.item.file.transform.DelimitedLineTokenizer;
 import org.springframework.batch.item.file.transform.LineTokenizer;
-import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
-import org.springframework.core.io.ClassPathResource;
+import org.springframework.core.io.FileSystemResource;
 import org.springframework.core.io.Resource;
 import org.springframework.transaction.PlatformTransactionManager;
+
+import java.nio.charset.StandardCharsets;
+
 
 @Configuration
 @EnableBatchProcessing
 public class BatchConfig {
-
-    @Value("${csv.file.path}")
-    private Resource csvFilePath;
 
     public static final Logger logger = LoggerFactory.getLogger(BatchConfig.class);
 
@@ -52,7 +51,8 @@ public class BatchConfig {
     @Bean
     public FlatFileItemReader<GeoreferenceRecord> reader() {
         return new FlatFileItemReaderBuilder<GeoreferenceRecord>()
-                .resource(new ClassPathResource("converted.csv"))
+                //.resource(new FileSystemResource(fileName))
+                .encoding("UTF-8")
                 .linesToSkip(1)
                 .name("csvItemReader")
                 .strict(false)
@@ -90,6 +90,20 @@ public class BatchConfig {
                 .<GeoreferenceRecord, GeoreferenceRecord>chunk(5, platformTransactionManager)
                 .reader(reader)
                 .writer(writer)
+                .listener(new StepExecutionListener() {
+                    @Override
+                    public void beforeStep(StepExecution stepExecution) {
+                        JobParameters jobParameters = stepExecution.getJobParameters();
+                        Resource resource = new FileSystemResource(jobParameters.getString("fileName"));
+                        ((FlatFileItemReader<GeoreferenceRecord>) reader).setResource(resource);
+                        //StepExecutionListener.super.beforeStep(stepExecution);
+                    }
+
+                    @Override
+                    public ExitStatus afterStep(StepExecution stepExecution) {
+                        return ExitStatus.COMPLETED;
+                    }
+                })
                 .processor(georeferenceRecordProcessor)
                 .allowStartIfComplete(true)
                 .build();

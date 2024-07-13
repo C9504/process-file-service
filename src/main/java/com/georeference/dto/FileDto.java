@@ -7,6 +7,6 @@ import lombok.Data;
 @Builder
 public class FileDto {
 
-    private String fileName;
+    private String subject;
     private String fileBody;
 }
