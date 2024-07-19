@@ -1,7 +1,6 @@
 package com.georeference.impl;
 
 import com.georeference.services.FileService;
-import org.apache.poi.openxml4j.exceptions.InvalidFormatException;
 import org.apache.poi.ss.usermodel.*;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 import org.springframework.stereotype.Service;

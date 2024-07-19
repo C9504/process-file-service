@@ -1,6 +1,6 @@
 package com.georeference.services;
 
-import com.georeference.entities.GeoreferenceRequest;
+import com.georeference.process.entities.GeoreferenceRequest;
 
 import java.util.List;
 import java.util.Optional;

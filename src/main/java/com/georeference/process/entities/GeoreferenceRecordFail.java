@@ -1,4 +1,4 @@
-package com.georeference.entities;
+package com.georeference.process.entities;
 
 import jakarta.persistence.*;
 import lombok.Data;

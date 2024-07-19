@@ -1,7 +1,7 @@
 package com.georeference.impl;
 
-import com.georeference.entities.GeoreferenceRequest;
-import com.georeference.repositories.GeoreferenceRequestRepository;
+import com.georeference.process.entities.GeoreferenceRequest;
+import com.georeference.process.repositories.GeoreferenceRequestRepository;
 import com.georeference.services.GeoreferenceRequestService;
 import org.springframework.stereotype.Service;
 
