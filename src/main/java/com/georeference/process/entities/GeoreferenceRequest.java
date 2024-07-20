@@ -16,11 +16,18 @@ public class GeoreferenceRequest {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
+    @Column(name = "EXPORTER_DOCUMENT_TYPE")
     private String exporterDocumentType;
+    @Column(name = "EXPORTER_DOCUMENT_NUMBER")
     private String exporterDocumentNumber;
+    @Column(name = "FILE_NAME")
     private String fileName;
+    @Column(name = "REQUEST_DATE")
     private Date requestDate;
+    @Column(name = "STATUS")
     private String status; // EN PROCESO, CON ERROR, FINALIZADO
+    @Column(name = "REPORT_NAME")
     private String reportName;
+    @Column(name = "ZIP_ID")
     private String zipId;
 }

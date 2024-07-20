@@ -17,27 +17,31 @@ public class GeoreferenceRecord {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     @ManyToOne
+    @JoinColumn(name = "GEOREFERENCE_REQUEST_ID")
     private GeoreferenceRequest georeferenceRequest;
-    @Column(length = 200)
+    @Column(name = "FARMER_NAME", length = 200)
     private String farmerName;
-    @Column(length = 4)
+    @Column(name = "DOCUMENT_TYPE", length = 4)
     private String documentType;
-    @Column(length = 15)
+    @Column(name = "DOCUMENT_NUMBER", length = 15)
     private Integer documentNumber;
-    @Column(length = 200)
+    @Column(name = "FARM_NAME", length = 200)
     private String farmName;
-    @Column(length = 15)
+    @Column(name = "CULTIVATION_AREA", length = 15)
     private Double cultivationArea;
-    @Column(length = 3)
+    @Column(name = "MUNICIPALITY_CODE", length = 3)
     private String municipalityCode;
-    @Column(length = 100)
+    @Column(name = "MUNICIPALITY_NAME", length = 100)
     private String municipalityName;
-    @Column(length = 3)
+    @Column(name = "DEPARTMENT_CODE", length = 3)
     private String departmentCode;
-    @Column(length = 100)
+    @Column(name = "DEPARTMENT_NAME", length = 100)
     private String departmentName;
+    @Column(name = "STATUS")
     private String status;
+    @Column(name = "GEO_JSON_ID")
     private String geoJsonId;
+    @Column(name = "OLD_PLOT")
     private Boolean oldPlot;
 
     // Codigo departamento pertenezca al municipio

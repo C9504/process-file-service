@@ -61,12 +61,12 @@ public class GeoreferenceRequestController {
 
     @GetMapping("/{exporterDocumentNumber}/me")
     @Operation(summary = "GET Georeference request by user", description = "Description")
-    public ResponseEntity<List<GeoreferenceRequest>> getGeoreferenceRequestByDocumentNumber(@PathVariable("exporterDocumentNumber") String exporterDocumentNumber) {
+    public List<GeoreferenceRequest> getGeoreferenceRequestByDocumentNumber(@PathVariable("exporterDocumentNumber") String exporterDocumentNumber) {
         long started = System.currentTimeMillis();
         List<GeoreferenceRequest> grs = georeferenceRequestService.getGeoreferenceRequestsByDocumentNumber(exporterDocumentNumber);
         long invocationNumber = counter.getAndIncrement();
         log.info("GeoreferenceRequestController#getGeoreferenceRequestByDocumentNumber(): georreferenceRequests invocation {} returning successfully | #{} timed out after {} ms", invocationNumber, invocationNumber, System.currentTimeMillis() - started);
-        return ResponseEntity.ok(grs);
+        return grs;
     }
 
     @PostMapping

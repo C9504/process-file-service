@@ -11,6 +11,12 @@ spring:
       username: APPREGCA
       password: regul.321DES
       driver-class-name: oracle.jdbc.OracleDriver
+    hikari:
+      minimum-idle: 5
+      maximum-pool-size: 20
+      idle-timeout: 30000
+      max-lifetime: 20000000
+      pool-name: HikariProcessFile
   jpa:
     database-platform: org.hibernate.dialect.OracleDialect
     #hibernate:

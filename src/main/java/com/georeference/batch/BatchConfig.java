@@ -4,8 +4,6 @@ import com.georeference.batch.listeners.BatchStepExecutionListener;
 import com.georeference.process.entities.GeoreferenceRecord;
 import com.georeference.process.repositories.GeoreferenceRecordFailRepository;
 import com.georeference.process.repositories.GeoreferenceRecordRepository;
-import com.georeference.utils.BatchException;
-import jakarta.persistence.EntityManagerFactory;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.batch.core.Job;
 import org.springframework.batch.core.Step;
@@ -15,11 +13,7 @@ import org.springframework.batch.core.launch.support.RunIdIncrementer;
 import org.springframework.batch.core.repository.JobRepository;
 import org.springframework.batch.core.repository.support.JobRepositoryFactoryBean;
 import org.springframework.batch.core.step.builder.StepBuilder;
-import org.springframework.batch.item.Chunk;
-import org.springframework.batch.item.ItemReader;
 import org.springframework.batch.item.ItemWriter;
-import org.springframework.batch.item.database.JpaItemWriter;
-import org.springframework.batch.item.database.builder.JpaItemWriterBuilder;
 import org.springframework.batch.item.file.FlatFileItemReader;
 import org.springframework.batch.item.file.builder.FlatFileItemReaderBuilder;
 import org.springframework.batch.item.file.mapping.BeanWrapperFieldSetMapper;
@@ -27,17 +21,17 @@ import org.springframework.batch.item.file.mapping.DefaultLineMapper;
 import org.springframework.batch.item.file.mapping.FieldSetMapper;
 import org.springframework.batch.item.file.transform.DelimitedLineTokenizer;
 import org.springframework.batch.item.file.transform.LineTokenizer;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
-import org.springframework.jdbc.datasource.DataSourceTransactionManager;
+import org.springframework.orm.jpa.JpaTransactionManager;
 import org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean;
 import org.springframework.transaction.PlatformTransactionManager;
 
 import javax.sql.DataSource;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Objects;
 
 @Configuration
 @EnableBatchProcessing
@@ -48,18 +42,16 @@ public class BatchConfig {
     private final DataSource dataSource;
 
     private final GeoreferenceRecordProcessor georeferenceRecordProcessor;
-
-    @Autowired
-    private GeoreferenceRecordRepository georeferenceRecordRepository;
-
-    @Autowired
-    private GeoreferenceRecordFailRepository georeferenceRecordFailRepository;
+    private final GeoreferenceRecordRepository georeferenceRecordRepository;
+    private final GeoreferenceRecordFailRepository georeferenceRecordFailRepository;
 
     @Qualifier("mainEntityManagerFactory")
     private final LocalContainerEntityManagerFactoryBean entityManagerFactory;
 
-    @Autowired
-    public BatchConfig(GeoreferenceRecordProcessor georeferenceRecordProcessor, LocalContainerEntityManagerFactoryBean entityManagerFactory, DataSource dataSource) {
+    //@Autowired
+    public BatchConfig(GeoreferenceRecordRepository georeferenceRecordRepository, GeoreferenceRecordFailRepository georeferenceRecordFailRepository, GeoreferenceRecordProcessor georeferenceRecordProcessor, LocalContainerEntityManagerFactoryBean entityManagerFactory, DataSource dataSource) {
+        this.georeferenceRecordRepository = georeferenceRecordRepository;
+        this.georeferenceRecordFailRepository  = georeferenceRecordFailRepository;
         this.georeferenceRecordProcessor = georeferenceRecordProcessor;
         this.entityManagerFactory = entityManagerFactory;
         this.dataSource = dataSource;
@@ -86,8 +78,8 @@ public class BatchConfig {
                 .name("csvItemReader")
                 .strict(false)
                 .lineTokenizer(tokenizer())
-                .fieldSetMapper(fieldSet -> {
-                    return GeoreferenceRecord.builder()
+                .fieldSetMapper(fieldSet ->
+                    GeoreferenceRecord.builder()
                             .farmerName(fieldSet.readString("farmerName"))
                             .documentType(fieldSet.readString("documentType"))
                             .documentNumber(fieldSet.readInt("documentNumber"))
@@ -100,32 +92,25 @@ public class BatchConfig {
                             //.status(fieldSet.readString("status"))
                             //.geoJsonId(fieldSet.readString("geoJsonId"))
                             //.oldPlot(fieldSet.readBoolean("oldPlot"))
-                            .build();
-                })
+                            .build()
+                )
                 .build();
     }
 
     @Bean
     public ItemWriter<GeoreferenceRecord> writer() {
-        return new ItemWriter<GeoreferenceRecord>() {
-            @Override
-            public void write(Chunk<? extends GeoreferenceRecord> chunk) throws Exception {
-                if (georeferenceRecordProcessor.getErrorList().isEmpty()) {
-                    List<GeoreferenceRecord> records = new ArrayList<>();
-                    for (GeoreferenceRecord item : chunk.getItems()) {
-                        GeoreferenceRecord georeferenceRecord = getGeoreferenceRecord(item);
-                        records.add(georeferenceRecord);
-                    }
-                    georeferenceRecordRepository.saveAll(records);
-                } else {
-                    georeferenceRecordFailRepository.saveAll(georeferenceRecordProcessor.getErrorList());
-                    throw new BatchException("Errors found during processing. Transaction rolled back.");
+        return chunk -> {
+            if (georeferenceRecordProcessor.getErrorList().isEmpty()) {
+                List<GeoreferenceRecord> records = new ArrayList<>();
+                for (GeoreferenceRecord item : chunk.getItems()) {
+                    GeoreferenceRecord georeferenceRecord = getGeoreferenceRecord(item);
+                    records.add(georeferenceRecord);
                 }
+                georeferenceRecordRepository.saveAll(records);
+            } else {
+                georeferenceRecordFailRepository.saveAll(georeferenceRecordProcessor.getErrorList());
             }
         };
-                //.usePersist(true)
-                /*.entityManagerFactory(entityManagerFactory.getObject())
-                .build();*/
     }
 
     private static GeoreferenceRecord getGeoreferenceRecord(GeoreferenceRecord item) {
@@ -139,6 +124,9 @@ public class BatchConfig {
         georeferenceRecord.setMunicipalityName(item.getMunicipalityName());
         georeferenceRecord.setDepartmentCode(item.getDepartmentCode());
         georeferenceRecord.setDepartmentName(item.getDepartmentName());
+        georeferenceRecord.setOldPlot(false);
+        georeferenceRecord.setStatus("");
+        georeferenceRecord.setGeoJsonId("");
         return georeferenceRecord;
     }
 
@@ -165,11 +153,11 @@ public class BatchConfig {
 
     @Bean
     public PlatformTransactionManager platformTransactionManager() {
-        return new DataSourceTransactionManager(dataSource);
+        return new JpaTransactionManager(Objects.requireNonNull(entityManagerFactory.getObject()));
     }
 
     @Bean(name = "csvImporterJob")
-    public Job csvImporterJob(Step csvImporterStep, JobRepository jobRepository) throws Exception {
+    public Job csvImporterJob(JobRepository jobRepository) throws Exception {
         return new JobBuilder("csvImporterJob", jobRepository)
                 .incrementer(new RunIdIncrementer())
                 //.listener()
