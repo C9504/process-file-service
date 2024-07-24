@@ -13,6 +13,8 @@ import org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean;
 import org.springframework.transaction.PlatformTransactionManager;
 
 import javax.sql.DataSource;
+import java.util.HashMap;
+import java.util.Map;
 
 @Configuration
 //@PropertySource({"classpath:application.yaml"})
@@ -37,9 +39,16 @@ public class AppRegCaConfig {
     }
 
     @Bean(name = "appRegCaEntityManagerFactory")
-    public LocalContainerEntityManagerFactoryBean appRegCaEntityManagerFactory(@Qualifier("appregCaDataSource") DataSource dataSource, EntityManagerFactoryBuilder builder) {
+    public LocalContainerEntityManagerFactoryBean appRegCaEntityManagerFactory
+            (@Qualifier("appregCaDataSource") DataSource dataSource,
+             EntityManagerFactoryBuilder builder
+             //@Qualifier("cacheManager") CacheManager cacheManager
+            ) {
+        //Map<String, Object> props = new HashMap<>();
+        //props.put("hibernate.javax.cache.CacheManager", cacheManager);
         return builder.dataSource(dataSource)
                 .packages("com.georeference.appregca.entities")
+                //.properties(props)
                 .persistenceUnit("appRegCa").build();
     }
 

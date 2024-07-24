@@ -3,12 +3,14 @@ package com.georeference.impl;
 import com.georeference.process.entities.GeoreferenceRequest;
 import com.georeference.process.repositories.GeoreferenceRequestRepository;
 import com.georeference.services.GeoreferenceRequestService;
+import jakarta.transaction.Transactional;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
 import java.util.Optional;
 
 @Service
+@Transactional
 public class GeoreferenceRequestImpl implements GeoreferenceRequestService {
 
     private final GeoreferenceRequestRepository georeferenceRequestRepository;
@@ -23,8 +25,8 @@ public class GeoreferenceRequestImpl implements GeoreferenceRequestService {
     }
 
     @Override
-    public Optional<GeoreferenceRequest> getGeoreferenceRequestById(Long id) {
-        return georeferenceRequestRepository.findById(id);
+    public GeoreferenceRequest getGeoreferenceRequestById(Long id) {
+        return georeferenceRequestRepository.findById(id).orElse(null);
     }
 
     @Override
@@ -46,4 +48,5 @@ public class GeoreferenceRequestImpl implements GeoreferenceRequestService {
     public void deleteGeoreferenceRequest(Long id) {
         georeferenceRequestRepository.deleteById(id);
     }
+
 }

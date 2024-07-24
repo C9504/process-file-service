@@ -11,4 +11,5 @@ public interface FileService {
     String convertXLSXToString(MultipartFile xlsxFile) throws IOException;
     byte[] convertXLSXToCSV(MultipartFile xlsxFile) throws IOException;
     void convertXLSXToCSVAndWrite(byte[] xlsxFile, String path) throws IOException;
+    String convertCSVToString(String filePath) throws IOException;
 }

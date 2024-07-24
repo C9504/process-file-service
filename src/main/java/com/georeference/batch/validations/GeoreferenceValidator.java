@@ -88,10 +88,10 @@ public class GeoreferenceValidator {
 
     private void validateMunicipality(GeoreferenceRecord georeferenceRecord, GeoreferenceRequest georeferenceRequest, Municipality municipality) {
         if (georeferenceRecord.getMunicipalityCode().equalsIgnoreCase("")) {
-            addError(georeferenceRequest, MUNICIPALITY_DANE_CODE, row, "CÓDIGO DEPARTAMENTO ES REQUERIDO");
+            addError(georeferenceRequest, MUNICIPALITY_DANE_CODE, row, "CÓDIGO MUNICIPAL ES REQUERIDO");
         }
-        if (georeferenceRecord.getMunicipalityCode().length() > 2) {
-            addError(georeferenceRequest, MUNICIPALITY_DANE_CODE, row, "CÓDIGO DEPARTAMENTO EXCEDE LA LONGITUD");
+        if (georeferenceRecord.getMunicipalityCode().length() > 3) {
+            addError(georeferenceRequest, MUNICIPALITY_DANE_CODE, row, "CÓDIGO MUNICIPAL EXCEDE LA LONGITUD");
         }
         if (municipality != null && !georeferenceRecord.getMunicipalityCode().equals(municipality.getTxCodeDane())) {
             addError(georeferenceRequest, MUNICIPALITY_DANE_CODE, row, "EL CÓDIGO DANE DEL MUNICIPIO NO EXISTE");

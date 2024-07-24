@@ -21,6 +21,7 @@ import org.springframework.web.bind.annotation.*;
 
 import java.io.IOException;
 import java.time.Instant;
+import java.util.Base64;
 import java.util.Date;
 import java.util.List;
 import java.util.UUID;
@@ -37,14 +38,16 @@ public class GeoreferenceRequestController {
     @Value("${csv.output.file.path}")
     private String csvFilePath;
 
-    private final FileService fileService;
+    @Autowired
+    private FileService fileService;
+
     @Autowired
     private JobLauncher jobLauncher;
+    @Qualifier("csvImporterJob")
     private final Job csvImporterJob;
     private final GeoreferenceRequestService georeferenceRequestService;
 
-    public GeoreferenceRequestController(FileService fileService, Job csvImporterJob, GeoreferenceRequestService georeferenceRequestService) {
-        this.fileService = fileService;
+    public GeoreferenceRequestController(Job csvImporterJob, GeoreferenceRequestService georeferenceRequestService) {
         this.csvImporterJob = csvImporterJob;
         this.georeferenceRequestService = georeferenceRequestService;
     }
@@ -53,7 +56,7 @@ public class GeoreferenceRequestController {
     @Operation(summary = "GET Georeference Request by Id", description = "Description")
     public ResponseEntity<GeoreferenceRequest> getGeoreferenceRequestById(@PathVariable("requestId") Long requestId) {
         long started = System.currentTimeMillis();
-        GeoreferenceRequest gr = georeferenceRequestService.getGeoreferenceRequestById(requestId).get();
+        GeoreferenceRequest gr = georeferenceRequestService.getGeoreferenceRequestById(requestId);
         long invocationNumber = counter.getAndIncrement();
         log.info("GeoreferenceRequestController#getGeoreferenceRequestById(): georreferenceRequest invocation {} returning successfully | #{} timed out after {} ms", invocationNumber, invocationNumber, System.currentTimeMillis() - started);
         return ResponseEntity.ok(gr);
@@ -84,19 +87,21 @@ public class GeoreferenceRequestController {
         GeoreferenceRequest newGeorreferenceRequest = georeferenceRequestService.saveGeoreferenceRequest(georeferenceRequest);
         // Decodificar base64 a bytes
         byte[] decodedBytes = fileService.decodeBase64FileFromString(fileDto.getFileBody());
-        String fileName = csvFilePath + newGeorreferenceRequest.getFileName().replace(".xlsx", ".csv");
+        String fileName = newGeorreferenceRequest.getFileName().replace(".xlsx", ".csv");
+        String filePath = csvFilePath + fileName;
         try {
-            fileService.convertXLSXToCSVAndWrite(decodedBytes, fileName);
+            fileService.convertXLSXToCSVAndWrite(decodedBytes, filePath);
             JobParameters parameters = new JobParametersBuilder()
                     .addLong("requestId", newGeorreferenceRequest.getId())
                     .addString("fileName", fileName)
+                    .addString("filePath", filePath)
                     .toJobParameters();
             long invocationNumber = counter.getAndIncrement();
             log.info("GeoreferenceRequestController#uploadFileBase64(): georreferenceRequests invocation {} returning successfully | #{} timed out after {} ms", invocationNumber, invocationNumber, System.currentTimeMillis() - started);
             return getStringResponseEntity(csvImporterJob, parameters);
         } catch (IOException e) {
             long invocationNumber = counter.getAndIncrement();
-            log.info("GeoreferenceRequestController#uploadFileBase64(): error georreferenceRequests invocation {} returning successfully | #{} timed out after {} ms", invocationNumber, invocationNumber, System.currentTimeMillis() - started);
+            log.error("GeoreferenceRequestController#uploadFileBase64(): error: {} georreferenceRequests invocation {} returning successfully | #{} timed out after {} ms", e.getMessage(), invocationNumber, invocationNumber, System.currentTimeMillis() - started);
             return ResponseEntity.status(500).body("Error al detectar el tipo de archivo: " + e.getMessage());
         }
     }

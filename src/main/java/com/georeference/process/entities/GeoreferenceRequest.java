@@ -16,6 +16,8 @@ public class GeoreferenceRequest {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
+    @Column(name = "LOAD_ID", insertable = false, updatable = false, unique = true)
+    private String loadId;
     @Column(name = "EXPORTER_DOCUMENT_TYPE")
     private String exporterDocumentType;
     @Column(name = "EXPORTER_DOCUMENT_NUMBER")
@@ -30,4 +32,5 @@ public class GeoreferenceRequest {
     private String reportName;
     @Column(name = "ZIP_ID")
     private String zipId;
+
 }

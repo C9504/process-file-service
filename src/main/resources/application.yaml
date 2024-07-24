@@ -21,10 +21,14 @@ spring:
     database-platform: org.hibernate.dialect.OracleDialect
     #hibernate:
       #ddl-auto: update
-    show-sql: true
+#    show-sql: true
     properties:
       hibernate:
         format_sql: true
+#        cache:
+#          use_query_cache: true
+#          use_second_level_cache: true
+#          region.factory_class: org.hibernate.cache.jcache.JCacheRegionFactory
   autoconfigure:
     exclude:
       - org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration
@@ -32,6 +36,16 @@ spring:
     jdbc:
       initialize-schema: always
       schema: classpath:schema.sql
+# Kafka Settings
+  kafka:
+    bootstrap-servers: 192.168.112.102:29092
+#    consumer:
+#      auto-offset-reset: earliest
+#      key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+#      value-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+    producer:
+      key-serializer: org.apache.kafka.common.serialization.StringSerializer
+      value-serializer: org.springframework.kafka.support.serializer.JsonSerializer
 csv:
   file:
     path: classpath:converted.csv
@@ -49,3 +63,10 @@ springdoc:
     enabled: true
     path: /swagger-ui.html
   packages-to-scan: com.georeference.controllers
+
+logging:
+  level:
+    org:
+      springframework:
+        batch: DEBUG
+        batch.core: DEBUG

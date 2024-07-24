@@ -1,22 +1,22 @@
-package com.georeference.batch;
+package com.georeference.batch.processors;
 
 import com.georeference.appregca.entities.Department;
 import com.georeference.appregca.entities.Municipality;
-import com.georeference.appregca.repositories.DepartmentRepository;
-import com.georeference.appregca.repositories.MunicipalityRepository;
 import com.georeference.batch.validations.GeoreferenceValidator;
 import com.georeference.process.entities.GeoreferenceRecord;
 import com.georeference.process.entities.GeoreferenceRecordFail;
 import com.georeference.process.entities.GeoreferenceRequest;
+import com.georeference.services.DepartmentService;
 import com.georeference.services.GeoreferenceRequestService;
+import com.georeference.services.MunicipalityService;
 import org.springframework.batch.core.configuration.annotation.JobScope;
 import org.springframework.batch.item.ItemProcessor;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Objects;
 
 @JobScope
 @Component
@@ -27,29 +27,31 @@ public class GeoreferenceRecordProcessor implements ItemProcessor<GeoreferenceRe
 
     private final GeoreferenceValidator validator;
     private final GeoreferenceRequestService georeferenceRequestService;
-    private final DepartmentRepository departmentRepository;
-    private final MunicipalityRepository municipalityRepository;
+
+    @Autowired
+    private MunicipalityService municipalityService;
+
+    @Autowired
+    private DepartmentService departmentService;
 
     private List<GeoreferenceRecordFail> errors = new ArrayList<>();
 
-    GeoreferenceRecordProcessor(@Value("#{jobParameters['requestId']}") Long requestId, GeoreferenceValidator validator, GeoreferenceRequestService georeferenceRequestService, DepartmentRepository departmentRepository, MunicipalityRepository municipalityRepository) {
+    public GeoreferenceRecordProcessor(@Value("#{jobParameters['requestId']}") Long requestId, GeoreferenceValidator validator, GeoreferenceRequestService georeferenceRequestService) {
         this.georeferenceRequestService = georeferenceRequestService;
         this.requestId = requestId;
         this.validator = validator;
-        this.departmentRepository = departmentRepository;
-        this.municipalityRepository = municipalityRepository;
     }
 
     @Override
     public GeoreferenceRecord process(GeoreferenceRecord entity) {
-        GeoreferenceRequest georeferenceRequest = georeferenceRequestService.getGeoreferenceRequestById(requestId).orElse(null);
-        Department department = departmentRepository.findByTxCodeDane(entity.getDepartmentCode());
-        Municipality municipality = municipalityRepository.findByTxCodeDane(entity.getMunicipalityCode());
+        GeoreferenceRequest georeferenceRequest = georeferenceRequestService.getGeoreferenceRequestById(requestId);
+        Department department = departmentService.getDepartmentByCode(entity.getDepartmentCode());
+        Municipality municipality = municipalityService.getMunicipalityByCodes(department.getTxCodeDane(), entity.getMunicipalityCode());
         row++;
         entity.setGeoreferenceRequest(georeferenceRequest);
-        this.errors = validator.validateFields(entity, georeferenceRequest, department, municipality, row);
-        if (!this.errors.isEmpty()) {
-            Objects.requireNonNull(georeferenceRequest).setStatus("CON ERROR");
+        errors = validator.validateFields(entity, georeferenceRequest, department, municipality, row);
+        if (!errors.isEmpty() && georeferenceRequest != null) {
+            georeferenceRequest.setStatus("CON ERROR");
             georeferenceRequestService.updateGeoreferenceRequest(georeferenceRequest);
         }
         return entity;

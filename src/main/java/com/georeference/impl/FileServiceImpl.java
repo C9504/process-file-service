@@ -1,6 +1,7 @@
 package com.georeference.impl;
 
 import com.georeference.services.FileService;
+import org.apache.commons.io.IOUtils;
 import org.apache.poi.ss.usermodel.*;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 import org.springframework.stereotype.Service;
@@ -125,6 +126,15 @@ public class FileServiceImpl implements FileService {
                 writer.newLine();
             }
             writer.flush();
+        }
+    }
+
+    @Override
+    public String convertCSVToString(String filePath) throws IOException {
+        File file = new File(filePath);
+        try(FileInputStream fileInputStream = new FileInputStream(file)) {
+            byte[] fileContent = IOUtils.toByteArray(fileInputStream);
+            return Base64.getEncoder().encodeToString(fileContent);
         }
     }
 

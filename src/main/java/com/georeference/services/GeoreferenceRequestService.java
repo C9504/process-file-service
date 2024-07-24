@@ -7,9 +7,10 @@ import java.util.Optional;
 
 public interface GeoreferenceRequestService {
     List<GeoreferenceRequest> getAllGeoreferenceRequests();
-    Optional<GeoreferenceRequest> getGeoreferenceRequestById(Long id);
+    GeoreferenceRequest getGeoreferenceRequestById(Long id);
     List<GeoreferenceRequest> getGeoreferenceRequestsByDocumentNumber(String documentNumber);
     GeoreferenceRequest saveGeoreferenceRequest(GeoreferenceRequest georeferenceRequest);
     GeoreferenceRequest updateGeoreferenceRequest(GeoreferenceRequest georeferenceRequest);
     void deleteGeoreferenceRequest(Long id);
+    //String getLoadId();
 }
