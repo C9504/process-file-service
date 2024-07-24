@@ -10,6 +10,8 @@ import org.springframework.core.io.FileSystemResource;
 import org.springframework.core.io.Resource;
 import org.springframework.stereotype.Component;
 
+import java.util.Objects;
+
 @Component
 public class BatchStepExecutionListener implements StepExecutionListener {
 
@@ -21,7 +23,7 @@ public class BatchStepExecutionListener implements StepExecutionListener {
     @Override
     public void beforeStep(StepExecution stepExecution) {
         JobParameters jobParameters = stepExecution.getJobParameters();
-        Resource resource = new FileSystemResource(jobParameters.getString("fileName"));
+        Resource resource = new FileSystemResource(Objects.requireNonNull(jobParameters.getString("filePath")));
         reader.setResource(resource);
         StepExecutionListener.super.beforeStep(stepExecution);
     }
