@@ -4,10 +4,10 @@ import com.georeference.batch.listeners.BatchJobExecuteListener;
 import com.georeference.batch.listeners.BatchStepExecutionListener;
 import com.georeference.batch.processors.GeoreferenceRecordProcessor;
 import com.georeference.process.entities.GeoreferenceRecord;
+import com.georeference.process.entities.GeoreferenceRecordFail;
 import com.georeference.process.repositories.GeoreferenceRecordFailRepository;
 import com.georeference.process.repositories.GeoreferenceRecordRepository;
 import com.georeference.services.FileService;
-import com.georeference.services.GeoreferenceRequestService;
 import com.georeference.services.sica.producers.SicaProducer;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.batch.core.Job;
@@ -34,6 +34,7 @@ import org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean;
 import org.springframework.transaction.PlatformTransactionManager;
 
 import javax.sql.DataSource;
+import java.util.List;
 import java.util.Objects;
 
 @Configuration
@@ -62,7 +63,7 @@ public class BatchConfig {
     }
 
     private static final String[] FIELDS = new String[] {
-            //"index",
+            "id",
             "farmerName", "documentType", "documentNumber",
             "farmName", "cultivationArea",
             "municipalityCode", "municipalityName", "departmentCode",
@@ -84,6 +85,7 @@ public class BatchConfig {
                 .lineTokenizer(tokenizer())
                 .fieldSetMapper(fieldSet ->
                     GeoreferenceRecord.builder()
+                            //.id(Long.parseLong(fieldSet.readString("ID")))
                             .farmerName(fieldSet.readString("farmerName"))
                             .documentType(fieldSet.readString("documentType"))
                             .documentNumber(fieldSet.readInt("documentNumber"))
@@ -104,13 +106,14 @@ public class BatchConfig {
     @Bean
     public ItemWriter<GeoreferenceRecord> writer() {
         return chunk -> {
-            if (georeferenceRecordProcessor.getErrorList().isEmpty()) {
+            List<GeoreferenceRecordFail> errorList = georeferenceRecordProcessor.getErrorList();
+            if (errorList.isEmpty()) {
                 for (GeoreferenceRecord item : chunk.getItems()) {
                     GeoreferenceRecord georeferenceRecord = getGeoreferenceRecord(item);
                     georeferenceRecordRepository.save(georeferenceRecord);
                 }
             } else {
-                georeferenceRecordFailRepository.saveAll(georeferenceRecordProcessor.getErrorList());
+                georeferenceRecordFailRepository.saveAll(errorList);
             }
         };
     }
@@ -135,7 +138,6 @@ public class BatchConfig {
 
     @Bean(name = "csvImporterJob")
     public Job csvImporterJob(JobRepository jobRepository,
-                              GeoreferenceRequestService georeferenceRequestService,
                               FileService fileService,
                               SicaProducer sicaProducer,
                               GeoreferenceRecordRepository georeferenceRecordRepository
@@ -143,7 +145,7 @@ public class BatchConfig {
         return new JobBuilder("csvImporterJob", jobRepository)
                 .incrementer(new RunIdIncrementer())
                 //.start(masterStep())
-                .listener(new BatchJobExecuteListener(georeferenceRequestService, fileService, sicaProducer, georeferenceRecordRepository))
+                .listener(new BatchJobExecuteListener(fileService, sicaProducer, georeferenceRecordRepository))
                 //.validator(parameters -> System.out.println(parameters.getLong("requestId")))
                 .flow(csvImporterStep())
                 .end()

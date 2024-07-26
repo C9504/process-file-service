@@ -11,4 +11,7 @@ import java.util.List;
 public interface GeoreferenceRecordRepository extends JpaRepository<GeoreferenceRecord, Long> {
     @Query("SELECT gr FROM GeoreferenceRecord gr WHERE gr.georeferenceRequest.id = :requestId")
     List<GeoreferenceRecord> getByRequestId(Long requestId);
+
+    @Query("SELECT COUNT(gr) FROM GeoreferenceRecord gr WHERE gr.georeferenceRequest.id = :requestId")
+    Integer getRegs(Long requestId);
 }

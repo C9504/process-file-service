@@ -2,6 +2,7 @@ package com.georeference.impl;
 
 import com.georeference.services.FileService;
 import org.apache.commons.io.IOUtils;
+import org.apache.poi.hssf.usermodel.HSSFWorkbook;
 import org.apache.poi.ss.usermodel.*;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 import org.springframework.stereotype.Service;
@@ -17,7 +18,7 @@ import java.util.Objects;
 @Service
 public class FileServiceImpl implements FileService {
 
-    private final Map<String, String> mimeToExtension = Map.of("application/vnd.openxmlformats-officedocument.spreadsheetml.sheet", "xlsx", "text/csv", "csv");
+    private final Map<String, String> mimeToExtension = Map.of("application/vnd.ms-excel", "xls", "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet", "xlsx"/*, "text/csv", "csv"*/);
 
     @Override
     public byte[] decodeBase64FileFromString(String base64File) {
@@ -27,13 +28,64 @@ public class FileServiceImpl implements FileService {
 
     @Override
     public String getExtensionFileName(String base64File) {
-        String mimeType = base64File.split(";")[0].split(":")[1];
-        return mimeToExtension.getOrDefault(mimeType, "");
+        /*String mimeType = base64File.split(";")[0].split(":")[1];
+        return mimeToExtension.getOrDefault(mimeType, "");*/
+        if (base64File == null || !base64File.contains(",")) {
+            return null;
+        }
+
+        // Extraer el prefijo data
+        String[] parts = base64File.split(",", 2);
+        String dataUrlPrefix = parts[0];
+
+        // Validar prefijo
+        if (!dataUrlPrefix.startsWith("data:")) {
+            return null;
+        }
+
+        // Extraer el tipo MIME
+        String[] prefixParts = dataUrlPrefix.split(";");
+        if (prefixParts.length == 0 || !prefixParts[0].startsWith("data:")) {
+            return null;
+        }
+        String mimeType = prefixParts[0].substring(5);
+
+        // Verificar si el tipo MIME está en el mapa
+        return mimeToExtension.get(mimeType);
+    }
+
+    @Override
+    public boolean isValidExtensionFileName(String base64File) {
+        // Validar formato de base64
+        if (base64File == null || !base64File.contains(",")) {
+            return false;
+        }
+
+        // Extraer el prefijo data
+        String[] parts = base64File.split(",", 2);
+        String dataUrlPrefix = parts[0];
+
+        // Validar prefijo
+        if (!dataUrlPrefix.startsWith("data:")) {
+            return false;
+        }
+
+        // Extraer el MIME type
+        String[] prefixParts = dataUrlPrefix.split(";");
+        if (prefixParts.length == 0 || !prefixParts[0].startsWith("data:")) {
+            return false;
+        }
+        String mimeType = prefixParts[0].substring(5);
+
+        // Verificar si el MIME type está en el mapa
+        return mimeToExtension.containsKey(mimeType);
     }
 
     @Override
     public void saveFile(String fileName, byte[] fileContent) {
-        // TODO document why this method is empty
+        /**
+         * TODO
+         */
     }
 
     @Override
@@ -100,16 +152,32 @@ public class FileServiceImpl implements FileService {
     }
 
     @Override
-    public void convertXLSXToCSVAndWrite(byte[] fileXlsx, String outputPath) throws IOException {
+    public void convertXLSXToCSVAndWrite(byte[] fileXlsx, String outputPath, String base64File) throws IOException {
         try (InputStream inputStream = new ByteArrayInputStream(fileXlsx);
-             Workbook workbook = new XSSFWorkbook(inputStream);
+             //XSSFWorkbook es para .xlsx
+             //HSSFWorkbook es para .xls
+             Workbook workbook = loadWorkbook(inputStream, base64File);
              OutputStreamWriter fileWriter = new OutputStreamWriter(new FileOutputStream(outputPath), StandardCharsets.UTF_8);
              BufferedWriter writer = new BufferedWriter(fileWriter)
         ) {
             Sheet sheet = workbook.getSheetAt(0);
-            Iterator<Row> rowIterator = sheet.iterator();
-            while (rowIterator.hasNext()) {
-                Row row = rowIterator.next();
+            int lastColumnNum = sheet.getRow(0).getLastCellNum();
+            int rowNum = 1;
+            for(int cn = lastColumnNum; cn >= 0 ; cn--) {
+                sheet.shiftColumns(cn, cn + 1, 1);
+            }
+            for (Row row : sheet) {
+                Cell newCell;
+                if (row.getRowNum() == 0) {
+                    newCell = row.createCell(0, CellType.STRING);
+                    newCell.setCellValue("id");
+                } else {
+                    newCell = row.createCell(0, CellType.NUMERIC);
+                    newCell.setCellValue(rowNum + 1);
+                }
+            }
+
+            for (Row row : sheet) {
                 Iterator<Cell> cellIterator = row.cellIterator();
                 StringBuilder rowString = new StringBuilder();
 
@@ -155,5 +223,15 @@ public class FileServiceImpl implements FileService {
             default:
                 return "";
         }
+    }
+
+    private Workbook loadWorkbook(InputStream inputStream, String base64File) throws IOException {
+        Workbook workbook = null;
+        if(this.getExtensionFileName(base64File).equals("xlsx")) {
+            workbook = new XSSFWorkbook(inputStream);
+        } else if(this.getExtensionFileName(base64File).equals("xls")) {
+            workbook = new HSSFWorkbook(inputStream);
+        }
+        return workbook;
     }
 }

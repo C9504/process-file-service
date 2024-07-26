@@ -21,7 +21,6 @@ import org.springframework.web.bind.annotation.*;
 
 import java.io.IOException;
 import java.time.Instant;
-import java.util.Base64;
 import java.util.Date;
 import java.util.List;
 import java.util.UUID;
@@ -43,6 +42,7 @@ public class GeoreferenceRequestController {
 
     @Autowired
     private JobLauncher jobLauncher;
+
     @Qualifier("csvImporterJob")
     private final Job csvImporterJob;
     private final GeoreferenceRequestService georeferenceRequestService;
@@ -76,25 +76,32 @@ public class GeoreferenceRequestController {
     @Operation(summary = "UPLOAD File xlsx to process", description = "Description")
     public ResponseEntity<String> uploadFileBase64(@RequestBody FileDto fileDto) {
         long started = System.currentTimeMillis();
+        if (!fileService.isValidExtensionFileName(fileDto.getFileBody())) {
+            long invocationNumber = counter.getAndIncrement();
+            log.error("GeoreferenceRequestController#uploadFileBase64(): error: {} georreferenceRequests invocation {} returning successfully | #{} timed out after {} ms", "Invalid File extension", invocationNumber, invocationNumber, System.currentTimeMillis() - started);
+            return ResponseEntity.status(HttpStatus.NOT_ACCEPTABLE).body("Extension de archivo invalida, el archivo debe ser .xlsx");
+        }
         GeoreferenceRequest georeferenceRequest = new GeoreferenceRequest();
         georeferenceRequest.setExporterDocumentType("CE");
         georeferenceRequest.setExporterDocumentNumber(fileDto.getSubject());
         georeferenceRequest.setReportName("report_" + UUID.randomUUID());
-        georeferenceRequest.setFileName("georreferencia_" + Instant.now().toEpochMilli() + ".xlsx");
+        georeferenceRequest.setFileName(Instant.now().toEpochMilli() + ".csv");
         georeferenceRequest.setZipId("zip_" + UUID.randomUUID());
         georeferenceRequest.setRequestDate(Date.from(Instant.now()));
         georeferenceRequest.setStatus("EN PROCESO");
         GeoreferenceRequest newGeorreferenceRequest = georeferenceRequestService.saveGeoreferenceRequest(georeferenceRequest);
         // Decodificar base64 a bytes
         byte[] decodedBytes = fileService.decodeBase64FileFromString(fileDto.getFileBody());
-        String fileName = newGeorreferenceRequest.getFileName().replace(".xlsx", ".csv");
+        String fileName = newGeorreferenceRequest.getFileName();
         String filePath = csvFilePath + fileName;
+        String loadId = newGeorreferenceRequest.getLoadId();
         try {
-            fileService.convertXLSXToCSVAndWrite(decodedBytes, filePath);
+            fileService.convertXLSXToCSVAndWrite(decodedBytes, filePath, fileDto.getFileBody());
             JobParameters parameters = new JobParametersBuilder()
                     .addLong("requestId", newGeorreferenceRequest.getId())
                     .addString("fileName", fileName)
                     .addString("filePath", filePath)
+                    .addString("loadId", loadId)
                     .toJobParameters();
             long invocationNumber = counter.getAndIncrement();
             log.info("GeoreferenceRequestController#uploadFileBase64(): georreferenceRequests invocation {} returning successfully | #{} timed out after {} ms", invocationNumber, invocationNumber, System.currentTimeMillis() - started);

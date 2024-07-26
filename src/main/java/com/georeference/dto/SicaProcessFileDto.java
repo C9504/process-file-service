@@ -13,4 +13,5 @@ public class SicaProcessFileDto {
     private String id;
     private String fileName;
     private String content;
+    private Integer regs;
 }

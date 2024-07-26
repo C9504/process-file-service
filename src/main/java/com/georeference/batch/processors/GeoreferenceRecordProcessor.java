@@ -45,12 +45,18 @@ public class GeoreferenceRecordProcessor implements ItemProcessor<GeoreferenceRe
     @Override
     public GeoreferenceRecord process(GeoreferenceRecord entity) {
         GeoreferenceRequest georeferenceRequest = georeferenceRequestService.getGeoreferenceRequestById(requestId);
-        Department department = departmentService.getDepartmentByCode(entity.getDepartmentCode());
-        Municipality municipality = municipalityService.getMunicipalityByCodes(department.getTxCodeDane(), entity.getMunicipalityCode());
+        Department department = null;
+        if (entity.getDepartmentCode().isEmpty()){
+            department = departmentService.getDepartmentByCode(entity.getDepartmentCode());
+        }
+        Municipality municipality = null;
+        if (department != null) {
+            municipality = municipalityService.getMunicipalityByCodes(department.getTxCodeDane(), entity.getMunicipalityCode());
+        }
         row++;
         entity.setGeoreferenceRequest(georeferenceRequest);
         errors = validator.validateFields(entity, georeferenceRequest, department, municipality, row);
-        if (!errors.isEmpty() && georeferenceRequest != null) {
+        if (!errors.isEmpty()) {
             georeferenceRequest.setStatus("CON ERROR");
             georeferenceRequestService.updateGeoreferenceRequest(georeferenceRequest);
         }

@@ -3,7 +3,9 @@ package com.georeference.impl;
 import com.georeference.process.entities.GeoreferenceRequest;
 import com.georeference.process.repositories.GeoreferenceRequestRepository;
 import com.georeference.services.GeoreferenceRequestService;
+import jakarta.persistence.EntityManager;
 import jakarta.transaction.Transactional;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -14,6 +16,8 @@ import java.util.Optional;
 public class GeoreferenceRequestImpl implements GeoreferenceRequestService {
 
     private final GeoreferenceRequestRepository georeferenceRequestRepository;
+    @Autowired
+    private EntityManager entityManager;
 
     public GeoreferenceRequestImpl(GeoreferenceRequestRepository georeferenceRequestRepository) {
         this.georeferenceRequestRepository = georeferenceRequestRepository;
@@ -36,7 +40,9 @@ public class GeoreferenceRequestImpl implements GeoreferenceRequestService {
 
     @Override
     public GeoreferenceRequest saveGeoreferenceRequest(GeoreferenceRequest georeferenceRequest) {
-        return georeferenceRequestRepository.save(georeferenceRequest);
+        entityManager.persist(georeferenceRequest);
+        entityManager.refresh(georeferenceRequest);
+        return georeferenceRequest;
     }
 
     @Override

@@ -64,9 +64,9 @@ springdoc:
     path: /swagger-ui.html
   packages-to-scan: com.georeference.controllers
 
-logging:
-  level:
-    org:
-      springframework:
-        batch: DEBUG
-        batch.core: DEBUG
+#logging:
+#  level:
+#    org:
+#      springframework:
+#        batch: DEBUG
+#        batch.core: DEBUG

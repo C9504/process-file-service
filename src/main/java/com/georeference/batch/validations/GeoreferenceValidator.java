@@ -31,7 +31,6 @@ public class GeoreferenceValidator {
         validateFarmName(georeferenceRecord, georeferenceRequest);
         validateDocumentType(georeferenceRecord, georeferenceRequest);
         validateDocumentNumber(georeferenceRecord, georeferenceRequest);
-        validateFarmerName(georeferenceRecord, georeferenceRequest);
         validateCultivateArea(georeferenceRecord, georeferenceRequest);
         validateDepartment(georeferenceRecord, georeferenceRequest, department);
         validateMunicipality(georeferenceRecord, georeferenceRequest, municipality);

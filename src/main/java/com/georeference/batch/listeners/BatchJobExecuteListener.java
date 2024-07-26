@@ -2,10 +2,8 @@ package com.georeference.batch.listeners;
 
 import com.georeference.dto.SicaProcessFileDto;
 import com.georeference.process.entities.GeoreferenceRecord;
-import com.georeference.process.entities.GeoreferenceRequest;
 import com.georeference.process.repositories.GeoreferenceRecordRepository;
 import com.georeference.services.FileService;
-import com.georeference.services.GeoreferenceRequestService;
 import com.georeference.services.sica.producers.SicaProducer;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.batch.core.JobExecution;
@@ -15,24 +13,20 @@ import org.springframework.stereotype.Component;
 
 import java.io.IOException;
 import java.util.List;
-import java.util.Objects;
 
 @Component
 @Slf4j
 public class BatchJobExecuteListener implements JobExecutionListener {
 
-    private final GeoreferenceRequestService georeferenceRequestService;
     private final SicaProducer sicaProducer;
     private final GeoreferenceRecordRepository georeferenceRecordRepository;
     private final FileService fileService;
 
     public BatchJobExecuteListener(
-            GeoreferenceRequestService georeferenceRequestService,
             FileService fileService,
             SicaProducer sicaProducer,
             GeoreferenceRecordRepository georeferenceRecordRepository
     ) {
-        this.georeferenceRequestService = georeferenceRequestService;
         this.fileService = fileService;
         this.sicaProducer = sicaProducer;
         this.georeferenceRecordRepository = georeferenceRecordRepository;
@@ -52,18 +46,20 @@ public class BatchJobExecuteListener implements JobExecutionListener {
         Long requestId = jobParameters.getLong("requestId");
         String filePath = jobParameters.getString("filePath");
         String fileName = jobParameters.getString("fileName");
+        String loadId = jobParameters.getString("loadId");
         try {
             String content = fileService.convertCSVToString(filePath);
-            GeoreferenceRequest georeferenceRequest = georeferenceRequestService.getGeoreferenceRequestById(requestId);
             List<GeoreferenceRecord> georeferenceRecords = georeferenceRecordRepository.getByRequestId(requestId);
             if (!georeferenceRecords.isEmpty()) {
-                sicaProducer.sendMessage(
+                Integer regs = georeferenceRecordRepository.getRegs(requestId);
+                /*sicaProducer.sendMessage(
                         SicaProcessFileDto
                                 .builder()
-                                .id(Objects.requireNonNull(georeferenceRequest).getLoadId())
-                                .fileName(fileName)
+                                .id(loadId)
+                                .fileName(loadId + ".csv")
+                                .regs(regs)
                                 .content(content)
-                                .build());
+                                .build());*/
                 log.info("Sending file to SICA: {}", fileName);
             }
         } catch (IOException e) {
