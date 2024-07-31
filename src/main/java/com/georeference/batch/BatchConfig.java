@@ -88,7 +88,7 @@ public class BatchConfig {
                             //.id(Long.parseLong(fieldSet.readString("ID")))
                             .farmerName(fieldSet.readString("farmerName"))
                             .documentType(fieldSet.readString("documentType"))
-                            .documentNumber(fieldSet.readInt("documentNumber"))
+                            .documentNumber(fieldSet.readString("documentNumber"))
                             .farmName(fieldSet.readString("farmName"))
                             .cultivationArea(fieldSet.readDouble("cultivationArea"))
                             .municipalityCode(fieldSet.readString("municipalityCode"))

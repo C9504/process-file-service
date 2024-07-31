@@ -46,7 +46,7 @@ public class GeoreferenceRecordProcessor implements ItemProcessor<GeoreferenceRe
     public GeoreferenceRecord process(GeoreferenceRecord entity) {
         GeoreferenceRequest georeferenceRequest = georeferenceRequestService.getGeoreferenceRequestById(requestId);
         Department department = null;
-        if (entity.getDepartmentCode().isEmpty()){
+        if (entity.getDepartmentCode().isEmpty()) {
             department = departmentService.getDepartmentByCode(entity.getDepartmentCode());
         }
         Municipality municipality = null;

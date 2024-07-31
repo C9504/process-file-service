@@ -13,4 +13,5 @@ public interface FileService {
     byte[] convertXLSXToCSV(MultipartFile xlsxFile) throws IOException;
     void convertXLSXToCSVAndWrite(byte[] xlsxFile, String path, String base64File) throws IOException;
     String convertCSVToString(String filePath) throws IOException;
+    int countRecords(String base64File) throws IOException;
 }

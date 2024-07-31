@@ -163,7 +163,7 @@ public class FileServiceImpl implements FileService {
             Sheet sheet = workbook.getSheetAt(0);
             int lastColumnNum = sheet.getRow(0).getLastCellNum();
             int rowNum = 1;
-            for(int cn = lastColumnNum; cn >= 0 ; cn--) {
+            for (int cn = lastColumnNum; cn >= 0; cn--) {
                 sheet.shiftColumns(cn, cn + 1, 1);
             }
             for (Row row : sheet) {
@@ -173,8 +173,9 @@ public class FileServiceImpl implements FileService {
                     newCell.setCellValue("id");
                 } else {
                     newCell = row.createCell(0, CellType.NUMERIC);
-                    newCell.setCellValue(rowNum + 1);
+                    newCell.setCellValue(String.valueOf(rowNum).replace(".0", ""));
                 }
+                rowNum++;
             }
 
             for (Row row : sheet) {
@@ -200,7 +201,7 @@ public class FileServiceImpl implements FileService {
     @Override
     public String convertCSVToString(String filePath) throws IOException {
         File file = new File(filePath);
-        try(FileInputStream fileInputStream = new FileInputStream(file)) {
+        try (FileInputStream fileInputStream = new FileInputStream(file)) {
             byte[] fileContent = IOUtils.toByteArray(fileInputStream);
             return Base64.getEncoder().encodeToString(fileContent);
         }
@@ -227,11 +228,29 @@ public class FileServiceImpl implements FileService {
 
     private Workbook loadWorkbook(InputStream inputStream, String base64File) throws IOException {
         Workbook workbook = null;
-        if(this.getExtensionFileName(base64File).equals("xlsx")) {
+        if (this.getExtensionFileName(base64File).equals("xlsx")) {
             workbook = new XSSFWorkbook(inputStream);
-        } else if(this.getExtensionFileName(base64File).equals("xls")) {
+        } else if (this.getExtensionFileName(base64File).equals("xls")) {
             workbook = new HSSFWorkbook(inputStream);
         }
         return workbook;
+    }
+
+    @Override
+    public int countRecords(String base64File) throws IOException {
+        byte[] decodedBytes = decodeBase64FileFromString(base64File);
+        Workbook workbook;
+        int recordCount = 0;
+        if (this.getExtensionFileName(base64File).equals("xlsx")) {
+            workbook = new XSSFWorkbook(new ByteArrayInputStream(decodedBytes));
+            Sheet sheet = workbook.getSheetAt(0);
+            recordCount = sheet.getPhysicalNumberOfRows();
+        }
+        if (this.getExtensionFileName(base64File).equals("xls")) {
+            workbook = new HSSFWorkbook(new ByteArrayInputStream(decodedBytes));
+            Sheet sheet = workbook.getSheetAt(0);
+            recordCount = sheet.getPhysicalNumberOfRows();
+        }
+        return recordCount;
     }
 }

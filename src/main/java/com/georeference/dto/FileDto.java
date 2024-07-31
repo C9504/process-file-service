@@ -8,5 +8,7 @@ import lombok.Data;
 public class FileDto {
 
     private String subject;
+    private String fullName;
+    private String fileName;
     private String fileBody;
 }

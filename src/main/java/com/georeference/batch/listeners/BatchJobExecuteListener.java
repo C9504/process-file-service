@@ -48,18 +48,18 @@ public class BatchJobExecuteListener implements JobExecutionListener {
         String fileName = jobParameters.getString("fileName");
         String loadId = jobParameters.getString("loadId");
         try {
-            String content = fileService.convertCSVToString(filePath);
             List<GeoreferenceRecord> georeferenceRecords = georeferenceRecordRepository.getByRequestId(requestId);
             if (!georeferenceRecords.isEmpty()) {
+                String content = fileService.convertCSVToString(filePath);
                 Integer regs = georeferenceRecordRepository.getRegs(requestId);
-                /*sicaProducer.sendMessage(
+                sicaProducer.sendMessage(
                         SicaProcessFileDto
                                 .builder()
                                 .id(loadId)
                                 .fileName(loadId + ".csv")
                                 .regs(regs)
                                 .content(content)
-                                .build());*/
+                                .build());
                 log.info("Sending file to SICA: {}", fileName);
             }
         } catch (IOException e) {

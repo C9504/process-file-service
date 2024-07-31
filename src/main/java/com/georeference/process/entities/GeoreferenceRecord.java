@@ -24,7 +24,7 @@ public class GeoreferenceRecord {
     @Column(name = "DOCUMENT_TYPE", length = 4)
     private String documentType;
     @Column(name = "DOCUMENT_NUMBER", length = 15)
-    private Integer documentNumber;
+    private String documentNumber;
     @Column(name = "FARM_NAME", length = 200)
     private String farmName;
     @Column(name = "CULTIVATION_AREA", length = 15)

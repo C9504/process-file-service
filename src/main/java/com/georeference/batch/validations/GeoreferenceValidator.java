@@ -38,28 +38,28 @@ public class GeoreferenceValidator {
     }
 
     private void validateFarmerName(GeoreferenceRecord georeferenceRecord, GeoreferenceRequest georeferenceRequest) {
-        if (georeferenceRecord.getFarmerName().equalsIgnoreCase("")) {
+        if (georeferenceRecord.getFarmerName().trim().equalsIgnoreCase("")) {
             addError(georeferenceRequest, FARMER_NAME, row, "EL NOMBRE CAFICULTOR ES REQUERIDO");
         }
-        if (georeferenceRecord.getFarmerName().length() > 200) {
+        if (georeferenceRecord.getFarmerName().trim().length() > 200) {
             addError(georeferenceRequest, FARMER_NAME, row, "EL NOMBRE CAFICULTOR EXCEDE LOS 200 CARACTERES");
         }
     }
 
     private void validateDocumentType(GeoreferenceRecord georeferenceRecord, GeoreferenceRequest georeferenceRequest) {
-        if (georeferenceRecord.getDocumentType().equalsIgnoreCase("") || georeferenceRecord.getDocumentType().length() > 4) {
+        if (georeferenceRecord.getDocumentType().trim().equalsIgnoreCase("") || georeferenceRecord.getDocumentType().trim().length() > 4) {
             addError(georeferenceRequest, "Tipo de Documento", row, "EL TIPO DE DOCUMENTO EXCEDE LA LONGITUD");
         }
     }
 
     private void validateDocumentNumber(GeoreferenceRecord georeferenceRecord, GeoreferenceRequest georeferenceRequest) {
-        if (georeferenceRecord.getDocumentNumber().toString().length() > 15) {
+        if (georeferenceRecord.getDocumentNumber().trim().length() > 15) {
             addError(georeferenceRequest, "Numero de Documento", row, "EL NÚMERO DE DOCUMENTO EXCEDE LA LONGITUD");
         }
     }
 
     private void validateFarmName(GeoreferenceRecord georeferenceRecord, GeoreferenceRequest georeferenceRequest) {
-        if (georeferenceRecord.getFarmName().length() > 200) {
+        if (georeferenceRecord.getFarmName().trim().length() > 200) {
             addError(georeferenceRequest, "Nombre de la Finca", row, "EL NOMBRE DE LA FINCA EXCEDE LOS 200 CARACTERES");
         }
     }
@@ -71,31 +71,31 @@ public class GeoreferenceValidator {
     }
 
     private void validateDepartment(GeoreferenceRecord georeferenceRecord, GeoreferenceRequest georeferenceRequest, Department department) {
-        if (georeferenceRecord.getDepartmentCode().equalsIgnoreCase("")) {
+        if (georeferenceRecord.getDepartmentCode().trim().equalsIgnoreCase("")) {
             addError(georeferenceRequest, DEPARTMENT_DANE_CODE, row, "CÓDIGO DEPARTAMENTO ES REQUERIDO");
         }
-        if (georeferenceRecord.getDepartmentCode().length() > 3) {
+        if (georeferenceRecord.getDepartmentCode().trim().length() > 3) {
             addError(georeferenceRequest, DEPARTMENT_DANE_CODE, row, "CÓDIGO DEPARTAMENTO EXCEDE LA LONGITUD");
         }
-        if (department != null && !georeferenceRecord.getDepartmentCode().equals(department.getTxCodeDane())) {
+        if (department != null && !georeferenceRecord.getDepartmentCode().trim().equals(department.getTxCodeDane().trim())) {
             addError(georeferenceRequest, DEPARTMENT_DANE_CODE, row, "EL CÓDIGO DANE DEL DEPARTAMENTO NO EXISTE");
         }
-        if (georeferenceRecord.getDepartmentName().length() > 100) {
+        if (georeferenceRecord.getDepartmentName().trim().length() > 100) {
             addError(georeferenceRequest, "Departamento", row, "EL NOMBRE DEL DEPARTAMENTO EXCEDE LOS 100 CARACTERES");
         }
     }
 
     private void validateMunicipality(GeoreferenceRecord georeferenceRecord, GeoreferenceRequest georeferenceRequest, Municipality municipality) {
-        if (georeferenceRecord.getMunicipalityCode().equalsIgnoreCase("")) {
+        if (georeferenceRecord.getMunicipalityCode().trim().equalsIgnoreCase("")) {
             addError(georeferenceRequest, MUNICIPALITY_DANE_CODE, row, "CÓDIGO MUNICIPAL ES REQUERIDO");
         }
-        if (georeferenceRecord.getMunicipalityCode().length() > 3) {
+        if (georeferenceRecord.getMunicipalityCode().trim().length() > 3) {
             addError(georeferenceRequest, MUNICIPALITY_DANE_CODE, row, "CÓDIGO MUNICIPAL EXCEDE LA LONGITUD");
         }
-        if (municipality != null && !georeferenceRecord.getMunicipalityCode().equals(municipality.getTxCodeDane())) {
+        if (municipality != null && !georeferenceRecord.getMunicipalityCode().trim().equals(municipality.getTxCodeDane().trim())) {
             addError(georeferenceRequest, MUNICIPALITY_DANE_CODE, row, "EL CÓDIGO DANE DEL MUNICIPIO NO EXISTE");
         }
-        if (georeferenceRecord.getMunicipalityName().length() > 100) {
+        if (georeferenceRecord.getMunicipalityName().trim().length() > 100) {
             addError(georeferenceRequest, "Municipio", row, "EL NOMBRE DEL MUNICIPIO EXCEDE LOS 100 CARACTERES");
         }
     }

@@ -78,15 +78,26 @@ public class GeoreferenceRequestController {
         long started = System.currentTimeMillis();
         if (!fileService.isValidExtensionFileName(fileDto.getFileBody())) {
             long invocationNumber = counter.getAndIncrement();
-            log.error("GeoreferenceRequestController#uploadFileBase64(): error: {} georreferenceRequests invocation {} returning successfully | #{} timed out after {} ms", "Invalid File extension", invocationNumber, invocationNumber, System.currentTimeMillis() - started);
+            log.warn("GeoreferenceRequestController#uploadFileBase64(): warning: {} georreferenceRequests invocation {} returning successfully | #{} timed out after {} ms", "Invalid File extension", invocationNumber, invocationNumber, System.currentTimeMillis() - started);
             return ResponseEntity.status(HttpStatus.NOT_ACCEPTABLE).body("Extension de archivo invalida, el archivo debe ser .xlsx");
+        }
+        try {
+            if (fileService.countRecords(fileDto.getFileBody()) > 500) {
+                long invocationNumber = counter.getAndIncrement();
+                log.warn("GeoreferenceRequestController#uploadFileBase64(): warning: {} georreferenceRequests invocation {} returning successfully | #{} timed out after {} ms", "The file exceeds the number of allowed records.", invocationNumber, invocationNumber, System.currentTimeMillis() - started);
+                return ResponseEntity.status(HttpStatus.NOT_ACCEPTABLE).body("El archivo supera el numero de registros permitidos");
+            }
+        } catch (IOException e) {
+            long invocationNumber = counter.getAndIncrement();
+            log.error("GeoreferenceRequestController#uploadFileBase64(): error: {} georreferenceRequests invocation {} returning with error | #{} timed out after {} ms", "The file exceeds the number of allowed records.", invocationNumber, invocationNumber, System.currentTimeMillis() - started);
+            return ResponseEntity.status(HttpStatus.NOT_ACCEPTABLE).body("Error uploading file: " + e.getMessage());
         }
         GeoreferenceRequest georeferenceRequest = new GeoreferenceRequest();
         georeferenceRequest.setExporterDocumentType("CE");
         georeferenceRequest.setExporterDocumentNumber(fileDto.getSubject());
-        georeferenceRequest.setReportName("report_" + UUID.randomUUID());
-        georeferenceRequest.setFileName(Instant.now().toEpochMilli() + ".csv");
-        georeferenceRequest.setZipId("zip_" + UUID.randomUUID());
+        georeferenceRequest.setReportName(UUID.randomUUID().toString());
+        georeferenceRequest.setFileName(fileDto.getFileName());
+        georeferenceRequest.setZipId(UUID.randomUUID().toString());
         georeferenceRequest.setRequestDate(Date.from(Instant.now()));
         georeferenceRequest.setStatus("EN PROCESO");
         GeoreferenceRequest newGeorreferenceRequest = georeferenceRequestService.saveGeoreferenceRequest(georeferenceRequest);
@@ -108,7 +119,7 @@ public class GeoreferenceRequestController {
             return getStringResponseEntity(csvImporterJob, parameters);
         } catch (IOException e) {
             long invocationNumber = counter.getAndIncrement();
-            log.error("GeoreferenceRequestController#uploadFileBase64(): error: {} georreferenceRequests invocation {} returning successfully | #{} timed out after {} ms", e.getMessage(), invocationNumber, invocationNumber, System.currentTimeMillis() - started);
+            log.error("GeoreferenceRequestController#uploadFileBase64(): {} - {}, error: {} georreferenceRequests invocation {} returning with error | #{} timed out after {} ms", fileDto.getFullName(), fileDto.getFileName(), e.getMessage(), invocationNumber, invocationNumber, System.currentTimeMillis() - started);
             return ResponseEntity.status(500).body("Error al detectar el tipo de archivo: " + e.getMessage());
         }
     }
