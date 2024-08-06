@@ -11,6 +11,7 @@ import lombok.NoArgsConstructor;
 public class GeoreferenceRecordFail {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name ="ID")
     private Long id;
     @ManyToOne
     @JoinColumn(name = "GEOREFERENCE_REQUEST_ID")

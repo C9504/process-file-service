@@ -1,9 +1,7 @@
 package com.georeference.impl;
 
 import com.georeference.appregca.entities.Department;
-import com.georeference.appregca.entities.Municipality;
 import com.georeference.appregca.repositories.DepartmentRepository;
-import com.georeference.appregca.repositories.MunicipalityRepository;
 import com.georeference.services.DepartmentService;
 import org.springframework.stereotype.Service;
 

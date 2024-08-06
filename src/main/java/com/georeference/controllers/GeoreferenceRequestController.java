@@ -34,7 +34,7 @@ public class GeoreferenceRequestController {
 
     private static final AtomicLong counter = new AtomicLong(0);
 
-    @Value("${csv.output.file.path}")
+    @Value("#{systemProperties['java.io.tmpdir']}")
     private String csvFilePath;
 
     @Autowired
@@ -71,6 +71,16 @@ public class GeoreferenceRequestController {
         log.info("GeoreferenceRequestController#getGeoreferenceRequestByDocumentNumber(): georreferenceRequests invocation {} returning successfully | #{} timed out after {} ms", invocationNumber, invocationNumber, System.currentTimeMillis() - started);
         return grs;
     }
+
+    /*@GetMapping("/{loadId}")
+    @Operation(summary = "GET Georeference request by load ID", description = "Description")
+    public List<GeoreferenceRequest> getGeoreferenceRequestByLoadId(@PathVariable("loadId") String loadId) {
+        long started = System.currentTimeMillis();
+        List<GeoreferenceRequest> grs = georeferenceRequestService.getGeoreferenceRequestByLoadId(loadId);
+        long invocationNumber = counter.getAndIncrement();
+        log.info("GeoreferenceRequestController#getGeoreferenceRequestByLoadId(): georreferenceRequests invocation {} returning successfully | #{} timed out after {} ms", invocationNumber, invocationNumber, System.currentTimeMillis() - started);
+        return grs;
+    }*/
 
     @PostMapping
     @Operation(summary = "UPLOAD File xlsx to process", description = "Description")

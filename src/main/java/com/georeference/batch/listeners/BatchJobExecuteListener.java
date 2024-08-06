@@ -5,6 +5,8 @@ import com.georeference.process.entities.GeoreferenceRecord;
 import com.georeference.process.repositories.GeoreferenceRecordRepository;
 import com.georeference.services.FileService;
 import com.georeference.services.sica.producers.SicaProducer;
+
+import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.batch.core.JobExecution;
 import org.springframework.batch.core.JobExecutionListener;
@@ -16,21 +18,12 @@ import java.util.List;
 
 @Component
 @Slf4j
+@RequiredArgsConstructor
 public class BatchJobExecuteListener implements JobExecutionListener {
 
     private final SicaProducer sicaProducer;
     private final GeoreferenceRecordRepository georeferenceRecordRepository;
     private final FileService fileService;
-
-    public BatchJobExecuteListener(
-            FileService fileService,
-            SicaProducer sicaProducer,
-            GeoreferenceRecordRepository georeferenceRecordRepository
-    ) {
-        this.fileService = fileService;
-        this.sicaProducer = sicaProducer;
-        this.georeferenceRecordRepository = georeferenceRecordRepository;
-    }
 
     @Override
     public void beforeJob(JobExecution jobExecution) {
@@ -49,6 +42,7 @@ public class BatchJobExecuteListener implements JobExecutionListener {
         String loadId = jobParameters.getString("loadId");
         try {
             List<GeoreferenceRecord> georeferenceRecords = georeferenceRecordRepository.getByRequestId(requestId);
+            System.out.println(georeferenceRecords.isEmpty() ? "Es nulo" : "CORRECTO");
             if (!georeferenceRecords.isEmpty()) {
                 String content = fileService.convertCSVToString(filePath);
                 Integer regs = georeferenceRecordRepository.getRegs(requestId);

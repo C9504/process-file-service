@@ -1,27 +1,24 @@
 package com.georeference.impl;
 
+import java.util.List;
+
+import org.springframework.stereotype.Service;
+
 import com.georeference.process.entities.GeoreferenceRequest;
 import com.georeference.process.repositories.GeoreferenceRequestRepository;
 import com.georeference.services.GeoreferenceRequestService;
+
 import jakarta.persistence.EntityManager;
 import jakarta.transaction.Transactional;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Service;
-
-import java.util.List;
-import java.util.Optional;
+import lombok.RequiredArgsConstructor;
 
 @Service
 @Transactional
+@RequiredArgsConstructor
 public class GeoreferenceRequestImpl implements GeoreferenceRequestService {
 
     private final GeoreferenceRequestRepository georeferenceRequestRepository;
-    @Autowired
-    private EntityManager entityManager;
-
-    public GeoreferenceRequestImpl(GeoreferenceRequestRepository georeferenceRequestRepository) {
-        this.georeferenceRequestRepository = georeferenceRequestRepository;
-    }
+    private final EntityManager entityManager;
 
     @Override
     public List<GeoreferenceRequest> getAllGeoreferenceRequests() {
@@ -53,6 +50,11 @@ public class GeoreferenceRequestImpl implements GeoreferenceRequestService {
     @Override
     public void deleteGeoreferenceRequest(Long id) {
         georeferenceRequestRepository.deleteById(id);
+    }
+
+    @Override
+    public List<GeoreferenceRequest> getGeoreferenceRequestByLoadId(String loadId) {
+        return georeferenceRequestRepository.findByLoadId(loadId);
     }
 
 }

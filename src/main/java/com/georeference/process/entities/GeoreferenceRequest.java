@@ -15,6 +15,7 @@ import java.util.Date;
 public class GeoreferenceRequest {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "ID")
     private Long id;
     @Column(name = "LOAD_ID", insertable = false, updatable = false, unique = true)
     private String loadId;

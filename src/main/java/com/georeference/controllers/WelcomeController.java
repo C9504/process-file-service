@@ -13,7 +13,6 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.util.List;
-import java.util.Objects;
 
 @RestController
 @RequestMapping("/")
@@ -28,12 +27,12 @@ public class WelcomeController {
     @Autowired
     private SicaProducer sicaProducer;
 
-    @GetMapping("/departments")
+    @GetMapping("api/departments")
     public ResponseEntity<List<Department>> getDepartments() {
         return ResponseEntity.ok(departmentRepository.findAll());
     }
 
-    @GetMapping("/municipality")
+    @GetMapping("api/municipality")
     public ResponseEntity<List<Municipality>> getMunicipalities() {
         return ResponseEntity.ok(municipalityRepository.findAll());
     }
@@ -53,4 +52,6 @@ public class WelcomeController {
     public ResponseEntity<String> getWelcome() {
         return ResponseEntity.ok().body("Welcome to Georeference Service");
     }
+
+
 }

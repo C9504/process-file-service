@@ -11,4 +11,7 @@ import java.util.List;
 public interface GeoreferenceRequestRepository extends JpaRepository<GeoreferenceRequest, Long> {
     @Query("SELECT gr FROM GeoreferenceRequest gr WHERE gr.exporterDocumentNumber = :documentNumber")
     List<GeoreferenceRequest> findByDocumentNumber(String documentNumber);
+
+    @Query("SELECT gr FROM GeoreferenceRequest gr WHERE gr.loadId = :loadId")
+    List<GeoreferenceRequest> findByLoadId(String loadId);
 }

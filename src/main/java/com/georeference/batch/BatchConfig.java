@@ -9,6 +9,8 @@ import com.georeference.process.repositories.GeoreferenceRecordFailRepository;
 import com.georeference.process.repositories.GeoreferenceRecordRepository;
 import com.georeference.services.FileService;
 import com.georeference.services.sica.producers.SicaProducer;
+
+import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.batch.core.Job;
 import org.springframework.batch.core.Step;
@@ -40,7 +42,7 @@ import java.util.Objects;
 @Configuration
 @EnableBatchProcessing
 @Slf4j
-//@ComponentScan(basePackages = {"com.georeference.batch.processors"})
+@RequiredArgsConstructor
 public class BatchConfig {
 
     @Qualifier("dataSource")
@@ -53,21 +55,12 @@ public class BatchConfig {
     @Qualifier("mainEntityManagerFactory")
     private final LocalContainerEntityManagerFactoryBean entityManagerFactory;
 
-    //@Autowired
-    public BatchConfig(GeoreferenceRecordRepository georeferenceRecordRepository, GeoreferenceRecordFailRepository georeferenceRecordFailRepository, GeoreferenceRecordProcessor georeferenceRecordProcessor, LocalContainerEntityManagerFactoryBean entityManagerFactory, DataSource dataSource) {
-        this.georeferenceRecordRepository = georeferenceRecordRepository;
-        this.georeferenceRecordFailRepository  = georeferenceRecordFailRepository;
-        this.georeferenceRecordProcessor = georeferenceRecordProcessor;
-        this.entityManagerFactory = entityManagerFactory;
-        this.dataSource = dataSource;
-    }
-
     private static final String[] FIELDS = new String[] {
             "id",
             "farmerName", "documentType", "documentNumber",
             "farmName", "cultivationArea",
             "municipalityCode", "municipalityName", "departmentCode",
-            "departmentName"//, "status" ,"geoJsonId", "oldPlot"
+            "departmentName"// , "status" ,"geoJsonId", "oldPlot"
     };
 
     /**
@@ -77,29 +70,27 @@ public class BatchConfig {
     @Bean
     public FlatFileItemReader<GeoreferenceRecord> reader() {
         return new FlatFileItemReaderBuilder<GeoreferenceRecord>()
-                //.resource(new FileSystemResource(fileName))
+                // .resource(new FileSystemResource(fileName))
                 .encoding("UTF-8")
                 .linesToSkip(1)
                 .name("csvItemReader")
                 .strict(false)
                 .lineTokenizer(tokenizer())
-                .fieldSetMapper(fieldSet ->
-                    GeoreferenceRecord.builder()
-                            //.id(Long.parseLong(fieldSet.readString("ID")))
-                            .farmerName(fieldSet.readString("farmerName"))
-                            .documentType(fieldSet.readString("documentType"))
-                            .documentNumber(fieldSet.readString("documentNumber"))
-                            .farmName(fieldSet.readString("farmName"))
-                            .cultivationArea(fieldSet.readDouble("cultivationArea"))
-                            .municipalityCode(fieldSet.readString("municipalityCode"))
-                            .municipalityName(fieldSet.readString("municipalityName"))
-                            .departmentCode(fieldSet.readString("departmentCode"))
-                            .departmentName(fieldSet.readString("departmentName"))
-                            //.status(fieldSet.readString("status"))
-                            //.geoJsonId(fieldSet.readString("geoJsonId"))
-                            //.oldPlot(fieldSet.readBoolean("oldPlot"))
-                            .build()
-                )
+                .fieldSetMapper(fieldSet -> GeoreferenceRecord.builder()
+                        // .id(Long.parseLong(fieldSet.readString("ID")))
+                        .farmerName(fieldSet.readString("farmerName"))
+                        .documentType(fieldSet.readString("documentType"))
+                        .documentNumber(fieldSet.readString("documentNumber"))
+                        .farmName(fieldSet.readString("farmName"))
+                        .cultivationArea(fieldSet.readDouble("cultivationArea"))
+                        .municipalityCode(fieldSet.readString("municipalityCode"))
+                        .municipalityName(fieldSet.readString("municipalityName"))
+                        .departmentCode(fieldSet.readString("departmentCode"))
+                        .departmentName(fieldSet.readString("departmentName"))
+                        // .status(fieldSet.readString("status"))
+                        // .geoJsonId(fieldSet.readString("geoJsonId"))
+                        // .oldPlot(fieldSet.readBoolean("oldPlot"))
+                        .build())
                 .build();
     }
 
@@ -138,15 +129,14 @@ public class BatchConfig {
 
     @Bean(name = "csvImporterJob")
     public Job csvImporterJob(JobRepository jobRepository,
-                              FileService fileService,
-                              SicaProducer sicaProducer,
-                              GeoreferenceRecordRepository georeferenceRecordRepository
-    ) throws Exception {
+            FileService fileService,
+            SicaProducer sicaProducer,
+            GeoreferenceRecordRepository georeferenceRecordRepository) throws Exception {
         return new JobBuilder("csvImporterJob", jobRepository)
                 .incrementer(new RunIdIncrementer())
-                //.start(masterStep())
-                .listener(new BatchJobExecuteListener(fileService, sicaProducer, georeferenceRecordRepository))
-                //.validator(parameters -> System.out.println(parameters.getLong("requestId")))
+                // .start(masterStep())
+                .listener(new BatchJobExecuteListener(sicaProducer, georeferenceRecordRepository, fileService))
+                // .validator(parameters -> System.out.println(parameters.getLong("requestId")))
                 .flow(csvImporterStep())
                 .end()
                 .build();
@@ -160,7 +150,7 @@ public class BatchConfig {
                 .processor(georeferenceRecordProcessor)
                 .writer(writer())
                 .listener(new BatchStepExecutionListener(reader()))
-                //.taskExecutor(taskExecutor())
+                // .taskExecutor(taskExecutor())
                 .faultTolerant()
                 .allowStartIfComplete(true)
                 .build();
@@ -182,7 +172,8 @@ public class BatchConfig {
     }
 
     @Bean
-    public DefaultLineMapper<GeoreferenceRecord> lineMapper(LineTokenizer tokenizer, FieldSetMapper<GeoreferenceRecord> fieldSetMapper) {
+    public DefaultLineMapper<GeoreferenceRecord> lineMapper(LineTokenizer tokenizer,
+            FieldSetMapper<GeoreferenceRecord> fieldSetMapper) {
         var lineMapper = new DefaultLineMapper<GeoreferenceRecord>();
         lineMapper.setLineTokenizer(tokenizer);
         lineMapper.setFieldSetMapper(fieldSetMapper);

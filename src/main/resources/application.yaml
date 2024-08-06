@@ -2,9 +2,9 @@ spring:
   application:
     name: Process File Service
   datasource:
-    url: jdbc:oracle:thin:@//localhost:1521/ORCL
-    username: C##GEOREFERENCE_PROCESS_FILE
-    password: password123
+    url: jdbc:oracle:thin:@//192.168.11.86:1530/MULTIDBD
+    username: APPREGCA
+    password: regul.321DES
     driver-class-name: oracle.jdbc.OracleDriver
     appregca:
       url: jdbc:oracle:thin:@//192.168.11.86:1530/MULTIDBD
@@ -25,10 +25,6 @@ spring:
     properties:
       hibernate:
         format_sql: true
-#        cache:
-#          use_query_cache: true
-#          use_second_level_cache: true
-#          region.factory_class: org.hibernate.cache.jcache.JCacheRegionFactory
   autoconfigure:
     exclude:
       - org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration
@@ -46,12 +42,6 @@ spring:
     producer:
       key-serializer: org.apache.kafka.common.serialization.StringSerializer
       value-serializer: org.springframework.kafka.support.serializer.JsonSerializer
-csv:
-  file:
-    path: classpath:converted.csv
-  output:
-    file:
-      path: C:\\Users\\Administrador\\Documents\\
 server:
   address: 0.0.0.0
   port: 2004
