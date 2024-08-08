@@ -141,7 +141,7 @@ public class GeoreferenceRequestController {
     private ResponseEntity<String> runJob(Job job, JobParameters parameters) {
         try {
             JobExecution jobExecution = jobLauncher.run(job, parameters);
-            return ResponseEntity.ok("Batch job " + job.getName() + " started with JobExecutionId: " + jobExecution.getId());
+            return ResponseEntity.ok(jobExecution.getJobParameters().getString("loadId"));
         } catch (Exception e) {
             return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR)
                     .body("Failed to start batch job " + job.getName() + " : " + e.getMessage());

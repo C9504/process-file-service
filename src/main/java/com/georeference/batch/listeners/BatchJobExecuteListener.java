@@ -42,7 +42,6 @@ public class BatchJobExecuteListener implements JobExecutionListener {
         String loadId = jobParameters.getString("loadId");
         try {
             List<GeoreferenceRecord> georeferenceRecords = georeferenceRecordRepository.getByRequestId(requestId);
-            System.out.println(georeferenceRecords.isEmpty() ? "Es nulo" : "CORRECTO");
             if (!georeferenceRecords.isEmpty()) {
                 String content = fileService.convertCSVToString(filePath);
                 Integer regs = georeferenceRecordRepository.getRegs(requestId);
